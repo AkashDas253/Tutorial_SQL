@@ -48,7 +48,37 @@
 
 ## Types of SQL Commands
 
-![Commands Types](images/command_types.png)
+```mermaid
+graph TD
+    A[SQL Commands] --> B[DDL (Data Definition Language)];
+    A --> C[DML (Data Manipulation Language)];
+    A --> D[DCL (Data Control Language)];
+    A --> E[TCL (Transaction Control Language)];
+    A --> F[DQL (Data Query Language)];
+
+    B --> B1[CREATE];
+    B --> B2[ALTER];
+    B --> B3[DROP];
+    B --> B4[TRUNCATE];
+    B --> B5[RENAME];
+
+    C --> C1[SELECT];
+    C --> C2[INSERT];
+    C --> C3[UPDATE];
+    C --> C4[DELETE];
+    C --> C5[MERGE];
+
+    D --> D1[GRANT];
+    D --> D2[REVOKE];
+
+    E --> E1[COMMIT];
+    E --> E2[ROLLBACK];
+    E --> E3[SAVEPOINT];
+    E --> E4[SET TRANSACTION];
+
+    F --> F1[SELECT];
+```
+
 ### **1. DDL (Data Definition Language)**
 
 DDL commands are used to define and modify the database structure. These commands deal with the creation and alteration of database objects like tables, indexes, and views.

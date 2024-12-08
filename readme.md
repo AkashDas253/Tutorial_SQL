@@ -7,12 +7,15 @@ This repository contains notes on various SQL topics.
 - **[Cheatsheet](lessons/cheatsheet/readme.md)**
 
 - **[Basics](lessons/basics/README.md)**
+
+- **[Concepts](lessons/concepts/readme.md)** 
+
 - **[Types of SQL](lessons/types_of_SQL/README.md)**
-- **[DDL](lessons/ddl/readme.md)**
-- **[DML](lessons/dml/readme.md)**
-- **[TCL](lessons/tcl/readme.md)**
-- **[DQL](lessons/dql/readme.md)**
-- **[DCL](lessons/dcl/readme.md)**
+    - **[DDL](lessons/ddl/readme.md)**
+    - **[DML](lessons/dml/readme.md)**
+    - **[TCL](lessons/tcl/readme.md)**
+    - **[DQL](lessons/dql/readme.md)**
+    - **[DCL](lessons/dcl/readme.md)**
 
 - **Function:**
     - **[Aggregate Functions](lessons/aggregate/README.md)**
