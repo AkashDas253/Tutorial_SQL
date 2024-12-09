@@ -1,4 +1,4 @@
-### **Procedural SQL (PL/SQL or T-SQL)**  
+## **Procedural SQL (PL/SQL or T-SQL)**  
 
 Procedural SQL extends standard SQL with programming constructs like variables, loops, and conditional statements, enabling more robust and complex database operations.
 

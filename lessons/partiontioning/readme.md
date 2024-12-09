@@ -1,4 +1,4 @@
-### **SQL Partitioning: Detailed Overview**
+## **SQL Partitioning: Detailed Overview**
 
 **Partitioning** is a database optimization technique that splits large tables into smaller, more manageable pieces, called **partitions**, while maintaining the overall table structure. Each partition is stored separately but is treated as a single logical entity for querying. Partitioning can greatly improve performance, manageability, and scalability, especially for large datasets.
 

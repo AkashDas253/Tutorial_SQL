@@ -1,4 +1,4 @@
-### **Query and Schema Constraints**
+## **Query and Schema Constraints**
 
 Constraints are rules enforced on database columns to maintain data integrity and ensure consistency. They can be applied at the table creation or modification stage.
 

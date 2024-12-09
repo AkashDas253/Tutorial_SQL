@@ -1,4 +1,4 @@
-### **SQL Indexes: Detailed Overview**
+## **SQL Indexes: Detailed Overview**
 
 An **index** in SQL is a database object that improves the speed of data retrieval operations on a table at the cost of additional space and maintenance overhead. Indexes are used to quickly locate and access the data in a database without having to scan the entire table. They can significantly improve query performance, especially in large databases.
 

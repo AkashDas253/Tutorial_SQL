@@ -1,4 +1,4 @@
-### **4. Data Control Language (DCL)**  
+## **Data Control Language (DCL)**  
 
 Data Control Language (DCL) commands manage access permissions and control user privileges in a database. These commands ensure that only authorized users can access or modify the database objects.
 

@@ -1,4 +1,4 @@
-### **Compatibility of SQL Data Types Across Different Databases**
+## **Compatibility of SQL Data Types Across Different Databases**
 
 Different SQL databases often offer variations of common data types to suit their specific use cases and performance optimizations. Below is a compatibility overview of various data types across popular SQL databases, including **PostgreSQL**, **MySQL**, **SQL Server**, and **Oracle SQL**.
 

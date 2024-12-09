@@ -1,4 +1,4 @@
-Here’s an expanded note with details for specific database implementations, including MySQL, Oracle SQL, SQL Server, and PostgreSQL.  
+## Database Specific DML
 
 ---
 

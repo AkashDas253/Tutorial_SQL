@@ -1,4 +1,4 @@
-### **SQL Data Types**
+## **SQL Data Types**
 
 Data types define the kind of data that can be stored in a column, ensuring appropriate data handling, storage efficiency, and validation. SQL data types are broadly categorized into **ANSI Standard Types** and **Extended Types**, which are database-specific.
 

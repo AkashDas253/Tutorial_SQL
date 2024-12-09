@@ -1,4 +1,4 @@
-### **SQL Operators**
+## **SQL Operators**
 
 SQL operators are symbols or keywords used in SQL statements to perform operations on values in a database. They allow for manipulating and comparing data to retrieve specific information. SQL operators are broadly classified into the following categories:
 

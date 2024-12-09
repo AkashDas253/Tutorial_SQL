@@ -1,4 +1,4 @@
-### **Data Definition Language (DDL)**  
+## **Data Definition Language (DDL)**  
 DDL is a subset of SQL commands used to define and modify the structure of database objects such as tables, schemas, views, and indexes. Unlike Data Manipulation Language (DML), DDL operations are auto-committed, meaning they are irreversible without explicit backup.
 
 ---

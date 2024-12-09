@@ -1,4 +1,4 @@
-### **Permission Inheritance in SQL: A Detailed Note**
+## **Permission Inheritance in SQL: A Detailed Note**
 
 **Permission inheritance** in SQL refers to the concept where roles or users can inherit permissions from other roles, simplifying access control management. In databases, this mechanism allows a role or user to automatically gain permissions granted to another role, without needing to manually assign every individual permission. This helps in managing permissions more efficiently, especially in large databases or complex systems.
 

@@ -1,6 +1,4 @@
-Certainly! Let’s dive deeper into **Oracle SQL**’s deviations, unique data types, and differences compared to other databases, particularly highlighting how **Oracle’s proprietary types** differ from **ANSI Standard** and **Extended Data Types**.
-
-### **Oracle SQL Data Types: Differences and Deviation from ANSI Standards**
+## **Oracle SQL Data Types: Differences and Deviation from ANSI Standards**
 
 Oracle SQL provides unique data types and deviations from the ANSI SQL standards, often tailored to optimize performance or better handle specific data management tasks. Below, we'll discuss Oracle's differences and deviations in detail:
 

@@ -1,4 +1,4 @@
-### **Data Query Language (DQL)**  
+## **Data Query Language (DQL)**  
 DQL focuses on querying data from the database. The primary command is `SELECT`, which retrieves data based on the criteria specified.
 
 #### **SELECT**  

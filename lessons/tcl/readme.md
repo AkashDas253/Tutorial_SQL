@@ -1,4 +1,4 @@
-### **Transaction Control Language (TCL)**  
+## **Transaction Control Language (TCL)**  
 
 Transaction Control Language commands are used to manage database transactions to maintain data integrity and ensure consistent states in a multi-user environment.
 
