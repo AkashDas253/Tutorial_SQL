@@ -195,10 +195,10 @@ graph TD
     A[Table] --> C[Partition 2]
     A[Table] --> D[Partition 3]
     A[Table] --> E[Partition 4]
-    B --> F[Data (Range 1)]
-    C --> G[Data (Range 2)]
-    D --> H[Data (Range 3)]
-    E --> I[Data (Range 4)]
+    B --> F[Data_Range 1]
+    C --> G[Data_Range 2]
+    D --> H[Data_Range 3]
+    E --> I[Data_Range 4]
 ```
 
 - **Explanation**:  

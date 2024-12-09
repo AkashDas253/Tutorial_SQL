@@ -132,7 +132,7 @@ graph LR
     A[Base Tables] --> B[View Definition]
     B --> C[View]
     C --> D[User Queries]
-    D --> A[Base Tables (via View)]
+    D --> A[Base Tables_via View]
     D --> E[View Result Set]
     A --> F[Base Tables Data]
 ```
