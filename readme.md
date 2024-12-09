@@ -10,7 +10,7 @@ This repository contains notes on various SQL topics.
 
 - [Concepts](lessons/concepts/readme.md) 
 
-- [Types of SQL](lessons/types_of_sql/readme.md)
+- [Types of SQL](lessons/types_of_SQL/readme.md)
 
     - [Data Definition Language (DDL)](lessons/ddl/readme.md)
 
