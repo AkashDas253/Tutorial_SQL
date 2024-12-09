@@ -50,7 +50,7 @@
 
 ```mermaid
 graph TD;
-    A[SQL Commands]-->B[DDL (Data Definition Language)];
+    A[SQL Commands]-->B [DDL (Data Definition Language)];
     A-->C[DML (Data Manipulation Language)];
     A-->D[DCL (Data Control Language)];
     A-->E[TCL (Transaction Control Language)];
