@@ -4,11 +4,11 @@
 
 ```mermaid
 graph TD;
-    A[SQL Commands] --> B[DDL [Data Definition Language]];
-    A --> C[DML [Data Manipulation Language]];
-    A --> D[DCL [Data Control Language]];
-    A --> E[TCL [Transaction Control Language]];
-    A --> F[DQL [Data Query Language]];
+    A[SQL Commands] --> B[DDL_Data Definition Language];
+    A --> C[DML_Data Manipulation Language];
+    A --> D[DCL_Data Control Language];
+    A --> E[TCL_Transaction Control Language];
+    A --> F[DQL_Data Query Language];
 
     B --> B1[CREATE];
     B --> B2[ALTER];
@@ -31,6 +31,7 @@ graph TD;
     E --> E4[SET TRANSACTION];
 
     F --> F1[SELECT];
+
 
 ```
 
