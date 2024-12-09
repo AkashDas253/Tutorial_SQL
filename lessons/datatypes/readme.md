@@ -151,4 +151,4 @@ graph TD;
    - Use `SMALLINT` for smaller ranges to save storage.  
    - Use `JSONB` in PostgreSQL for better indexing and performance over `JSON`.  
 
-Would you like further insights on compatibility across different SQL databases or advanced usage scenarios?
+<!-- Would you like further insights on compatibility across different SQL databases or advanced usage scenarios? -->

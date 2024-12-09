@@ -45,7 +45,7 @@ This repository contains notes on various SQL topics.
 
 
 
-- [SQL Operators](lessons/operators/readme.md)
+- [SQL Operators](lessons/operator/readme.md)
 
 
 

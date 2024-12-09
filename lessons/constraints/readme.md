@@ -187,4 +187,4 @@ erDiagram
    FOREIGN KEY (column_name) REFERENCES parent_table (primary_key) ON DELETE CASCADE;
    ```
 
-Would you like me to elaborate on indexing with constraints or compatibility across specific databases?
+<!-- Would you like me to elaborate on indexing with constraints or compatibility across specific databases? -->

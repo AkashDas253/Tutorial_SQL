@@ -213,4 +213,4 @@ graph TD;
     E --> F;
 ```
 
-Would you like examples for real-world scenarios, such as auditing triggers or performance considerations with cursors?
+<!-- Would you like examples for real-world scenarios, such as auditing triggers or performance considerations with cursors? -->

@@ -112,4 +112,4 @@ Different SQL databases often offer variations of common data types to suit thei
 
 ---
 
-Would you like to dive deeper into any specific database's handling of these data types or explore real-world use cases?
+<!-- Would you like to dive deeper into any specific database's handling of these data types or explore real-world use cases? -->
