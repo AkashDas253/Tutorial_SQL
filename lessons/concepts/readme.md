@@ -173,4 +173,3 @@
 - **JSON/Document Handling** (PostgreSQL, MySQL, SQL Server)  
 - **Key-Value Data Stores**  
 
-This structure ensures that ANSI SQL forms the foundation while categorizing extra features specific to different SQL implementations under their respective sections. 

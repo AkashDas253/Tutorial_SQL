@@ -1,193 +1,201 @@
-## Data Manipulation Language (DML)
+### **Data Query Language (DQL)**  
+DQL focuses on querying data from the database. The primary command is `SELECT`, which retrieves data based on the criteria specified.
 
-### Overview
-- **Definition**: DML is a subset of SQL used to manage data within database objects.
-- **Purpose**: Perform operations such as inserting, updating, deleting, and calling stored procedures.
+#### **SELECT**  
+Used to retrieve data from one or more tables.  
 
-### Key Commands
+**Syntax:**  
+```sql
+SELECT [DISTINCT] column1, column2, ...
+FROM table_name
+[WHERE condition]
+[GROUP BY column1, column2, ...]
+[HAVING condition]
+[ORDER BY column1 [ASC|DESC], column2 [ASC|DESC]]
+[LIMIT row_count OFFSET row_skip];
+```
 
-#### INSERT
-- **Purpose**: Add new rows to a table.
-- **Syntax**:
+##### **Aggregations**  
+Used to compute summary statistics.  
+- **COUNT:** Counts the number of rows.  
   ```sql
-  INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);
+  SELECT COUNT(column_name) FROM table_name;
   ```
-  - `table_name`: The name of the table where the data will be inserted.
-  - `column1, column2, ...`: The columns in the table where the data will be inserted.
-  - `value1, value2, ...`: The values to be inserted into the specified columns.
-- **Example**:
+- **SUM:** Adds numerical values.  
   ```sql
-  -- Insert a new record into the employees table
-  INSERT INTO employees (name, position) VALUES ('John Doe', 'Developer');
+  SELECT SUM(column_name) FROM table_name;
   ```
-
-#### UPDATE
-- **Purpose**: Modify existing rows in a table.
-- **Syntax**:
+- **AVG:** Calculates the average value.  
   ```sql
-  UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;
+  SELECT AVG(column_name) FROM table_name;
   ```
-  - `table_name`: The name of the table to update.
-  - `column1 = value1, column2 = value2, ...`: The columns and their new values.
-  - `condition`: The condition to specify which rows to update.
-- **Example**:
+- **MAX/MIN:** Finds the maximum/minimum value.  
   ```sql
-  -- Update the position of an employee
-  UPDATE employees SET position = 'Senior Developer' WHERE name = 'John Doe';
+  SELECT MAX(column_name), MIN(column_name) FROM table_name;
   ```
 
-#### DELETE
-- **Purpose**: Remove rows from a table.
-- **Syntax**:
-  ```sql
-  DELETE FROM table_name WHERE condition;
-  ```
-  - `table_name`: The name of the table to delete rows from.
-  - `condition`: The condition to specify which rows to delete.
-- **Example**:
-  ```sql
-  -- Delete an employee record
-  DELETE FROM employees WHERE name = 'John Doe';
-  ```
+##### **GROUP BY and HAVING**  
+Organizes data into groups for aggregation, with filters on grouped data using `HAVING`.  
+**Syntax:**  
+```sql
+SELECT column1, AGGREGATE_FUNCTION(column2)
+FROM table_name
+GROUP BY column1
+HAVING AGGREGATE_FUNCTION(column2) condition;
+```
 
-#### CALL
-- **Purpose**: Execute a stored procedure.
-- **Syntax**:
+##### **JOINs**  
+Combines rows from multiple tables based on a related column.  
+- **INNER JOIN:** Matches rows in both tables.  
   ```sql
-  CALL procedure_name(parameters);
+  SELECT a.column1, b.column2
+  FROM table_a a
+  INNER JOIN table_b b
+  ON a.common_field = b.common_field;
   ```
-  - `procedure_name`: The name of the stored procedure to call.
-  - `parameters`: The parameters to pass to the stored procedure.
-- **Example**:
-  ```sql
-  -- Call a stored procedure to update employee salaries
-  CALL update_employee_salaries();
-  ```
+- **LEFT JOIN:** Includes unmatched rows from the left table.  
+- **RIGHT JOIN:** Includes unmatched rows from the right table.  
+- **FULL JOIN:** Includes unmatched rows from both tables.  
+- **CROSS JOIN:** Produces a Cartesian product.  
 
-#### EXPLAIN
-- **Purpose**: Display the execution plan for a query.
-- **Syntax**:
+##### **Subqueries**  
+Nested queries inside another query.  
+- **Correlated Subquery:** Depends on the outer query.  
   ```sql
-  EXPLAIN query;
+  SELECT column1
+  FROM table1 t1
+  WHERE EXISTS (
+    SELECT 1
+    FROM table2 t2
+    WHERE t2.column2 = t1.column1
+  );
   ```
-  - `query`: The query to explain.
-- **Example**:
-  ```sql
-  -- Explain the execution plan for a select query
-  EXPLAIN SELECT * FROM employees WHERE position = 'Developer';
-  ```
+- **Uncorrelated Subquery:** Independent of the outer query.  
 
-#### LOCK
-- **Purpose**:
+##### **Common Table Expressions (CTE)** *(SQL Server, PostgreSQL)*  
+Defines a temporary result set for use within a query.  
+**Syntax:**  
+```sql
+WITH cte_name AS (
+    SELECT column1, column2
+    FROM table_name
+)
+SELECT * FROM cte_name;
+```
 
- Control
+##### **Window Functions** *(PostgreSQL, SQL Server)*  
+Calculates results across a window of rows.  
+**Syntax:**  
+```sql
+SELECT column1,
+       ROW_NUMBER() OVER (PARTITION BY column2 ORDER BY column3) AS rank
+FROM table_name;
+```
 
- concurrent access to database objects.
-- **Syntax**:
-  ```sql
-  LOCK TABLE table_name IN {SHARE | EXCLUSIVE} MODE;
-  ```
-  - `table_name`: The name of the table to lock.
-  - `{SHARE | EXCLUSIVE}`: The mode of the lock.
-- **Example**:
-  ```sql
-  -- Lock the employees table in exclusive mode
-  LOCK TABLE employees IN EXCLUSIVE MODE;
-  ```
+---
+
+### **Data Manipulation Language (DML)**  
+DML commands modify data in the database.
+
+#### **INSERT**  
+Adds new rows to a table.  
+
+##### **Single/Multi-row Insert**  
+**Syntax:**  
+```sql
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...), (value3, value4, ...);
+```
+
+##### **INSERT INTO SELECT**  
+Copies data from one table to another.  
+**Syntax:**  
+```sql
+INSERT INTO target_table (column1, column2, ...)
+SELECT column1, column2
+FROM source_table
+WHERE condition;
+```
+
+##### **ON DUPLICATE KEY UPDATE** *(MySQL)*  
+Updates existing rows on duplicate key conflict.  
+**Syntax:**  
+```sql
+INSERT INTO table_name (column1, column2)
+VALUES (value1, value2)
+ON DUPLICATE KEY UPDATE column1 = value3;
+```
+
+---
+
+#### **UPDATE**  
+Modifies existing data.  
+**Syntax:**  
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2
+WHERE condition;
+```
+
+---
+
+#### **DELETE**  
+Removes rows based on a condition.  
+**Syntax:**  
+```sql
+DELETE FROM table_name
+WHERE condition;
+```
+
+---
+
+#### **MERGE** *(SQL Server, Oracle SQL)*  
+Combines `INSERT`, `UPDATE`, and `DELETE` in a single operation.  
+**Syntax:**  
+```sql
+MERGE INTO target_table USING source_table
+ON target_table.key = source_table.key
+WHEN MATCHED THEN
+  UPDATE SET column1 = value1
+WHEN NOT MATCHED THEN
+  INSERT (column1, column2) VALUES (value1, value2)
+WHEN NOT MATCHED BY SOURCE THEN
+  DELETE;
+```
+
+---
+
+### **Additional Enhancements**  
+
+#### **EXPLAIN**  
+Analyzes and displays query execution plans.  
+**Syntax:**  
+```sql
+EXPLAIN SELECT column1 FROM table_name;
+```
+
+#### **SET Operators**  
+Combine results of multiple queries.  
+- **UNION/UNION ALL:** Combines results with or without duplicates.  
+- **INTERSECT:** Finds common rows.  
+- **EXCEPT/MINUS:** Finds rows in the first query but not the second.  
+
+#### **Transaction Management** *(for DML)*  
+Ensures atomicity of operations.  
+- **START TRANSACTION:** Begins a new transaction.  
+- **COMMIT:** Saves changes.  
+- **ROLLBACK:** Undoes changes.  
+
+---
+
+### **Comparison Table: SELECT, INSERT, UPDATE, DELETE, MERGE**  
+
+| **Operation** | **Purpose**                           | **Supports Subqueries?** | **Impact**              |  
+|---------------|---------------------------------------|--------------------------|-------------------------|  
+| **SELECT**    | Retrieves data from one or more tables | Yes                      | Read-only               |  
+| **INSERT**    | Adds new rows to a table              | Yes                      | Data addition           |  
+| **UPDATE**    | Modifies existing rows                | Yes                      | Data modification       |  
+| **DELETE**    | Removes rows from a table             | Yes                      | Data deletion           |  
+| **MERGE**     | Combines multiple DML operations      | Yes                      | Data insertion/updation |  
 
 
-### Usage Considerations
-- **Data Integrity**: Ensure that DML operations maintain the integrity of the data.
-- **Concurrency Control**: Use locks and transactions to manage concurrent access to data.
-- **Performance**: Optimize DML operations to improve performance and reduce resource usage.
-
-### Best Practices
-- **Use Transactions**: Group related DML operations into transactions to ensure atomicity.
-- **Handle Exceptions**: Implement error handling to manage exceptions during DML operations.
-- **Optimize Queries**: Use indexes and optimize queries to improve performance.
-- **Minimize Locks**: Keep locks short to reduce contention and improve concurrency.
-
-### Comparison of DML Commands in Different SQL Implementations
-
-| Feature            | MySQL Syntax Example | PostgreSQL Syntax Example | SQL Server Syntax Example | Oracle SQL Syntax Example |
-|--------------------|-----------------------|---------------------------|---------------------------|---------------------------|
-| Insert             | `INSERT INTO ...;`    | `INSERT INTO ...;`        | `INSERT INTO ...;`        | `INSERT INTO ...;`        |
-| Update             | `UPDATE ...;`         | `UPDATE ...;`             | `UPDATE ...;`             | `UPDATE ...;`             |
-| Delete             | `DELETE FROM ...;`    | `DELETE FROM ...;`        | `DELETE FROM ...;`        | `DELETE FROM ...;`        |
-| Call               | `CALL ...;`           | `CALL ...;`               | `EXEC ...;`               | `CALL ...;`               |
-| Explain            | `EXPLAIN ...;`        | `EXPLAIN ...;`            | `EXPLAIN ...;`            | `EXPLAIN ...;`            |
-| Lock               | `LOCK TABLE ...;`     | `LOCK TABLE ...;`         | `LOCK TABLE ...;`         | `LOCK TABLE ...;`         |
-
-### Additional Details
-
-#### Handling NULL Values
-- **Definition**: NULL represents missing or unknown data.
-- **Syntax**:
-  ```sql
-  INSERT INTO table_name (column1, column2) VALUES (value1, NULL);
-  ```
-- **Example**:
-  ```sql
-  -- Insert a record with a NULL value
-  INSERT INTO employees (name, position) VALUES ('Jane Doe', NULL);
-  ```
-
-#### Using Subqueries
-- **Definition**: A subquery is a query nested inside another query.
-- **Syntax**:
-  ```sql
-  INSERT INTO table_name (column1, column2) SELECT value1, value2 FROM another_table WHERE condition;
-  ```
-- **Example**:
-  ```sql
-  -- Insert records from another table
-  INSERT INTO employees (name, position) SELECT name, position FROM new_employees WHERE start_date > '2023-01-01';
-  ```
-
-#### Conditional Updates
-- **Definition**: Update rows based on specific conditions.
-- **Syntax**:
-  ```sql
-  UPDATE table_name SET column1 = value1 WHERE condition;
-  ```
-- **Example**:
-  ```sql
-  -- Update the position of employees based on their current position
-  UPDATE employees SET position = 'Lead Developer' WHERE position = 'Senior Developer';
-  ```
-
-#### Deleting with Subqueries
-- **Definition**: Use subqueries to specify which rows to delete.
-- **Syntax**:
-  ```sql
-  DELETE FROM table_name WHERE column IN (SELECT column FROM another_table WHERE condition);
-  ```
-- **Example**:
-  ```sql
-  -- Delete employees who are not in the active projects list
-  DELETE FROM employees WHERE id NOT IN (SELECT employee_id FROM active_projects);
-  ```
-
-#### Calling Stored Procedures with Parameters
-- **Definition**: Execute stored procedures with input parameters.
-- **Syntax**:
-  ```sql
-  CALL procedure_name(parameter1, parameter2);
-  ```
-- **Example**:
-  ```sql
-  -- Call a stored procedure to update an employee's salary
-  CALL update_salary('John Doe', 75000);
-  ```
-
-#### Locking Specific Rows
-- **Definition**: Lock specific rows to control concurrent access.
-- **Syntax**:
-  ```sql
-  SELECT * FROM table_name WHERE condition FOR UPDATE;
-  ```
-- **Example**:
-  ```sql
-  -- Lock rows of employees who are developers
-  SELECT * FROM employees WHERE position = 'Developer' FOR UPDATE;
-  ```
