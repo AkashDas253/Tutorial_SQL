@@ -3,7 +3,7 @@
 ## Types of SQL Commands
 
 ```mermaid
-graph TD
+graph TD;
     A[SQL Commands] --> B[DDL (Data Definition Language)];
     A --> C[DML (Data Manipulation Language)];
     A --> D[DCL (Data Control Language)];
@@ -31,6 +31,7 @@ graph TD
     E --> E4[SET TRANSACTION];
 
     F --> F1[SELECT];
+
 ```
 
 ### **1. DDL (Data Definition Language)**
