@@ -77,7 +77,7 @@ graph TD;
     E --> E4[SET TRANSACTION];
 
     F --> F1[SELECT];
-```
+  ```
 
 ### **1. DDL (Data Definition Language)**
 
