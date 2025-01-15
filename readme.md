@@ -125,7 +125,7 @@ This repository contains notes on various SQL topics.
 - Encryption (SQL Server TDE, Oracle Advanced Security)  
 - Row-Level Security (SQL Server, PostgreSQL)  
 
----
+--- 
 
 ### 15. NoSQL Extensions in SQL Databases
 - JSON/Document Handling (PostgreSQL, MySQL, SQL Server)  
