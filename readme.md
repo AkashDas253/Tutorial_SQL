@@ -5,9 +5,7 @@ This repository contains notes on various SQL topics.
 ## Topics
 
 - [Cheatsheet](lessons/cheatsheet/readme.md)
-
 - [Basics](lessons/basics/readme.md)
-
 - [Concepts](lessons/concepts/readme.md) 
 
 - [Types of SQL](lessons/types_of_SQL/readme.md)
