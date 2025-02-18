@@ -13,6 +13,7 @@ This repository contains notes on various SQL topics.
 - [Oracle Data Manipulation](lessons/oracle_data_manipulation/readme.md)
 - [Oracle Data Definition](lessons/oracle_data_definition/readme.md)
 - [Oracle Data Control](lessons/oracle_data_control/readme.md)
+
 - [Oracle Query Features](lessons/oracle_query_features/readme.md)
 - [Oracle Advanced Features](lessons/oracle_advanced_features/readme.md)
 - [Oracle Security and Management](lessons/oracle_security_and_management/readme.md)
