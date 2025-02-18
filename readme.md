@@ -25,6 +25,7 @@ This repository contains notes on various SQL topics.
 - [ANSI Data Manipulation Language (DML)](lessons/ansi_dml/readme.md)
 - [ANSI Data Control Language (DCL)](lessons/ansi_dcl/readme.md)
 - [ANSI Transaction Control Language (TCL)](lessons/ansi_tcl/readme.md)
+- [ANSI Datatypes](lessons/ansi_data_types/readme.md)
 - [ANSI Constraints](lessons/ansi_constraints/readme.md)
 - [ANSI Joins](lessons/ansi_joins/readme.md)
 - [ANSI Subqueries](lessons/ansi_subqueries/readme.md)
@@ -51,7 +52,7 @@ This repository contains notes on various SQL topics.
 - [Advanced Concepts](lessons/plsql_advanced_concepts/readme.md)  
 - [Security in PL/SQL](lessons/plsql_security/readme.md)  
 - [PL/SQL Optimization](lessons/plsql_optimization/readme.md)  
-
+<!-- 
 ### [Posgres SQL](lessons/posgres_sql/readme.md)
 
 ### [Basic Concepts](lessons/posgres_sql_basic_concepts/readme.md)
@@ -128,4 +129,4 @@ This repository contains notes on various SQL topics.
 - [Foreign Keys and Relationships](lessons/posgres_sql_foreign_keys_relationships/readme.md)
 - [Inheritance](lessons/posgres_sql_inheritance/readme.md)
 - [Time Zone Support](lessons/posgres_sql_time_zone_support/readme.md)
-- [Event Triggers](lessons/posgres_sql_event_triggers/readme.md)
+- [Event Triggers](lessons/posgres_sql_event_triggers/readme.md) -->
