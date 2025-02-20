@@ -104,6 +104,8 @@ A **Cursor FOR Loop** is a shorthand for opening, fetching, and closing an expli
 |--------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | `FOR record IN cursor_name LOOP`<br> `statements;`<br> `END LOOP;` | Implicitly declares, opens, fetches, and closes the cursor. It iterates over each row in the result set. |
 
+
+
 | **Example**                                                    |
 |---------------------------------------------------------------|
 | ``` FOR emp_record IN emp_cursor LOOP<br> DBMS_OUTPUT.PUT_LINE(emp_record.first_name || ' ' || emp_record.last_name);<br> END LOOP;``` |
