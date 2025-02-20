@@ -46,6 +46,8 @@ Explicit cursors are defined by the programmer and are used when dealing with qu
 | **FETCH**             | `FETCH cursor_name INTO variable1, variable2;`              | Retrieves one row at a time from the cursor and stores it in variables. |
 | **CLOSE**             | `CLOSE cursor_name;`                                         | Releases the resources allocated for the cursor.                       |
 
+
+
 | **Example** | 
 |-------------|
 | ``` OPEN emp_cursor; ``` |
