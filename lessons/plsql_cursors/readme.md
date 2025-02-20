@@ -107,8 +107,12 @@ A **Cursor FOR Loop** is a shorthand for opening, fetching, and closing an expli
 
 
 **Example**     
-|
-``` FOR emp_record IN emp_cursor LOOP<br> DBMS_OUTPUT.PUT_LINE(emp_record.first_name || ' ' || emp_record.last_name);<br> END LOOP;``` 
+
+```
+FOR emp_record IN emp_cursor LOOP
+DBMS_OUTPUT.PUT_LINE(emp_record.first_name || ' ' || emp_record.last_name);
+END LOOP;
+``` 
 
 ---
 
