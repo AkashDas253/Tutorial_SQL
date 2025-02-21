@@ -104,7 +104,7 @@ String operators are used for string manipulation.
 
 | **Operator**   | **Description**                                     | **Example**                                                   |  
 |----------------|-----------------------------------------------------|---------------------------------------------------------------|  
-| ``||``          | Concatenates two strings.                           | ``SELECT first_name || ' ' || last_name FROM employees;``        |  
+| ||          | Concatenates two strings.                           | ``SELECT first_name || ' ' || last_name FROM employees;``        |  
 
 **Usage Example**:  
 ```sql
