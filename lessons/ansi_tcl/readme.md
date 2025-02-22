@@ -10,7 +10,7 @@ TCL is a subset of SQL used to manage the changes made by DML statements. It ens
 | `ROLLBACK`             | Reverts the changes made during the current transaction.                                                 | `ROLLBACK;`                                                         |  
 | `SAVEPOINT`            | Sets a point within a transaction to which you can later roll back.                                       | `SAVEPOINT save1;`                                                  |  
 | `RELEASE SAVEPOINT`    | Removes a savepoint, making it unavailable for rollback.                                                  | `RELEASE SAVEPOINT save1;`                                          |  
-| `SET TRANSACTION`      | Sets properties for the current transaction (e.g., isolation level).                                      | `SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;`                     |  
+| `SET TRANSACTION`      | Sets properties for the current transaction (e.g., isolation level, access mode, read/write mode).       | `SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;`                     |  
 
 ---
 
@@ -98,17 +98,19 @@ COMMIT;
 
 ### `SET TRANSACTION` Command
 
-The `SET TRANSACTION` command allows you to configure the properties of a transaction, such as setting the isolation level. This helps control how transactions interact with each other.
+The `SET TRANSACTION` command allows you to configure the properties of a transaction, such as setting the isolation level, access mode, or read/write mode. This helps control how transactions interact with each other.
 
 #### Syntax Overview
 
-| **Clause**             | **Description**                                                                                         | **Example**                                                         |  
-|------------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|  
-| `SET TRANSACTION`      | Specifies the properties of a transaction.                                                              | `SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;`                     |  
+| **Clause**                    | **Description**                                                                                         | **Example**                                                         |  
+|--------------------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|  
+| `ISOLATION LEVEL`              | Defines how transactions interact with other concurrent transactions.                                    | `SET TRANSACTION ISOLATION LEVEL READ COMMITTED;`                   |  
+| `READ ONLY / READ WRITE`       | Specifies whether the transaction can modify data.                                                      | `SET TRANSACTION READ ONLY;`                                         |  
+| `DEFERRABLE / NOT DEFERRABLE`  | Determines whether the transaction can be delayed for better performance in some cases.                  | `SET TRANSACTION DEFERRABLE;`                                        |  
 
 **Usage Example**:  
 ```sql
-SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE READ WRITE;
 BEGIN;
 UPDATE employees SET age = 29 WHERE name = 'John Doe';
 COMMIT;
@@ -129,6 +131,36 @@ Transactions can be set to different isolation levels to control concurrency. Co
 
 ---
 
+### Access Modes in `SET TRANSACTION`
+
+Access modes define whether a transaction can modify data.
+
+| **Access Mode**  | **Description**                                  |  
+|------------------|--------------------------------------------------|  
+| `READ ONLY`      | The transaction is restricted to read operations only. |  
+| `READ WRITE`     | The transaction can perform both read and write operations. |  
+
+---
+
+### Deferrable Transactions
+
+Some databases allow transactions to be deferred for optimization.
+
+| **Mode**            | **Description**                                                                                          |  
+|---------------------|---------------------------------------------------------------------------------------------------------|  
+| `DEFERRABLE`       | Allows the database to defer checking certain constraints until the transaction commits.                 |  
+| `NOT DEFERRABLE`   | Enforces all constraints immediately.                                                                    |  
+
+**Usage Example**:  
+```sql
+SET TRANSACTION DEFERRABLE;
+BEGIN;
+UPDATE employees SET salary = salary * 1.10;
+COMMIT;
+```
+
+---
+
 ### Conclusion
 
-TCL commands are crucial for ensuring data consistency and integrity within a database. `COMMIT` and `ROLLBACK` are used to finalize or undo transactions, while `SAVEPOINT` allows for partial rollbacks. `SET TRANSACTION` enables the configuration of transaction properties, such as isolation levels, to manage concurrent operations effectively.
+TCL commands are crucial for ensuring data consistency and integrity within a database. `COMMIT` and `ROLLBACK` are used to finalize or undo transactions, while `SAVEPOINT` allows for partial rollbacks. `SET TRANSACTION` enables the configuration of transaction properties, such as isolation levels, access modes, and deferrable constraints, to manage concurrent operations effectively.

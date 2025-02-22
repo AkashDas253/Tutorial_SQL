@@ -46,6 +46,8 @@ Explicit cursors are defined by the programmer and are used when dealing with qu
 | **FETCH**             | `FETCH cursor_name INTO variable1, variable2;`              | Retrieves one row at a time from the cursor and stores it in variables. |
 | **CLOSE**             | `CLOSE cursor_name;`                                         | Releases the resources allocated for the cursor.                       |
 
+
+
 | **Example** | 
 |-------------|
 | ``` OPEN emp_cursor; ``` |
@@ -102,9 +104,15 @@ A **Cursor FOR Loop** is a shorthand for opening, fetching, and closing an expli
 |--------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | `FOR record IN cursor_name LOOP`<br> `statements;`<br> `END LOOP;` | Implicitly declares, opens, fetches, and closes the cursor. It iterates over each row in the result set. |
 
-| **Example**                                                    |
-|---------------------------------------------------------------|
-| ``` FOR emp_record IN emp_cursor LOOP<br> DBMS_OUTPUT.PUT_LINE(emp_record.first_name || ' ' || emp_record.last_name);<br> END LOOP;``` |
+
+
+**Example**     
+
+```
+FOR emp_record IN emp_cursor LOOP
+DBMS_OUTPUT.PUT_LINE(emp_record.first_name || ' ' || emp_record.last_name);
+END LOOP;
+``` 
 
 ---
 
