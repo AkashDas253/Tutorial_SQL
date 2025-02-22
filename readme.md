@@ -4,21 +4,6 @@ This repository contains notes on various SQL topics.
 
 ## Topics
 
-### [Oracle SQL](lessons/oracle_sql/readme.md)
-
-- [Oracle Syntax](lessons/oracle_syntax/readme.md)
-- [Oracle Datatypes](lessons/oracle_datatype/readme.md)
-- [Oracle Operators](lessons/oracle_operator/readme.md)
-- [Oracle Database Objects](lessons/oracle_objects/readme.md)
-- [Oracle Data Manipulation](lessons/oracle_data_manipulation/readme.md)
-- [Oracle Data Definition](lessons/oracle_data_definition/readme.md)
-- [Oracle Data Control](lessons/oracle_data_control/readme.md)
-- [Oracle Query Features](lessons/oracle_query_features/readme.md)
-- [Oracle Advanced Features](lessons/oracle_advanced_features/readme.md)
-- [Oracle Security and Management](lessons/oracle_security_and_management/readme.md)
-- [Oracle Performance Optimization](lessons/oracle_performance_optimization/readme.md)
-- [Oracle Backup and Recovery](lessons/oracle_backup_and_recovery/readme.md)
-
 ### [ANSI SQL](lessons/ansi_sql/readme.md)
 
 - [ANSI Data Definition Language (DDL)](lessons/ansi_ddl/readme.md)
@@ -33,6 +18,21 @@ This repository contains notes on various SQL topics.
 - [ANSI SQL Functions](lessons/ansi_sql_functions/readme.md)
 - [ANSI Indexing](lessons/ansi_indexing/readme.md)
 - [ANSI Views](lessons/ansi_views/readme.md)
+
+### [Oracle SQL](lessons/oracle_sql/readme.md)
+
+- [Oracle Syntax](lessons/oracle_syntax/readme.md)
+- [Oracle Datatypes](lessons/oracle_datatype/readme.md)
+- [Oracle Operators](lessons/oracle_operator/readme.md)
+- [Oracle Database Objects](lessons/oracle_objects/readme.md)
+- [Oracle Data Manipulation](lessons/oracle_data_manipulation/readme.md)
+- [Oracle Data Definition](lessons/oracle_data_definition/readme.md)
+- [Oracle Data Control](lessons/oracle_data_control/readme.md)
+- [Oracle Query Features](lessons/oracle_query_features/readme.md)
+- [Oracle Advanced Features](lessons/oracle_advanced_features/readme.md)
+- [Oracle Security and Management](lessons/oracle_security_and_management/readme.md)
+- [Oracle Performance Optimization](lessons/oracle_performance_optimization/readme.md)
+- [Oracle Backup and Recovery](lessons/oracle_backup_and_recovery/readme.md)
 
 ### [PL/SQL](lessons/plsql/readme.md) 
 
@@ -52,6 +52,38 @@ This repository contains notes on various SQL topics.
 - [Advanced Concepts](lessons/plsql_advanced_concepts/readme.md)  
 - [Security in PL/SQL](lessons/plsql_security/readme.md)  
 - [PL/SQL Optimization](lessons/plsql_optimization/readme.md)  
+
+### [Posgres SQL](lessons/posgres_sql/readme.md)
+
+- [PostgreSQL Basics](lessons/postgres_basics/readme.md)  
+- [SQL Statements](lessons/postgres_sql_statements/readme.md)  
+- [Data Types](lessons/postgres_data_types/readme.md)  
+- [Constraints](lessons/postgres_constraints/readme.md)  
+- [Indexing](lessons/postgres_indexing/readme.md)  
+- [Joins](lessons/postgres_joins/readme.md)  
+- [Views & Materialized Views](lessons/postgres_views/readme.md)  
+- [Transactions](lessons/postgres_transactions/readme.md)  
+- [Functions & Procedures](lessons/postgres_functions/readme.md)  
+- [Triggers](lessons/postgres_triggers/readme.md)  
+- [Query Optimization](lessons/postgres_query_optimization/readme.md)  
+- [JSON & XML Support](lessons/postgres_json_xml/readme.md)  
+- [Full-Text Search](lessons/postgres_full_text_search/readme.md)  
+- [Security](lessons/postgres_security/readme.md)  
+- [High Availability & Replication](lessons/postgres_replication/readme.md)  
+- [Partitioning](lessons/postgres_partitioning/readme.md)  
+- [Inheritance](lessons/postgres_inheritance/readme.md)  
+- [Parallel Query Execution](lessons/postgres_parallel_query/readme.md)  
+- [Window Functions](lessons/postgres_window_functions/readme.md)  
+- [Common Table Expressions (CTEs)](lessons/postgres_cte/readme.md)  
+- [Logical & Bitwise Operators](lessons/postgres_logical_bitwise/readme.md)  
+- [Foreign Data Wrappers (FDW)](lessons/postgres_fdw/readme.md)  
+- [Event Triggers](lessons/postgres_event_triggers/readme.md)  
+- [Backup & Recovery](lessons/postgres_backup_recovery/readme.md)  
+- [Performance Monitoring](lessons/postgres_performance_monitoring/readme.md)  
+- [Geospatial Data](lessons/postgres_geospatial/readme.md)  
+- [Time-Series Data](lessons/postgres_time_series/readme.md)  
+
+
 <!-- 
 ### [Posgres SQL](lessons/posgres_sql/readme.md)
 
