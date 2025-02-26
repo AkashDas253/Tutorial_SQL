@@ -59,7 +59,6 @@ This repository contains notes on various SQL topics.
 
 
 
-
 - Advanced SQL Features
   - [Views](lessons/views/readme.md)
 
