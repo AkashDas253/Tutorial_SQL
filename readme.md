@@ -129,43 +129,42 @@ This repository contains notes on various SQL topics.
 - Key-Value Data Stores  
  -->
 
+---
 
-# SQL Notes
 
-This repository contains notes on various SQL topics.
-
-## Topics
+## Implementation wise
 
 ### [ANSI SQL](lessons/ansi_sql/readme.md)
 
-- [ANSI Data Definition Language (DDL)](lessons/ansi_ddl/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_ddl/readme.md)  
-- [ANSI Data Manipulation Language (DML)](lessons/ansi_dml/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_dml/readme.md)  
-- [ANSI Data Control Language (DCL)](lessons/ansi_dcl/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_dcl/readme.md)  
-- [ANSI Transaction Control Language (TCL)](lessons/ansi_tcl/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_tcl/readme.md)  
-- [ANSI Datatypes](lessons/ansi_data_types/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_data_types/readme.md)  
-- [ANSI Constraints](lessons/ansi_constraints/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_constraints/readme.md)  
-- [ANSI Joins](lessons/ansi_joins/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_joins/readme.md)  
-- [ANSI Subqueries](lessons/ansi_subqueries/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_subqueries/readme.md)  
-- [ANSI SQL Operators](lessons/ansi_sql_operators/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_sql_operators/readme.md)  
-- [ANSI SQL Functions](lessons/ansi_sql_functions/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_sql_functions/readme.md)  
-- [ANSI Indexing](lessons/ansi_indexing/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_indexing/readme.md)  
-- [ANSI Views](lessons/ansi_views/readme.md) - [Cheatsheet](lessons/ansi_cheatsheet_views/readme.md)  
+- [ANSI Data Definition Language (DDL)](lessons/ansi_ddl/readme.md) 
+- [ANSI Data Manipulation Language (DML)](lessons/ansi_dml/readme.md) 
+- [ANSI Data Control Language (DCL)](lessons/ansi_dcl/readme.md)  
+- [ANSI Transaction Control Language (TCL)](lessons/ansi_tcl/readme.md)  
+- [ANSI Datatypes](lessons/ansi_data_types/readme.md) 
+- [ANSI Constraints](lessons/ansi_constraints/readme.md)  
+- [ANSI Joins](lessons/ansi_joins/readme.md) 
+- [ANSI Subqueries](lessons/ansi_subqueries/readme.md) 
+- [ANSI SQL Operators](lessons/ansi_sql_operators/readme.md) 
+- [ANSI SQL Functions](lessons/ansi_sql_functions/readme.md) 
+- [ANSI Indexing](lessons/ansi_indexing/readme.md) 
+- [ANSI Views](lessons/ansi_views/readme.md) 
 
 
 ### [Oracle SQL](lessons/oracle_sql/readme.md)
 
-- [Oracle Syntax](lessons/oracle_syntax/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_syntax/readme.md)  
-- [Oracle Datatypes](lessons/oracle_datatype/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_datatype/readme.md)  
-- [Oracle Operators](lessons/oracle_operator/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_operator/readme.md)  
-- [Oracle Database Objects](lessons/oracle_objects/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_objects/readme.md)  
-- [Oracle Data Manipulation](lessons/oracle_data_manipulation/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_data_manipulation/readme.md)  
-- [Oracle Data Definition](lessons/oracle_data_definition/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_data_definition/readme.md)  
-- [Oracle Data Control](lessons/oracle_data_control/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_data_control/readme.md)  
-- [Oracle Query Features](lessons/oracle_query_features/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_query_features/readme.md)  
-- [Oracle Advanced Features](lessons/oracle_advanced_features/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_advanced_features/readme.md)  
-- [Oracle Security and Management](lessons/oracle_security_and_management/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_security_and_management/readme.md)  
-- [Oracle Performance Optimization](lessons/oracle_performance_optimization/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_performance_optimization/readme.md)  
-- [Oracle Backup and Recovery](lessons/oracle_backup_and_recovery/readme.md) - [Cheatsheet](lessons/oracle_cheatsheet_backup_and_recovery/readme.md)  
+- [Oracle Syntax](lessons/oracle_syntax/readme.md) 
+- [Oracle Datatypes](lessons/oracle_datatype/readme.md) 
+- [Oracle Operators](lessons/oracle_operator/readme.md)   
+- [Oracle Database Objects](lessons/oracle_objects/readme.md) 
+- [Oracle Data Manipulation Language (DML)](lessons/oracle_dml/readme.md) 
+- [Oracle Data Definition Language (DDL)](lessons/oracle_ddl/readme.md) 
+- [Oracle Data Control Language (DCL)](lessons/oracle_dcl/readme.md) 
+- [Oracle Transaction Control Language (TCL)](lessons/ansi_tcl/readme.md) 
+- [Oracle Query Features](lessons/oracle_query_features/readme.md) 
+- [Oracle Advanced Features](lessons/oracle_advanced_features/readme.md)   
+- [Oracle Security and Management](lessons/oracle_security_and_management/readme.md)  
+- [Oracle Performance Optimization](lessons/oracle_performance_optimization/readme.md)  
+- [Oracle Backup and Recovery](lessons/oracle_backup_and_recovery/readme.md) 
 
 ### [PL/SQL](lessons/plsql/readme.md) 
 

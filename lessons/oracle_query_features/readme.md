@@ -1,5 +1,3 @@
-Here’s a comprehensive note on **Query Features** in Oracle SQL, covering Joins, Subqueries, Set Operations, Group By Features, and Analytical Functions, including their syntax and usage examples.
-
 ## Query Features in Oracle SQL
 
 ### 1. **Joins**

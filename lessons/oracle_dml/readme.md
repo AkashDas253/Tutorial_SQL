@@ -1,4 +1,4 @@
-## Data Manipulation in Oracle SQL
+## Data Manipulation Language in Oracle SQL
 
 ### 1. **INSERT**
 The `INSERT` statement is used to add new records to a table.
