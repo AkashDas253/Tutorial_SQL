@@ -4,6 +4,8 @@ This repository contains notes on various SQL topics.
 
 ## Combined
 
+---
+
 - [Cheatsheet](lessons/cheatsheet/readme.md)
 - [Basics](lessons/basics/readme.md)
 - [Concepts](lessons/concepts/readme.md) 
@@ -134,6 +136,8 @@ This repository contains notes on various SQL topics.
 
 ## Implementation wise
 
+---
+
 ### [ANSI SQL](lessons/ansi_sql/readme.md)
 
 - [ANSI Data Definition Language (DDL)](lessons/ansi_ddl/readme.md) 
@@ -150,6 +154,7 @@ This repository contains notes on various SQL topics.
 - [ANSI Indexing](lessons/ansi_indexing/readme.md) 
 - [ANSI Views](lessons/ansi_views/readme.md) 
 
+---
 
 ### [Oracle SQL](lessons/oracle_sql/readme.md)
 
@@ -167,6 +172,8 @@ This repository contains notes on various SQL topics.
 - [Oracle Security and Management](lessons/oracle_security_and_management/readme.md)  
 - [Oracle Performance Optimization](lessons/oracle_performance_optimization/readme.md)  
 - [Oracle Backup and Recovery](lessons/oracle_backup_and_recovery/readme.md) 
+
+---
 
 ### [PL/SQL](lessons/plsql/readme.md) 
 
@@ -186,6 +193,8 @@ This repository contains notes on various SQL topics.
 - [Advanced Concepts](lessons/plsql_advanced_concepts/readme.md) 
 - [Security in PL/SQL](lessons/plsql_security/readme.md)
 - [PL/SQL Optimization](lessons/plsql_optimization/readme.md) 
+
+---
 
 ### [Posgres SQL](lessons/posgres_sql/readme.md)
 
