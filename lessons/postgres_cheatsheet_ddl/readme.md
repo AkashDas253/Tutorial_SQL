@@ -1,60 +1,126 @@
-## **PostgreSQL DDL (Data Definition Language) Cheatsheet**  
+# **Data Definition Language (DDL) in PostgreSQL**
 
-#### **1. Database Management**  
-| Action | Command |
-|--------|---------|
-| Create Database | `CREATE DATABASE dbname;` |
-| List Databases | `SELECT datname FROM pg_database;` |
-| Connect to Database | `\c dbname` (in `psql`) |
-| Rename Database | `ALTER DATABASE dbname RENAME TO new_dbname;` |
-| Drop Database | `DROP DATABASE dbname;` |
+## **Overview**
+Data Definition Language (DDL) in PostgreSQL consists of SQL statements used to define, modify, and manage database objects such as databases, tables, indexes, schemas, and constraints.
 
-#### **2. Schema Management**  
-| Action | Command |
-|--------|---------|
-| Create Schema | `CREATE SCHEMA schema_name;` |
-| List Schemas | `SELECT schema_name FROM information_schema.schemata;` |
-| Set Default Schema | `SET search_path TO schema_name;` |
-| Drop Schema | `DROP SCHEMA schema_name CASCADE;` |
+---
 
-#### **3. Table Management**  
-| Action | Command |
-|--------|---------|
-| Create Table | `CREATE TABLE table_name (id SERIAL PRIMARY KEY, name TEXT);` |
-| List Tables | `SELECT tablename FROM pg_tables WHERE schemaname = 'public';` |
-| Describe Table | `SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'table_name';` |
-| Rename Table | `ALTER TABLE table_name RENAME TO new_name;` |
-| Drop Table | `DROP TABLE table_name;` |
+## **DDL Statements**
 
-#### **4. Column Management**  
-| Action | Command |
-|--------|---------|
-| Add Column | `ALTER TABLE table_name ADD COLUMN column_name TYPE;` |
-| Rename Column | `ALTER TABLE table_name RENAME COLUMN old_name TO new_name;` |
-| Change Data Type | `ALTER TABLE table_name ALTER COLUMN column_name TYPE new_type;` |
-| Set Default Value | `ALTER TABLE table_name ALTER COLUMN column_name SET DEFAULT value;` |
-| Drop Column | `ALTER TABLE table_name DROP COLUMN column_name;` |
+### **Database Management**
+| **Statement** | **Description** |
+|--------------|---------------|
+| `CREATE DATABASE db_name;` | Creates a new database. |
+| `DROP DATABASE db_name;` | Deletes an existing database. |
+| `ALTER DATABASE db_name RENAME TO new_name;` | Renames an existing database. |
+| `ALTER DATABASE db_name SET param = value;` | Changes database configuration settings. |
 
-#### **5. Constraints**  
-| Constraint | Command Example |
-|------------|----------------|
-| `PRIMARY KEY` | `CREATE TABLE t(id SERIAL PRIMARY KEY, name TEXT);` |
-| `FOREIGN KEY` | `CREATE TABLE orders(id SERIAL, user_id INT REFERENCES users(id));` |
-| `UNIQUE` | `CREATE TABLE t(id SERIAL, name TEXT UNIQUE);` |
-| `CHECK` | `CREATE TABLE t(id SERIAL, age INT CHECK (age > 18));` |
-| `NOT NULL` | `CREATE TABLE t(id SERIAL, name TEXT NOT NULL);` |
-| Add Constraint | `ALTER TABLE t ADD CONSTRAINT chk_age CHECK (age > 18);` |
-| Drop Constraint | `ALTER TABLE t DROP CONSTRAINT chk_age;` |
+---
 
-#### **6. Indexes**  
-| Action | Command |
-|--------|---------|
-| Create Index | `CREATE INDEX idx_name ON table_name (column_name);` |
-| Create Unique Index | `CREATE UNIQUE INDEX idx_unique ON table_name (column_name);` |
-| Drop Index | `DROP INDEX idx_name;` |
+### **Schema Management**
+| **Statement** | **Description** |
+|--------------|---------------|
+| `CREATE SCHEMA schema_name;` | Creates a new schema. |
+| `DROP SCHEMA schema_name;` | Deletes a schema. |
+| `DROP SCHEMA schema_name CASCADE;` | Deletes a schema along with all objects inside it. |
+| `ALTER SCHEMA schema_name RENAME TO new_name;` | Renames a schema. |
 
-#### **7. Views**  
-| Action | Command |
-|--------|---------|
-| Create View | `CREATE VIEW view_name AS SELECT column1, column2 FROM table_name;` |
-| Drop View | `DROP VIEW view_name;` |
+---
+
+### **Table Management**
+| **Statement** | **Description** |
+|--------------|---------------|
+| `CREATE TABLE table_name (col1 type, col2 type, ...);` | Creates a new table. |
+| `DROP TABLE table_name;` | Deletes an existing table. |
+| `DROP TABLE table_name CASCADE;` | Deletes a table and all dependent objects. |
+| `ALTER TABLE table_name RENAME TO new_name;` | Renames a table. |
+| `ALTER TABLE table_name ADD COLUMN col_name data_type;` | Adds a new column to a table. |
+| `ALTER TABLE table_name DROP COLUMN col_name;` | Removes a column from a table. |
+| `ALTER TABLE table_name ALTER COLUMN col_name SET DEFAULT value;` | Sets a default value for a column. |
+| `ALTER TABLE table_name ALTER COLUMN col_name DROP DEFAULT;` | Removes a default value from a column. |
+
+---
+
+### **Index Management**
+| **Statement** | **Description** |
+|--------------|---------------|
+| `CREATE INDEX index_name ON table_name (column_name);` | Creates an index to speed up queries. |
+| `DROP INDEX index_name;` | Deletes an index. |
+| `ALTER INDEX index_name RENAME TO new_name;` | Renames an index. |
+| `CREATE UNIQUE INDEX index_name ON table_name (column_name);` | Creates a unique index to prevent duplicate values. |
+
+---
+
+### **Constraints**
+Constraints enforce rules on data in tables.
+
+| **Constraint** | **Description** |
+|--------------|---------------|
+| `PRIMARY KEY (col_name);` | Ensures unique and non-null values for a column. |
+| `UNIQUE (col_name);` | Ensures all values in a column are unique. |
+| `CHECK (condition);` | Ensures column values meet a specific condition. |
+| `FOREIGN KEY (col_name) REFERENCES other_table(col_name);` | Enforces referential integrity between tables. |
+| `NOT NULL;` | Ensures a column cannot have NULL values. |
+
+#### **Adding Constraints**
+```sql
+ALTER TABLE table_name ADD CONSTRAINT constraint_name PRIMARY KEY (col_name);
+```
+
+#### **Removing Constraints**
+```sql
+ALTER TABLE table_name DROP CONSTRAINT constraint_name;
+```
+
+---
+
+### **View Management**
+| **Statement** | **Description** |
+|--------------|---------------|
+| `CREATE VIEW view_name AS SELECT col1, col2 FROM table_name;` | Creates a virtual table based on a query. |
+| `DROP VIEW view_name;` | Deletes a view. |
+| `ALTER VIEW view_name RENAME TO new_name;` | Renames a view. |
+
+---
+
+### **Materialized Views**
+Materialized views store query results and can be refreshed.
+
+| **Statement** | **Description** |
+|--------------|---------------|
+| `CREATE MATERIALIZED VIEW mv_name AS SELECT * FROM table_name;` | Creates a materialized view. |
+| `REFRESH MATERIALIZED VIEW mv_name;` | Updates the materialized view with fresh data. |
+| `DROP MATERIALIZED VIEW mv_name;` | Deletes a materialized view. |
+
+---
+
+### **Sequences (Auto-Increment)**
+Sequences generate unique numbers for primary keys.
+
+| **Statement** | **Description** |
+|--------------|---------------|
+| `CREATE SEQUENCE seq_name;` | Creates a sequence. |
+| `DROP SEQUENCE seq_name;` | Deletes a sequence. |
+| `SELECT nextval('seq_name');` | Gets the next sequence value. |
+| `ALTER SEQUENCE seq_name RESTART WITH 1;` | Resets the sequence value. |
+
+---
+
+### **Tablespace Management**
+Tablespaces define storage locations.
+
+| **Statement** | **Description** |
+|--------------|---------------|
+| `CREATE TABLESPACE ts_name LOCATION 'path';` | Creates a tablespace. |
+| `DROP TABLESPACE ts_name;` | Deletes a tablespace. |
+
+---
+
+## **Key Takeaways**
+- **DDL defines the structure** of databases, schemas, tables, indexes, constraints, views, and sequences.
+- **DDL changes are auto-committed**, meaning they **cannot be rolled back**.
+- **Indexes speed up queries**, but require maintenance.
+- **Views store query logic**, while **materialized views store actual data**.
+- **Constraints enforce rules**, ensuring data integrity.
+- **Sequences generate unique values** for primary keys.
+- **Tablespaces manage storage locations** for database objects.

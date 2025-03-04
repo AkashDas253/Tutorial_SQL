@@ -201,12 +201,15 @@ This repository contains notes on various SQL topics.
 - [Syntax](lessons/postgres_syntax/readme.dm)
 - [Installation & Setup Cheatsheet](lessons/postgres_cheatsheet_installation_setup/readme.md)  
 - [Database Structure](lessons/postgres_database_structure/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_database_structure/readme.md)  
-- [SQL Statements](lessons/postgres_sql_statements/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_sql_statements/readme.md)  
+- [SQL Statements Cheatsheet](lessons/postgres_cheatsheet_sql_statements/readme.md)  
     - [Data Definition Language (DDL)](lessons/postgres_ddl/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_ddl/readme.md)  
     - [Data Manipulation Language (DML)](lessons/postgres_dml/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_dml/readme.md)  
     - [Data Query Language (DQL)](lessons/postgres_dql/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_dql/readme.md)  
     - [Data Control Language (DCL)](lessons/postgres_dcl/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_dcl/readme.md)  
     - [Transaction Control Language (TCL)](lessons/postgres_tcl/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_tcl/readme.md)  
+
+---
+
 - [Data Types](lessons/postgres_data_types/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_data_types/readme.md)  
     - [Numeric](lessons/postgres_numeric_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_numeric_data_type/readme.md)  
     - [Character](lessons/postgres_character_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_character_data_type/readme.md)  
@@ -236,7 +239,6 @@ This repository contains notes on various SQL topics.
 - [Parallel Query Execution](lessons/postgres_parallel_query/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_parallel_query/readme.md)  
 - [Window Functions](lessons/postgres_window_functions/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_window_functions/readme.md)  
 - [Common Table Expressions (CTEs)](lessons/postgres_cte/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_cte/readme.md)  
-
 - [Foreign Data Wrappers (FDW)](lessons/postgres_fdw/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_fdw/readme.md)  
 - [Event Triggers](lessons/postgres_event_triggers/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_event_triggers/readme.md)  
 - [Backup & Recovery](lessons/postgres_backup_recovery/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_backup_recovery/readme.md)  
@@ -244,6 +246,7 @@ This repository contains notes on various SQL topics.
 - [Geospatial Data](lessons/postgres_geospatial/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_geospatial/readme.md)  
 - [Time-Series Data](lessons/postgres_time_series/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_time_series/readme.md)  
 
+---
 
 <!-- 
 ### [Posgres SQL](lessons/posgres_sql/readme.md)
