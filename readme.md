@@ -138,6 +138,7 @@ This repository contains notes on various SQL topics.
 
 - [ANSI Data Definition Language (DDL)](lessons/ansi_ddl/readme.md) 
 - [ANSI Data Manipulation Language (DML)](lessons/ansi_dml/readme.md) 
+- [ANSI Data Query Language (DQL)](lessons/ansi_dql/readme.md)
 - [ANSI Data Control Language (DCL)](lessons/ansi_dcl/readme.md)  
 - [ANSI Transaction Control Language (TCL)](lessons/ansi_tcl/readme.md)  
 - [ANSI Datatypes](lessons/ansi_data_types/readme.md) 
@@ -158,6 +159,7 @@ This repository contains notes on various SQL topics.
 - [Oracle Database Objects](lessons/oracle_objects/readme.md) 
 - [Oracle Data Manipulation Language (DML)](lessons/oracle_dml/readme.md) 
 - [Oracle Data Definition Language (DDL)](lessons/oracle_ddl/readme.md) 
+- [Oracle Data Query Language (DQL)](lessons/oracle_dql/readme.md) 
 - [Oracle Data Control Language (DCL)](lessons/oracle_dcl/readme.md) 
 - [Oracle Transaction Control Language (TCL)](lessons/oracle_tcl/readme.md) 
 - [Oracle Query Features](lessons/oracle_query_features/readme.md) 
@@ -203,6 +205,7 @@ This repository contains notes on various SQL topics.
     - [Boolean](lessons/postgres_boolean_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_boolean_data_type/readme.md)  
     - [JSON/JSONB](lessons/postgres_json_jsonb_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_json_jsonb_data_type/readme.md)  
     - [Array](lessons/postgres_array_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_array_data_type/readme.md)  
+- [Operators](lessons/postgres_operator/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_operator/readme.md)  
 - [Constraints](lessons/postgres_constraints/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_constraints/readme.md)  
 - [Indexing](lessons/postgres_indexing/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_indexing/readme.md)  
 - [Joins](lessons/postgres_joins/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_joins/readme.md)  
@@ -224,7 +227,7 @@ This repository contains notes on various SQL topics.
 - [Parallel Query Execution](lessons/postgres_parallel_query/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_parallel_query/readme.md)  
 - [Window Functions](lessons/postgres_window_functions/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_window_functions/readme.md)  
 - [Common Table Expressions (CTEs)](lessons/postgres_cte/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_cte/readme.md)  
-- [Operators](lessons/postgres_operator/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_operator/readme.md)  
+
 - [Foreign Data Wrappers (FDW)](lessons/postgres_fdw/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_fdw/readme.md)  
 - [Event Triggers](lessons/postgres_event_triggers/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_event_triggers/readme.md)  
 - [Backup & Recovery](lessons/postgres_backup_recovery/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_backup_recovery/readme.md)  
