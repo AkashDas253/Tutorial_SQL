@@ -1,7 +1,3 @@
-Here’s a **comprehensive note on PL/SQL Architecture**:
-
----
-
 ## PL/SQL Architecture  
 
 PL/SQL is Oracle's procedural extension to SQL, combining the data manipulation power of SQL with procedural constructs. It operates within the Oracle Database environment and interacts with various components for seamless execution.
