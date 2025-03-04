@@ -2,7 +2,7 @@
 
 This repository contains notes on various SQL topics.
 
-## Topics
+## Combined
 
 - [Cheatsheet](lessons/cheatsheet/readme.md)
 - [Basics](lessons/basics/readme.md)
@@ -187,10 +187,9 @@ This repository contains notes on various SQL topics.
 
 ### [Posgres SQL](lessons/posgres_sql/readme.md)
 
-- [PostgreSQL Basics](lessons/postgres_basics/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_basics/readme.md)  
-    - [Data Types](lessons/postgres_data_types/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_data_types/readme.md)  
-    - [Installation & Setup](lessons/postgres_installation_setup/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_installation_setup/readme.md)  
-    - [Database Structure](lessons/postgres_database_structure/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_database_structure/readme.md)  
+- [Syntax](lessons/postgres_syntax/readme.dm)
+- [Installation & Setup Cheatsheet](lessons/postgres_cheatsheet_installation_setup/readme.md)  
+- [Database Structure](lessons/postgres_database_structure/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_database_structure/readme.md)  
 - [SQL Statements](lessons/postgres_sql_statements/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_sql_statements/readme.md)  
     - [Data Definition Language (DDL)](lessons/postgres_ddl/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_ddl/readme.md)  
     - [Data Manipulation Language (DML)](lessons/postgres_dml/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_dml/readme.md)  
