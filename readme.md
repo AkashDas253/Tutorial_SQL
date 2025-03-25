@@ -211,21 +211,20 @@ This repository contains notes on various SQL topics.
 ---
 
 - [Data Types](lessons/postgres_data_types/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_data_types/readme.md)  
-    - [Numeric](lessons/postgres_numeric_data_type/readme.md) 
-    - [Character](lessons/postgres_character_data_type/readme.md) 
-    - [Date & Time](lessons/postgres_date_time_data_type/readme.md) 
-    - [Boolean](lessons/postgres_boolean_data_type/readme.md) 
-    - [JSON/JSONB](lessons/postgres_json_jsonb_data_type/readme.md) 
-    - [Array](lessons/postgres_array_data_type/readme.md) 
-- [Operators](lessons/postgres_operator/readme.md) 
-- [Constraints](lessons/postgres_constraints/readme.md) 
-- [Indexing](lessons/postgres_indexing/readme.md) 
-- [Joins](lessons/postgres_joins/readme.md) 
-- [Views](lessons/postgres_views/readme.md) 
-- [Materialized Views](lessons/postgres_materialized_views/readme.md) 
-- [Transactions](lessons/postgres_transactions/readme.md) 
+    - [Numeric](lessons/postgres_numeric_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_numeric_data_type/readme.md)  
+    - [Character](lessons/postgres_character_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_character_data_type/readme.md)  
+    - [Date & Time](lessons/postgres_date_time_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_date_time_data_type/readme.md)  
+    - [Boolean](lessons/postgres_boolean_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_boolean_data_type/readme.md)  
+    - [JSON/JSONB](lessons/postgres_json_jsonb_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_json_jsonb_data_type/readme.md)  
+    - [Array](lessons/postgres_array_data_type/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_array_data_type/readme.md)  
+- [Operators](lessons/postgres_operator/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_operator/readme.md)  
+- [Constraints](lessons/postgres_constraints/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_constraints/readme.md)  
+- [Indexing](lessons/postgres_indexing/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_indexing/readme.md)  
+- [Joins](lessons/postgres_joins/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_joins/readme.md)  
+- [Views](lessons/postgres_views/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_views/readme.md)  
+- [Materialized Views](lessons/postgres_materialized_views/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_materialized_views/readme.md)  
+- [Transactions](lessons/postgres_transactions/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_transactions/readme.md)  
 
----
 ---
 
 - [Functions & Procedures](lessons/postgres_functions_procedures/readme.md) - [Cheatsheet](lessons/postgres_cheatsheet_functions_procedures/readme.md)  
