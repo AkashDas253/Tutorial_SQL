@@ -329,3 +329,5 @@ This repository contains notes on various SQL topics.
 - [Inheritance](lessons/posgres_sql_inheritance/readme.md)
 - [Time Zone Support](lessons/posgres_sql_time_zone_support/readme.md)
 - [Event Triggers](lessons/posgres_sql_event_triggers/readme.md) -->
+
+### [MySQL](lessons/mysql/readme.md)
