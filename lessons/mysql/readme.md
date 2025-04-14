@@ -106,13 +106,13 @@
 
 ---
 
-### Transactions
-- [START TRANSACTION](lessons/transactions/start_transaction/readme.md)
+### [Transactions](lessons/transactions/readme.md)
+<!-- - [START TRANSACTION](lessons/transactions/start_transaction/readme.md)
 - [COMMIT](lessons/transactions/commit/readme.md)
 - [ROLLBACK](lessons/transactions/rollback/readme.md)
 - [SAVEPOINT](lessons/transactions/savepoint/readme.md)
 - [RELEASE SAVEPOINT](lessons/transactions/release_savepoint/readme.md)
-- [SET AUTOCOMMIT](lessons/transactions/set_autocommit/readme.md)
+- [SET AUTOCOMMIT](lessons/transactions/set_autocommit/readme.md) -->
 
 ---
 
