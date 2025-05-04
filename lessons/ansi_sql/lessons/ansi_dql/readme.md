@@ -1,4 +1,4 @@
-# **ANSI Data Query Language (DQL)**  
+## **ANSI Data Query Language (DQL)**  
 
 DQL is a subset of SQL that is used to retrieve data from a database. The main command in DQL is `SELECT`, which allows querying, filtering, and organizing data based on conditions.
 

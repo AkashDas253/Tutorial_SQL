@@ -1,4 +1,4 @@
-# **Data Query Language (DQL) in Oracle SQL**  
+## **Data Query Language (DQL) in Oracle SQL**  
 
 DQL (Data Query Language) consists of commands used to **retrieve data** from a database. The primary command in DQL is **`SELECT`**, which fetches data from one or more tables based on specified conditions.  
 

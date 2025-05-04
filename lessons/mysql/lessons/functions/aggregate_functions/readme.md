@@ -1,4 +1,3 @@
-
 ## Comprehensive Note on Aggregate Functions in MySQL
 
 **Aggregate functions** perform calculations on a set of values and return a single value. Commonly used in `SELECT` statements with `GROUP BY`, `HAVING`, or without grouping for overall summaries.

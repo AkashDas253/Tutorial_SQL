@@ -1,8 +1,8 @@
-# **Transaction Control Language (TCL) in Oracle SQL**  
+## **Transaction Control Language (TCL) in Oracle SQL**  
 
 TCL (Transaction Control Language) in Oracle SQL is used to manage transactions in a database. Transactions ensure **data integrity** and **consistency** by grouping multiple SQL operations into a single logical unit.  
 
-## **1. Transaction Concepts**  
+### **1. Transaction Concepts**  
 - A **transaction** is a sequence of one or more SQL statements executed as a unit of work.  
 - A transaction **starts automatically** when a DML statement (`INSERT`, `UPDATE`, `DELETE`) is executed.  
 - Transactions **end** when a `COMMIT` or `ROLLBACK` is executed.  
@@ -10,7 +10,7 @@ TCL (Transaction Control Language) in Oracle SQL is used to manage transactions 
 
 ---
 
-## **2. TCL Commands**  
+### **2. TCL Commands**  
 
 | **Command**  | **Description** |
 |-------------|---------------|
@@ -21,18 +21,18 @@ TCL (Transaction Control Language) in Oracle SQL is used to manage transactions 
 
 ---
 
-## **3. Command Details and Usage**  
+### **3. Command Details and Usage**  
 
-### **3.1 COMMIT**  
+#### **3.1 COMMIT**  
 - Used to **permanently save** changes made by the current transaction.  
 - Once a `COMMIT` is issued, changes cannot be undone.  
 
-#### **Syntax:**  
+##### **Syntax:**  
 ```sql
 COMMIT;
 ```
 
-#### **Example:**  
+##### **Example:**  
 ```sql
 UPDATE employees SET salary = salary * 1.1 WHERE department_id = 10;
 COMMIT;
@@ -40,16 +40,16 @@ COMMIT;
 
 ---
 
-### **3.2 ROLLBACK**  
+#### **3.2 ROLLBACK**  
 - Used to **undo changes** made by the current transaction.  
 - If a transaction is **not committed**, it can be rolled back.  
 
-#### **Syntax:**  
+##### **Syntax:**  
 ```sql
 ROLLBACK;
 ```
 
-#### **Example:**  
+##### **Example:**  
 ```sql
 DELETE FROM employees WHERE department_id = 20;
 ROLLBACK;  -- Cancels the deletion
@@ -57,16 +57,16 @@ ROLLBACK;  -- Cancels the deletion
 
 ---
 
-### **3.3 SAVEPOINT**  
+#### **3.3 SAVEPOINT**  
 - Used to create a **checkpoint** in a transaction.  
 - Allows rolling back to a specific point instead of the entire transaction.  
 
-#### **Syntax:**  
+##### **Syntax:**  
 ```sql
 SAVEPOINT savepoint_name;
 ```
 
-#### **Example:**  
+##### **Example:**  
 ```sql
 UPDATE employees SET salary = salary * 1.05 WHERE department_id = 30;
 SAVEPOINT sp1;
@@ -80,15 +80,15 @@ COMMIT;
 
 ---
 
-### **3.4 SET TRANSACTION**  
+#### **3.4 SET TRANSACTION**  
 - Used to **set properties** for a transaction, such as isolation levels.  
 
-#### **Syntax:**  
+##### **Syntax:**  
 ```sql
 SET TRANSACTION READ ONLY;
 ```
 
-#### **Example:**  
+##### **Example:**  
 ```sql
 SET TRANSACTION READ WRITE;
 INSERT INTO employees (emp_id, name, salary) VALUES (101, 'John Doe', 5000);
@@ -97,7 +97,7 @@ COMMIT;
 
 ---
 
-## **4. Summary of TCL Commands**  
+### **4. Summary of TCL Commands**  
 
 | **Command** | **Function** | **Reversible?** |
 |------------|------------|---------------|
