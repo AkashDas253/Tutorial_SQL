@@ -146,7 +146,7 @@
 
 ---
 
-### [Oracle SQL](lessons/oracle_sql/lessons/readme.md)
+### [Oracle SQL](lessons/oracle_sql/readme.md)
 
 - [Oracle Syntax](lessons/oracle_sql/lessons/oracle_syntax/readme.md) 
 - [Oracle Datatypes](lessons/oracle_sql/lessons/oracle_datatype/readme.md) 
@@ -192,4 +192,4 @@
 
 ### [MySQL](lessons/mysql/readme.md)
 
----
+--- 
