@@ -39,7 +39,7 @@ This repository contains notes on various SQL topics.
 - [SQL Data Types](lessons/datatypes/readme.md)
 
     - [Database Compatibility](lessons/datatypes_compatibility/readme.md)
-        - [Oracle SQL Datatypes](lessons/datatypes_oracle_sql/readme.md)
+        - [Oracle SQL Datatypes](lessons/datatypes_oracle/oracle_sql/readme.md)
 
     - [Advanced Usage](lessons/datatypes_usage/readme.md)
 
@@ -138,40 +138,40 @@ This repository contains notes on various SQL topics.
 
 ---
 
-### [ANSI SQL](lessons/ansi_sql/readme.md)
+### [ANSI SQL](lessons/ansi_sql/ansi_sql/readme.md)
 
-- [ANSI Data Definition Language (DDL)](lessons/ansi_ddl/readme.md) 
-- [ANSI Data Manipulation Language (DML)](lessons/ansi_dml/readme.md) 
-- [ANSI Data Query Language (DQL)](lessons/ansi_dql/readme.md)
-- [ANSI Data Control Language (DCL)](lessons/ansi_dcl/readme.md)  
-- [ANSI Transaction Control Language (TCL)](lessons/ansi_tcl/readme.md)  
-- [ANSI Datatypes](lessons/ansi_data_types/readme.md) 
-- [ANSI Constraints](lessons/ansi_constraints/readme.md)  
-- [ANSI Joins](lessons/ansi_joins/readme.md) 
-- [ANSI Subqueries](lessons/ansi_subqueries/readme.md) 
-- [ANSI SQL Operators](lessons/ansi_sql_operators/readme.md) 
-- [ANSI SQL Functions](lessons/ansi_sql_functions/readme.md) 
-- [ANSI Indexing](lessons/ansi_indexing/readme.md) 
-- [ANSI Views](lessons/ansi_views/readme.md) 
+- [ANSI Data Definition Language (DDL)](lessons/ansi_sql/ansi_ddl/readme.md) 
+- [ANSI Data Manipulation Language (DML)](lessons/ansi_sql/ansi_dml/readme.md) 
+- [ANSI Data Query Language (DQL)](lessons/ansi_sql/ansi_dql/readme.md)
+- [ANSI Data Control Language (DCL)](lessons/ansi_sql/ansi_dcl/readme.md)  
+- [ANSI Transaction Control Language (TCL)](lessons/ansi_sql/ansi_tcl/readme.md)  
+- [ANSI Datatypes](lessons/ansi_sql/ansi_data_types/readme.md) 
+- [ANSI Constraints](lessons/ansi_sql/ansi_constraints/readme.md)  
+- [ANSI Joins](lessons/ansi_sql/ansi_joins/readme.md) 
+- [ANSI Subqueries](lessons/ansi_sql/ansi_subqueries/readme.md) 
+- [ANSI SQL Operators](lessons/ansi_sql/ansi_sql_operators/readme.md) 
+- [ANSI SQL Functions](lessons/ansi_sql/ansi_sql_functions/readme.md) 
+- [ANSI Indexing](lessons/ansi_sql/ansi_indexing/readme.md) 
+- [ANSI Views](lessons/ansi_sql/ansi_views/readme.md) 
 
 ---
 
-### [Oracle SQL](lessons/oracle_sql/readme.md)
+### [Oracle SQL](lessons/oracle_sql/oracle_sql/readme.md)
 
-- [Oracle Syntax](lessons/oracle_syntax/readme.md) 
-- [Oracle Datatypes](lessons/oracle_datatype/readme.md) 
-- [Oracle Operators](lessons/oracle_operator/readme.md)   
-- [Oracle Database Objects](lessons/oracle_objects/readme.md) 
-- [Oracle Data Manipulation Language (DML)](lessons/oracle_dml/readme.md) 
-- [Oracle Data Definition Language (DDL)](lessons/oracle_ddl/readme.md) 
-- [Oracle Data Query Language (DQL)](lessons/oracle_dql/readme.md) 
-- [Oracle Data Control Language (DCL)](lessons/oracle_dcl/readme.md) 
-- [Oracle Transaction Control Language (TCL)](lessons/oracle_tcl/readme.md) 
-- [Oracle Query Features](lessons/oracle_query_features/readme.md) 
-- [Oracle Advanced Features](lessons/oracle_advanced_features/readme.md)   
-- [Oracle Security and Management](lessons/oracle_security_and_management/readme.md)  
-- [Oracle Performance Optimization](lessons/oracle_performance_optimization/readme.md)  
-- [Oracle Backup and Recovery](lessons/oracle_backup_and_recovery/readme.md) 
+- [Oracle Syntax](lessons/oracle_sql/oracle_syntax/readme.md) 
+- [Oracle Datatypes](lessons/oracle_sql/oracle_datatype/readme.md) 
+- [Oracle Operators](lessons/oracle_sql/oracle_operator/readme.md)   
+- [Oracle Database Objects](lessons/oracle_sql/oracle_objects/readme.md) 
+- [Oracle Data Manipulation Language (DML)](lessons/oracle_sql/oracle_dml/readme.md) 
+- [Oracle Data Definition Language (DDL)](lessons/oracle_sql/oracle_ddl/readme.md) 
+- [Oracle Data Query Language (DQL)](lessons/oracle_sql/oracle_dql/readme.md) 
+- [Oracle Data Control Language (DCL)](lessons/oracle_sql/oracle_dcl/readme.md) 
+- [Oracle Transaction Control Language (TCL)](lessons/oracle_sql/oracle_tcl/readme.md) 
+- [Oracle Query Features](lessons/oracle_sql/oracle_query_features/readme.md) 
+- [Oracle Advanced Features](lessons/oracle_sql/oracle_advanced_features/readme.md)   
+- [Oracle Security and Management](lessons/oracle_sql/oracle_security_and_management/readme.md)  
+- [Oracle Performance Optimization](lessons/oracle_sql/oracle_performance_optimization/readme.md)  
+- [Oracle Backup and Recovery](lessons/oracle_sql/oracle_backup_and_recovery/readme.md) 
 
 ---
 
