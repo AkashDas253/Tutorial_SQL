@@ -2,13 +2,13 @@
 
 ---
 
-### ▪️ Overview
+### Overview
 
 **Data Definition Language (DDL)** in MySQL refers to the SQL commands used to define, modify, and delete **database schema structures** such as **databases**, **tables**, **indexes**, and **views**. These operations typically result in **auto-commit**, meaning the changes are saved immediately and cannot be rolled back.
 
 ---
 
-### ▪️ Key DDL Commands
+### Key DDL Commands
 
 | Command      | Purpose                                               |
 |--------------|--------------------------------------------------------|
@@ -20,9 +20,9 @@
 
 ---
 
-### ▪️ Syntax and Usage
+### Syntax and Usage
 
-#### 🔹 `CREATE`
+#### `CREATE`
 ```sql
 -- Create Database
 CREATE DATABASE db_name;
@@ -38,7 +38,7 @@ CREATE TABLE table_name (
 CREATE INDEX index_name ON table_name (column_name);
 ```
 
-#### 🔹 `ALTER`
+#### `ALTER`
 ```sql
 -- Add Column
 ALTER TABLE table_name ADD column_name datatype;
@@ -56,7 +56,7 @@ ALTER TABLE table_name DROP COLUMN column_name;
 ALTER TABLE old_table_name RENAME TO new_table_name;
 ```
 
-#### 🔹 `DROP`
+#### `DROP`
 ```sql
 -- Drop Table
 DROP TABLE table_name;
@@ -68,13 +68,13 @@ DROP DATABASE db_name;
 DROP INDEX index_name ON table_name;
 ```
 
-#### 🔹 `RENAME`
+#### `RENAME`
 ```sql
 -- Rename Table
 RENAME TABLE old_table_name TO new_table_name;
 ```
 
-#### 🔹 `TRUNCATE`
+#### `TRUNCATE`
 ```sql
 -- Remove all rows and reset auto_increment
 TRUNCATE TABLE table_name;
@@ -82,7 +82,7 @@ TRUNCATE TABLE table_name;
 
 ---
 
-### ▪️ Key Characteristics
+### Key Characteristics
 
 | Feature                | Description                                                              |
 |------------------------|--------------------------------------------------------------------------|
@@ -94,7 +94,7 @@ TRUNCATE TABLE table_name;
 
 ---
 
-### ▪️ DDL in Information Schema
+### DDL in Information Schema
 
 MySQL maintains metadata of DDL changes in system views:
 
@@ -106,7 +106,7 @@ MySQL maintains metadata of DDL changes in system views:
 
 ---
 
-### ▪️ Usage Scenarios
+### Usage Scenarios
 
 | Scenario                          | DDL Use                                 |
 |----------------------------------|------------------------------------------|
@@ -117,7 +117,7 @@ MySQL maintains metadata of DDL changes in system views:
 
 ---
 
-### ▪️ Considerations and Best Practices
+### Considerations and Best Practices
 
 - Use `IF EXISTS` or `IF NOT EXISTS` to prevent errors.
 - Be careful with `DROP` and `TRUNCATE`, as they remove data irreversibly.

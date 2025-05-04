@@ -2,7 +2,7 @@
 
 ---
 
-### ▪️ Overview
+### Overview
 
 **Data Control Language (DCL)** in MySQL is a subset of SQL commands used to control access to data within the database. DCL allows administrators to define who has access to data and what operations they can perform on the database. These commands are typically used for **security** and **permissions** management.
 
@@ -12,7 +12,7 @@ The two main DCL commands are:
 
 ---
 
-### ▪️ Key DCL Commands
+### Key DCL Commands
 
 | Command   | Purpose                                        |
 |-----------|------------------------------------------------|
@@ -21,9 +21,9 @@ The two main DCL commands are:
 
 ---
 
-### ▪️ Syntax and Usage
+### Syntax and Usage
 
-#### 🔹 `GRANT`
+#### `GRANT`
 ```sql
 -- Grant a single privilege to a user
 GRANT privilege_type ON database_name.table_name TO 'username'@'host';
@@ -38,7 +38,7 @@ GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'host';
 GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'host' WITH GRANT OPTION;
 ```
 
-#### 🔹 `REVOKE`
+#### `REVOKE`
 ```sql
 -- Revoke a single privilege from a user
 REVOKE privilege_type ON database_name.table_name FROM 'username'@'host';
@@ -49,7 +49,7 @@ REVOKE ALL PRIVILEGES ON database_name.* FROM 'username'@'host';
 
 ---
 
-### ▪️ Privileges in MySQL
+### Privileges in MySQL
 
 Privileges define what operations a user can perform. The most common privileges include:
 
@@ -68,7 +68,7 @@ Privileges define what operations a user can perform. The most common privileges
 
 ---
 
-### ▪️ Usage Scenarios
+### Usage Scenarios
 
 | Scenario                                   | DCL Command Used         |
 |--------------------------------------------|---------------------------|
@@ -79,7 +79,7 @@ Privileges define what operations a user can perform. The most common privileges
 
 ---
 
-### ▪️ `GRANT` and `REVOKE` Example
+### `GRANT` and `REVOKE` Example
 
 1. **Grant SELECT Permission**:
 ```sql
@@ -101,7 +101,7 @@ REVOKE SELECT ON my_database.my_table FROM 'john_doe'@'localhost';
 
 ---
 
-### ▪️ WITH GRANT OPTION
+### WITH GRANT OPTION
 
 The **`WITH GRANT OPTION`** allows the user to **grant privileges to others**. This can be particularly useful for delegating authority.
 
@@ -112,7 +112,7 @@ GRANT SELECT ON my_database.my_table TO 'john_doe'@'localhost' WITH GRANT OPTION
 
 ---
 
-### ▪️ Revoking Permissions
+### Revoking Permissions
 
 | Scenario                               | DCL Command Used              |
 |----------------------------------------|-------------------------------|
@@ -127,7 +127,7 @@ REVOKE ALL PRIVILEGES ON my_database.* FROM 'john_doe'@'localhost';
 
 ---
 
-### ▪️ Granting Privileges to Roles (MySQL 8.0+)
+### Granting Privileges to Roles (MySQL 8.0+)
 
 In MySQL 8.0 and later, you can create roles and assign privileges to them. Then, you can assign roles to users, making it easier to manage permissions for multiple users.
 
@@ -144,7 +144,7 @@ GRANT 'data_readers' TO 'john_doe'@'localhost';
 
 ---
 
-### ▪️ Security Considerations
+### Security Considerations
 
 | Best Practice                           | Benefit                                       |
 |-----------------------------------------|-----------------------------------------------|
@@ -154,7 +154,7 @@ GRANT 'data_readers' TO 'john_doe'@'localhost';
 
 ---
 
-### ▪️ DCL vs DML vs DDL
+### DCL vs DML vs DDL
 
 | Feature         | DCL                                | DML                             | DDL                             |
 |-----------------|------------------------------------|---------------------------------|----------------------------------|

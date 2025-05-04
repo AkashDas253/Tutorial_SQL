@@ -1,14 +1,14 @@
-## 🟦 Comprehensive Note on String Data Types in MySQL
+## String Data Types in MySQL
 
 ---
 
-### ▪️ Overview
+### Overview
 
 MySQL provides various **string data types** to store character data, such as text, strings, and binary data. These types are essential for handling names, descriptions, addresses, and any other data that requires character-based storage.
 
 ---
 
-### ▪️ String Data Types
+### String Data Types
 
 | Data Type     | Description                                      | Storage      | Format                                   | Example                                          |
 |---------------|--------------------------------------------------|--------------|------------------------------------------|--------------------------------------------------|
@@ -25,11 +25,11 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-### ▪️ Detailed Breakdown of String Data Types
+### Detailed Breakdown of String Data Types
 
 ---
 
-#### ▪️ **CHAR**
+#### **CHAR**
 
 - **Description**: Stores fixed-length strings. If the stored string is shorter than the specified length, it will be padded with spaces to the right.
 - **Storage**: Varies by the length of the string (`n` bytes).
@@ -42,7 +42,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-#### ▪️ **VARCHAR**
+#### **VARCHAR**
 
 - **Description**: Stores variable-length strings, allowing for efficient storage of strings without padding.
 - **Storage**: `1 byte` + length of the string.
@@ -55,7 +55,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-#### ▪️ **TEXT**
+#### **TEXT**
 
 - **Description**: Stores long text strings. Suitable for larger pieces of text like articles, descriptions, or product reviews.
 - **Storage**: Varies, but can store up to `65,535` characters.
@@ -68,7 +68,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-#### ▪️ **TINYTEXT**
+#### **TINYTEXT**
 
 - **Description**: Stores small text strings. Smaller than `TEXT`, typically used for short descriptions or small pieces of text.
 - **Storage**: Up to `255` characters.
@@ -81,7 +81,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-#### ▪️ **MEDIUMTEXT**
+#### **MEDIUMTEXT**
 
 - **Description**: Stores medium-length text strings, suitable for larger chunks of data than `TINYTEXT` but smaller than `LONGTEXT`.
 - **Storage**: Up to `16,777,215` characters.
@@ -94,7 +94,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-#### ▪️ **LONGTEXT**
+#### **LONGTEXT**
 
 - **Description**: Stores large text strings, capable of holding vast amounts of data (up to 4GB).
 - **Storage**: Up to `4,294,967,295` characters.
@@ -107,7 +107,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-#### ▪️ **BLOB**
+#### **BLOB**
 
 - **Description**: Stores binary large objects, used for binary data like images, files, and other non-text data.
 - **Storage**: Varies by size of the binary data.
@@ -120,7 +120,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-#### ▪️ **TINYBLOB**
+#### **TINYBLOB**
 
 - **Description**: Stores small binary data, similar to `TINYTEXT` but for binary content.
 - **Storage**: Up to `255` bytes.
@@ -133,7 +133,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-#### ▪️ **MEDIUMBLOB**
+#### **MEDIUMBLOB**
 
 - **Description**: Stores medium-sized binary data, used when larger binary objects need to be stored than `TINYBLOB`.
 - **Storage**: Up to `16,777,215` bytes.
@@ -146,7 +146,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-#### ▪️ **LONGBLOB**
+#### **LONGBLOB**
 
 - **Description**: Stores very large binary data, up to `4 GB`.
 - **Storage**: Up to `4,294,967,295` bytes.
@@ -159,7 +159,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-### ▪️ Choosing the Right String Data Type
+### Choosing the Right String Data Type
 
 | Data Type    | Use Case                                           | Storage Type       |
 |--------------|---------------------------------------------------|--------------------|
@@ -176,7 +176,7 @@ MySQL provides various **string data types** to store character data, such as te
 
 ---
 
-### ▪️ Summary
+### Summary
 
 - **CHAR**: Best for fixed-length strings that require no padding, like country codes or state abbreviations.
 - **VARCHAR**: Ideal for variable-length strings that can change in size, such as names and addresses.

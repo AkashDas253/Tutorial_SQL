@@ -1,14 +1,14 @@
-## 🟦 Comprehensive Note on Data Types in MySQL
+## Data Types in MySQL
 
 ---
 
-### ▪️ Overview
+### Overview
 
 **Data types** in MySQL define the kind of data that can be stored in a column. They determine the storage space required for the data, its valid values, and operations that can be performed on it. MySQL supports a wide range of data types, including numeric, string, date/time, and binary types.
 
 ---
 
-### ▪️ Types of Data Types in MySQL
+### Types of Data Types in MySQL
 
 | Category        | Data Types                                           |
 |-----------------|------------------------------------------------------|
@@ -20,7 +20,7 @@
 
 ---
 
-### ▪️ Numeric Data Types
+### Numeric Data Types
 
 | Data Type   | Description                                     | Storage       | Range                                             | Example                                      |
 |-------------|-------------------------------------------------|---------------|---------------------------------------------------|----------------------------------------------|
@@ -32,7 +32,7 @@
 
 ---
 
-### ▪️ String Data Types
+### String Data Types
 
 | Data Type   | Description                                     | Storage         | Range                                              | Example                                      |
 |-------------|-------------------------------------------------|-----------------|----------------------------------------------------|----------------------------------------------|
@@ -45,7 +45,7 @@
 
 ---
 
-### ▪️ Date/Time Data Types
+### Date/Time Data Types
 
 | Data Type     | Description                                     | Storage     | Format                          | Example                                          |
 |---------------|-------------------------------------------------|-------------|---------------------------------|--------------------------------------------------|
@@ -57,7 +57,7 @@
 
 ---
 
-### ▪️ Binary Data Types
+### Binary Data Types
 
 | Data Type     | Description                                      | Storage      | Example                                      |
 |---------------|--------------------------------------------------|--------------|----------------------------------------------|
@@ -67,7 +67,7 @@
 
 ---
 
-### ▪️ JSON Data Type
+### JSON Data Type
 
 | Data Type   | Description                           | Storage   | Example                                      |
 |-------------|---------------------------------------|-----------|----------------------------------------------|
@@ -75,7 +75,7 @@
 
 ---
 
-### ▪️ Choosing the Right Data Type Summary
+### Choosing the Right Data Type Summary
 
 | Data Type   | Use Case                                           | Storage Type       |
 |-------------|---------------------------------------------------|--------------------|

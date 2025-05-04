@@ -1,4 +1,3 @@
-
 ## Control Flow Functions in MySQL
 
 **Control Flow functions** in MySQL allow you to control the flow of execution in queries, enabling conditional logic and loops within SQL statements. These functions are essential for implementing complex decision-making, branching, and iterative processes in SQL queries.

@@ -1,6 +1,6 @@
-## Comprehensive Note on Constraints in MySQL
+## Constraints in MySQL
 
-Constraints in MySQL are used to enforce rules on data in a table. They ensure data integrity, maintain accuracy, and prevent invalid data from being inserted into the database. Constraints are defined at the column or table level and can be applied when creating or altering a table. 
+Constraints in MySQL are used to enforce rules on data in a table. They ensure data integrity, maintain accuracy, and prevent invalid data from being inserted into the database. Constraints are defined at the column or table level and can be applied when creating or altering a table.
 
 ---
 
@@ -8,13 +8,14 @@ Constraints in MySQL are used to enforce rules on data in a table. They ensure d
 
 1. [Overview of Constraints](#overview-of-constraints)
 2. [Types of Constraints](#types-of-constraints)
-   - [PRIMARY KEY](#primary-key)
-   - [FOREIGN KEY](#foreign-key)
-   - [UNIQUE](#unique)
-   - [NOT NULL](#not-null)
-   - [CHECK](#check)
-   - [DEFAULT](#default)
-   - [INDEX](#index)
+
+   * [PRIMARY KEY](#primary-key)
+   * [FOREIGN KEY](#foreign-key)
+   * [UNIQUE](#unique)
+   * [NOT NULL](#not-null)
+   * [CHECK](#check)
+   * [DEFAULT](#default)
+   * [INDEX](#index)
 3. [Creating and Managing Constraints](#creating-and-managing-constraints)
 4. [Best Practices for Constraints](#best-practices-for-constraints)
 
@@ -36,9 +37,10 @@ MySQL supports several types of constraints, each serving different purposes for
 
 A **PRIMARY KEY** constraint uniquely identifies each row in a table. A primary key must be unique and cannot contain `NULL` values. A table can have only one primary key, but it can consist of multiple columns (composite primary key).
 
-- **Use Case**: Ensures uniqueness for each row in the table.
+* **Use Case**: Ensures uniqueness for each row in the table.
 
 #### Syntax:
+
 ```sql
 CREATE TABLE table_name (
     column_name data_type PRIMARY KEY
@@ -46,6 +48,7 @@ CREATE TABLE table_name (
 ```
 
 **Example**:
+
 ```sql
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
@@ -59,9 +62,10 @@ CREATE TABLE employees (
 
 A **FOREIGN KEY** constraint enforces a link between the columns in two tables, ensuring referential integrity. A foreign key in one table points to a primary key or unique key in another table. This ensures that a value in the foreign key column must exist in the referenced primary key column.
 
-- **Use Case**: Used to link tables and ensure data consistency between related tables.
+* **Use Case**: Used to link tables and ensure data consistency between related tables.
 
 #### Syntax:
+
 ```sql
 CREATE TABLE table_name (
     column_name data_type,
@@ -70,6 +74,7 @@ CREATE TABLE table_name (
 ```
 
 **Example**:
+
 ```sql
 CREATE TABLE orders (
     order_id INT PRIMARY KEY,
@@ -84,9 +89,10 @@ CREATE TABLE orders (
 
 A **UNIQUE** constraint ensures that all values in a column are distinct. Unlike a primary key, a column with a unique constraint can contain `NULL` values, but all non-`NULL` values must be unique.
 
-- **Use Case**: Used to enforce uniqueness for columns other than the primary key.
+* **Use Case**: Used to enforce uniqueness for columns other than the primary key.
 
 #### Syntax:
+
 ```sql
 CREATE TABLE table_name (
     column_name data_type UNIQUE
@@ -94,6 +100,7 @@ CREATE TABLE table_name (
 ```
 
 **Example**:
+
 ```sql
 CREATE TABLE users (
     user_id INT PRIMARY KEY,
@@ -107,9 +114,10 @@ CREATE TABLE users (
 
 A **NOT NULL** constraint ensures that a column cannot have a `NULL` value. It is used to enforce that a field must contain a value when a new record is inserted.
 
-- **Use Case**: Ensures that important columns always have a value.
+* **Use Case**: Ensures that important columns always have a value.
 
 #### Syntax:
+
 ```sql
 CREATE TABLE table_name (
     column_name data_type NOT NULL
@@ -117,6 +125,7 @@ CREATE TABLE table_name (
 ```
 
 **Example**:
+
 ```sql
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
@@ -130,9 +139,10 @@ CREATE TABLE employees (
 
 The **CHECK** constraint ensures that the values in a column satisfy a specific condition. It can be used to ensure data validity by applying rules like numeric ranges or length limits.
 
-- **Use Case**: Used to enforce rules on data, such as ensuring an age is positive or a salary is above a certain threshold.
+* **Use Case**: Used to enforce rules on data, such as ensuring an age is positive or a salary is above a certain threshold.
 
 #### Syntax:
+
 ```sql
 CREATE TABLE table_name (
     column_name data_type CHECK (condition)
@@ -140,6 +150,7 @@ CREATE TABLE table_name (
 ```
 
 **Example**:
+
 ```sql
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
@@ -153,9 +164,10 @@ CREATE TABLE employees (
 
 The **DEFAULT** constraint provides a default value for a column when no value is provided during insertion. It ensures that a column has a valid value if the user does not explicitly provide one.
 
-- **Use Case**: Ensures that a column is populated with a default value if no explicit value is provided.
+* **Use Case**: Ensures that a column is populated with a default value if no explicit value is provided.
 
 #### Syntax:
+
 ```sql
 CREATE TABLE table_name (
     column_name data_type DEFAULT default_value
@@ -163,6 +175,7 @@ CREATE TABLE table_name (
 ```
 
 **Example**:
+
 ```sql
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
@@ -176,14 +189,16 @@ CREATE TABLE employees (
 
 An **INDEX** constraint is used to create indexes on one or more columns to speed up data retrieval operations. Although indexes are often used for performance optimization, they can also be considered constraints in certain contexts, such as when ensuring faster searches.
 
-- **Use Case**: Used to optimize query performance, especially for large tables.
+* **Use Case**: Used to optimize query performance, especially for large tables.
 
 #### Syntax:
+
 ```sql
 CREATE INDEX index_name ON table_name (column_name);
 ```
 
 **Example**:
+
 ```sql
 CREATE INDEX idx_name ON employees (name);
 ```
@@ -192,60 +207,72 @@ CREATE INDEX idx_name ON employees (name);
 
 ### Creating and Managing Constraints
 
-Constraints can be defined at the time of table creation or added later using the `ALTER TABLE` statement. 
+Constraints can be defined at the time of table creation or added later using the `ALTER TABLE` statement.
 
 #### Add Constraint to an Existing Table
+
 You can use `ALTER TABLE` to add constraints to an existing table.
 
-- **Add a PRIMARY KEY**:
+* **Add a PRIMARY KEY**:
+
 ```sql
 ALTER TABLE table_name ADD PRIMARY KEY (column_name);
 ```
 
-- **Add a FOREIGN KEY**:
+* **Add a FOREIGN KEY**:
+
 ```sql
 ALTER TABLE table_name ADD CONSTRAINT fk_name FOREIGN KEY (column_name) REFERENCES referenced_table(referenced_column);
 ```
 
-- **Add a UNIQUE Constraint**:
+* **Add a UNIQUE Constraint**:
+
 ```sql
 ALTER TABLE table_name ADD UNIQUE (column_name);
 ```
 
-- **Add a CHECK Constraint**:
+* **Add a CHECK Constraint**:
+
 ```sql
 ALTER TABLE table_name ADD CONSTRAINT chk_name CHECK (condition);
 ```
 
-- **Add a DEFAULT Constraint**:
+* **Add a DEFAULT Constraint**:
+
 ```sql
 ALTER TABLE table_name MODIFY column_name data_type DEFAULT default_value;
 ```
 
 #### Drop Constraints
+
 You can drop constraints using `ALTER TABLE` as well.
 
-- **Drop PRIMARY KEY**:
+* **Drop PRIMARY KEY**:
+
 ```sql
 ALTER TABLE table_name DROP PRIMARY KEY;
 ```
 
-- **Drop FOREIGN KEY**:
+* **Drop FOREIGN KEY**:
+
 ```sql
 ALTER TABLE table_name DROP FOREIGN KEY fk_name;
 ```
 
-- **Drop UNIQUE Constraint**:
+* **Drop UNIQUE Constraint**:
+
 ```sql
 ALTER TABLE table_name DROP INDEX index_name;
 ```
 
-- **Drop CHECK Constraint**:
+* **Drop CHECK Constraint**:
+
 ```sql
 ALTER TABLE table_name DROP CONSTRAINT chk_name;
 ```
 
-- **Drop DEFAULT Constraint**:
+* **Drop DEFAULT Constraint**:
+
 ```sql
 ALTER TABLE table_name MODIFY column_name data_type DROP DEFAULT;
 ```

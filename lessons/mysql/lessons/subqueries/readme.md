@@ -1,5 +1,4 @@
-
-## Comprehensive Note on Subqueries in MySQL
+## Subqueries in MySQL
 
 A **subquery** is a query nested inside another query. Subqueries allow data to be fetched dynamically for use in `SELECT`, `INSERT`, `UPDATE`, or `DELETE` operations, making queries more flexible and powerful.
 
@@ -7,28 +6,28 @@ A **subquery** is a query nested inside another query. Subqueries allow data to 
 
 ### 🔹 Inner Index
 
-- [Types of Subqueries](#types-of-subqueries)
-- [Subquery in SELECT](#subquery-in-select)
-- [Subquery in WHERE](#subquery-in-where)
-- [Subquery in FROM (Derived Table)](#subquery-in-from-derived-table)
-- [Subquery in INSERT](#subquery-in-insert)
-- [Subquery in UPDATE](#subquery-in-update)
-- [Subquery in DELETE](#subquery-in-delete)
-- [Correlated Subquery](#correlated-subquery)
-- [Comparison Operators in Subqueries](#comparison-operators-in-subqueries)
-- [Usage Scenarios](#usage-scenarios)
+* [Types of Subqueries](#types-of-subqueries)
+* [Subquery in SELECT](#subquery-in-select)
+* [Subquery in WHERE](#subquery-in-where)
+* [Subquery in FROM (Derived Table)](#subquery-in-from-derived-table)
+* [Subquery in INSERT](#subquery-in-insert)
+* [Subquery in UPDATE](#subquery-in-update)
+* [Subquery in DELETE](#subquery-in-delete)
+* [Correlated Subquery](#correlated-subquery)
+* [Comparison Operators in Subqueries](#comparison-operators-in-subqueries)
+* [Usage Scenarios](#usage-scenarios)
 
 ---
 
 ### Types of Subqueries
 
-| Type                 | Description                                           |
-|----------------------|-------------------------------------------------------|
-| Single-row subquery  | Returns one row with one column                       |
-| Multiple-row subquery| Returns multiple rows of one column                   |
-| Multiple-column subquery | Returns multiple rows and columns               |
-| Correlated subquery  | Refers to columns from the outer query                |
-| Nested subquery      | Subquery inside another subquery                     |
+| Type                     | Description                            |
+| ------------------------ | -------------------------------------- |
+| Single-row subquery      | Returns one row with one column        |
+| Multiple-row subquery    | Returns multiple rows of one column    |
+| Multiple-column subquery | Returns multiple rows and columns      |
+| Correlated subquery      | Refers to columns from the outer query |
+| Nested subquery          | Subquery inside another subquery       |
 
 ---
 
@@ -37,6 +36,7 @@ A **subquery** is a query nested inside another query. Subqueries allow data to 
 Used to return derived values for each row.
 
 **Syntax:**
+
 ```sql
 SELECT name, (SELECT COUNT(*) FROM orders WHERE customer_id = c.id) AS order_count
 FROM customers AS c;
@@ -49,6 +49,7 @@ FROM customers AS c;
 Used to filter rows based on dynamic conditions.
 
 **Syntax:**
+
 ```sql
 SELECT name FROM employees
 WHERE department_id = (SELECT id FROM departments WHERE name = 'Sales');
@@ -61,6 +62,7 @@ WHERE department_id = (SELECT id FROM departments WHERE name = 'Sales');
 Acts as a virtual table.
 
 **Syntax:**
+
 ```sql
 SELECT avg_salary FROM (
   SELECT department_id, AVG(salary) AS avg_salary FROM employees GROUP BY department_id
@@ -74,6 +76,7 @@ SELECT avg_salary FROM (
 Used to insert result of a `SELECT` query.
 
 **Syntax:**
+
 ```sql
 INSERT INTO archive_employees (id, name)
 SELECT id, name FROM employees WHERE status = 'terminated';
@@ -86,6 +89,7 @@ SELECT id, name FROM employees WHERE status = 'terminated';
 Used to dynamically fetch values to update rows.
 
 **Syntax:**
+
 ```sql
 UPDATE employees
 SET department_id = (
@@ -101,6 +105,7 @@ WHERE name = 'Alice';
 Used to delete rows based on a dynamic condition.
 
 **Syntax:**
+
 ```sql
 DELETE FROM orders
 WHERE customer_id IN (
@@ -115,6 +120,7 @@ WHERE customer_id IN (
 Depends on the outer query for each row and runs repeatedly.
 
 **Syntax:**
+
 ```sql
 SELECT name FROM employees e
 WHERE salary > (
@@ -126,26 +132,28 @@ WHERE salary > (
 
 ### Comparison Operators in Subqueries
 
-| Operator  | Usage Example                                           |
-|-----------|----------------------------------------------------------|
-| `=`       | `WHERE dept_id = (SELECT id FROM dept WHERE name = 'HR')` |
-| `IN`      | `WHERE id IN (SELECT emp_id FROM project)`              |
-| `ANY`     | `WHERE salary > ANY (SELECT salary FROM emp WHERE role='dev')` |
-| `ALL`     | `WHERE salary < ALL (SELECT salary FROM emp WHERE dept='HR')` |
-| `EXISTS`  | `WHERE EXISTS (SELECT * FROM bonus WHERE emp.id = bonus.emp_id)` |
-| `NOT EXISTS` | `WHERE NOT EXISTS (SELECT * FROM leaves WHERE emp_id = e.id)` |
+| Operator     | Usage Example                                                    |
+| ------------ | ---------------------------------------------------------------- |
+| `=`          | `WHERE dept_id = (SELECT id FROM dept WHERE name = 'HR')`        |
+| `IN`         | `WHERE id IN (SELECT emp_id FROM project)`                       |
+| `ANY`        | `WHERE salary > ANY (SELECT salary FROM emp WHERE role='dev')`   |
+| `ALL`        | `WHERE salary < ALL (SELECT salary FROM emp WHERE dept='HR')`    |
+| `EXISTS`     | `WHERE EXISTS (SELECT * FROM bonus WHERE emp.id = bonus.emp_id)` |
+| `NOT EXISTS` | `WHERE NOT EXISTS (SELECT * FROM leaves WHERE emp_id = e.id)`    |
 
 ---
 
 ### Usage Scenarios
 
-- **Find customers who placed orders:**
+* **Find customers who placed orders:**
+
   ```sql
   SELECT name FROM customers
   WHERE id IN (SELECT customer_id FROM orders);
   ```
 
-- **List employees in departments with more than 5 employees:**
+* **List employees in departments with more than 5 employees:**
+
   ```sql
   SELECT name FROM employees e
   WHERE EXISTS (
@@ -155,7 +163,8 @@ WHERE salary > (
   );
   ```
 
-- **Get employees with max salary:**
+* **Get employees with max salary:**
+
   ```sql
   SELECT name FROM employees
   WHERE salary = (SELECT MAX(salary) FROM employees);

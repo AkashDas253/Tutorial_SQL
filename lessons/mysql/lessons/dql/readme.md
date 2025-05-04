@@ -2,7 +2,7 @@
 
 ---
 
-### ▪️ Overview
+### Overview
 
 **Data Query Language (DQL)** in MySQL refers to the SQL commands used to **retrieve data** from a database. The primary focus of DQL is **querying** databases without modifying any data. It provides a powerful mechanism for extracting, filtering, sorting, and analyzing data.
 
@@ -10,7 +10,7 @@ The most commonly used DQL command in MySQL is `SELECT`.
 
 ---
 
-### ▪️ Key DQL Command
+### Key DQL Command
 
 | Command   | Purpose                                      |
 |-----------|----------------------------------------------|
@@ -18,9 +18,9 @@ The most commonly used DQL command in MySQL is `SELECT`.
 
 ---
 
-### ▪️ Syntax and Usage
+### Syntax and Usage
 
-#### 🔹 `SELECT`
+#### `SELECT`
 ```sql
 -- Basic Select
 SELECT column1, column2 FROM table_name;
@@ -53,7 +53,7 @@ SELECT column1 FROM table_name WHERE column2 = (SELECT column2 FROM another_tabl
 
 ---
 
-### ▪️ Clauses and Modifiers in DQL
+### Clauses and Modifiers in DQL
 
 | Clause           | Purpose                                           |
 |------------------|---------------------------------------------------|
@@ -73,7 +73,7 @@ SELECT column1 FROM table_name WHERE column2 = (SELECT column2 FROM another_tabl
 
 ---
 
-### ▪️ Usage Scenarios
+### Usage Scenarios
 
 | Scenario                                      | DQL Command Used          |
 |-----------------------------------------------|---------------------------|
@@ -86,7 +86,7 @@ SELECT column1 FROM table_name WHERE column2 = (SELECT column2 FROM another_tabl
 
 ---
 
-### ▪️ Aggregation in DQL
+### Aggregation in DQL
 
 | Function          | Description                                      |
 |-------------------|--------------------------------------------------|
@@ -103,7 +103,7 @@ SELECT AVG(price) FROM products;
 
 ---
 
-### ▪️ JOINs in DQL
+### JOINs in DQL
 
 | Type              | Description                                      |
 |-------------------|--------------------------------------------------|
@@ -123,7 +123,7 @@ INNER JOIN salaries b ON a.id = b.employee_id;
 
 ---
 
-### ▪️ Subqueries in DQL
+### Subqueries in DQL
 
 - **Single-row Subquery**: Returns a single value.
 - **Multi-row Subquery**: Returns multiple values.
@@ -140,7 +140,7 @@ SELECT employee_id, salary FROM employees e WHERE e.salary > (SELECT AVG(salary)
 
 ---
 
-### ▪️ DQL Performance Considerations
+### DQL Performance Considerations
 
 | Best Practice                          | Benefit                                      |
 |----------------------------------------|----------------------------------------------|
@@ -151,7 +151,7 @@ SELECT employee_id, salary FROM employees e WHERE e.salary > (SELECT AVG(salary)
 
 ---
 
-### ▪️ DQL vs DML vs DDL
+### DQL vs DML vs DDL
 
 | Feature         | DQL                               | DML                             | DDL                             |
 |-----------------|-----------------------------------|---------------------------------|----------------------------------|

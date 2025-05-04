@@ -2,13 +2,13 @@
 
 ---
 
-### ▪️ Overview
+### Overview
 
 **Data Manipulation Language (DML)** refers to SQL commands used to **access and modify data** stored in MySQL tables. Unlike DDL, DML operations **affect the data**, not the schema. These commands are **transactional**, meaning they can be rolled back or committed based on the application's logic.
 
 ---
 
-### ▪️ Key DML Commands
+### Key DML Commands
 
 | Command   | Purpose                                           |
 |-----------|---------------------------------------------------|
@@ -19,9 +19,9 @@
 
 ---
 
-### ▪️ Syntax and Usage
+### Syntax and Usage
 
-#### 🔹 `SELECT`
+#### `SELECT`
 ```sql
 -- Basic Select
 SELECT column1, column2 FROM table_name;
@@ -33,7 +33,7 @@ SELECT * FROM table_name WHERE condition;
 SELECT a.col1, b.col2 FROM table1 a JOIN table2 b ON a.id = b.id;
 ```
 
-#### 🔹 `INSERT`
+#### `INSERT`
 ```sql
 -- Insert single row
 INSERT INTO table_name (column1, column2) VALUES (value1, value2);
@@ -47,13 +47,13 @@ INSERT INTO table2 (column1, column2)
 SELECT column1, column2 FROM table1 WHERE condition;
 ```
 
-#### 🔹 `UPDATE`
+#### `UPDATE`
 ```sql
 -- Update existing records
 UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
 ```
 
-#### 🔹 `DELETE`
+#### `DELETE`
 ```sql
 -- Delete specific records
 DELETE FROM table_name WHERE condition;
@@ -64,7 +64,7 @@ DELETE FROM table_name;
 
 ---
 
-### ▪️ Transaction Behavior
+### Transaction Behavior
 
 | Feature              | Description                                      |
 |----------------------|--------------------------------------------------|
@@ -74,7 +74,7 @@ DELETE FROM table_name;
 
 ---
 
-### ▪️ Clauses Commonly Used with DML
+### Clauses Commonly Used with DML
 
 | Clause       | Applies To | Description                                      |
 |--------------|------------|--------------------------------------------------|
@@ -86,7 +86,7 @@ DELETE FROM table_name;
 
 ---
 
-### ▪️ Performance Considerations
+### Performance Considerations
 
 | Best Practice                          | Benefit                                      |
 |----------------------------------------|----------------------------------------------|
@@ -97,7 +97,7 @@ DELETE FROM table_name;
 
 ---
 
-### ▪️ Usage Scenarios
+### Usage Scenarios
 
 | Scenario                       | DML Command Used         |
 |--------------------------------|---------------------------|
@@ -108,7 +108,7 @@ DELETE FROM table_name;
 
 ---
 
-### ▪️ DML vs DDL
+### DML vs DDL
 
 | Feature         | DML                                | DDL                             |
 |------------------|--------------------------------------|----------------------------------|

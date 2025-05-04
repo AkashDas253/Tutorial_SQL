@@ -1,9 +1,9 @@
-# MySQL
+## MySQL
 
 - [Overview](lessons/overview/readme.md)
 - [Concepts](lessons/concepts/readme.md)
 
-### Basics
+### Language Types
 - [Data Definition Language (DDL)](lessons/ddl/readme.md)
 - [Data Manipulation Language (DML)](lessons/dml/readme.md)  
 - [Data Query Language (DQL)](lessons/dql/readme.md)  
@@ -19,7 +19,7 @@
 
 ### [Data Types](lessons/data_types/readme.md)  
 - [Numeric types](lessons/data_types/numeric_types/readme.md)  
-- [Date and time types](lessons/data_types/date_time_types/readme.md)  
+- [Date and Time types](lessons/data_types/date_time_types/readme.md)  
 - [String types](lessons/data_types/string_types/readme.md)  
 - [JSON](lessons/data_types/json/readme.md)  
 - [Spatial types](lessons/data_types/spatial_types/readme.md)
@@ -95,10 +95,6 @@
   <!-- - [NOW](lessons/functions/date_time_functions/now/readme.md), [CURDATE](lessons/functions/date_time_functions/curdate/readme.md), [DATE_ADD](lessons/functions/date_time_functions/date_add/readme.md), [DATEDIFF](lessons/functions/date_time_functions/datediff/readme.md), [STR_TO_DATE](lessons/functions/date_time_functions/str_to_date/readme.md) -->
 - [Numeric Functions](lessons/functions/numeric_functions/readme.md)
   <!-- - [ROUND](lessons/functions/numeric_functions/round/readme.md), [CEIL](lessons/functions/numeric_functions/ceil/readme.md), [FLOOR](lessons/functions/numeric_functions/floor/readme.md), [MOD](lessons/functions/numeric_functions/mod/readme.md), [ABS](lessons/functions/numeric_functions/abs/readme.md) -->
-
----
----
-
 - [Control Flow Functions](lessons/functions/control_flow_functions/readme.md)
   <!-- - [IF](lessons/functions/control_flow_functions/if/readme.md), [IFNULL](lessons/functions/control_flow_functions/ifnull/readme.md), [CASE](lessons/functions/control_flow_functions/case/readme.md), [COALESCE](lessons/functions/control_flow_functions/coalesce/readme.md) -->
 - [JSON Functions](lessons/functions/json_functions/readme.md)
@@ -116,68 +112,127 @@
 
 ---
 
-### Storage Engines
-- [InnoDB](lessons/storage_engines/innodb/readme.md)
+### [Storage Engines](lessons/storage_engines/readme.md)
+<!-- - [InnoDB](lessons/storage_engines/innodb/readme.md)
 - [MyISAM](lessons/storage_engines/myisam/readme.md)
 - [MEMORY](lessons/storage_engines/memory/readme.md)
 - [CSV](lessons/storage_engines/csv/readme.md)
 - [ARCHIVE](lessons/storage_engines/archive/readme.md)
 - [FEDERATED](lessons/storage_engines/federated/readme.md)
 - [BLACKHOLE](lessons/storage_engines/blackhole/readme.md)
-- [PERFORMANCE_SCHEMA](lessons/storage_engines/performance_schema/readme.md)
+- [PERFORMANCE_SCHEMA](lessons/storage_engines/performance_schema/readme.md) -->
 
 ---
 
-### Users and Privileges
-- [CREATE USER](lessons/users_privileges/create_user/readme.md)
+### [Users and Privileges](lessons/users_privileges/readme.md)
+<!-- - [CREATE USER](lessons/users_privileges/create_user/readme.md)
 - [DROP USER](lessons/users_privileges/drop_user/readme.md)
 - [GRANT](lessons/users_privileges/grant/readme.md)
 - [REVOKE](lessons/users_privileges/revoke/readme.md)
 - [SET PASSWORD](lessons/users_privileges/set_password/readme.md)
 - [SHOW GRANTS](lessons/users_privileges/show_grants/readme.md)
 - [Authentication Plugins](lessons/users_privileges/authentication_plugins/readme.md)
-- [Role Management](lessons/users_privileges/role_management/readme.md)
+- [Role Management](lessons/users_privileges/role_management/readme.md) -->
 
 ---
 
-### Stored Programs
-- [Stored Procedures](lessons/stored_programs/stored_procedures/readme.md)
-- [Stored Functions](lessons/stored_programs/stored_functions/readme.md)
-- [Triggers](lessons/stored_programs/triggers/readme.md)
-  - [BEFORE INSERT/UPDATE/DELETE](lessons/stored_programs/triggers/before/readme.md)
-  - [AFTER INSERT/UPDATE/DELETE](lessons/stored_programs/triggers/after/readme.md)
-- [Events](lessons/stored_programs/events/readme.md)
-  - [CREATE EVENT](lessons/stored_programs/events/create_event/readme.md)
-  - [ALTER EVENT](lessons/stored_programs/events/alter_event/readme.md)
-  - [DROP EVENT](lessons/stored_programs/events/drop_event/readme.md)
-- [DECLARE](lessons/stored_programs/declare/readme.md)
-- [IF/ELSE](lessons/stored_programs/if_else/readme.md)
-- [WHILE, REPEAT, LOOP](lessons/stored_programs/loops/readme.md)
-- [CURSOR](lessons/stored_programs/cursor/readme.md)
+### Stored Program
+- [Stored Procedures](lessons/stored_procedures/readme.md)
+- [Stored Functions](lessons/stored_functions/readme.md)
+- [Triggers](lessons/triggers/readme.md)
+  <!-- - [BEFORE INSERT/UPDATE/DELETE](lessons/triggers/before/readme.md)
+  - [AFTER INSERT/UPDATE/DELETE](lessons/triggers/after/readme.md) -->
+- [Events](lessons/events/readme.md)
+  <!-- - [CREATE EVENT](lessons/events/create_event/readme.md)
+  - [ALTER EVENT](lessons/events/alter_event/readme.md)
+  - [DROP EVENT](lessons/events/drop_event/readme.md) -->
+- [DECLARE](lessons/declare/readme.md)
+- [IF/ELSE](lessons/if_else/readme.md)
+- [WHILE, REPEAT, LOOP](lessons/loops/readme.md)
+- [CURSOR](lessons/cursor/readme.md)
 
 ---
 
-### Query Optimization
-- [EXPLAIN](lessons/query_optimization/explain/readme.md)
-- [ANALYZE](lessons/query_optimization/analyze/readme.md)
-- [Query Cache](lessons/query_optimization/query_cache/readme.md) (deprecated in newer versions)
-- [Index Optimization](lessons/query_optimization/index_optimization/readme.md)
-- [Table Partitioning](lessons/query_optimization/table_partitioning/readme.md)
-- [Optimizer Hints](lessons/query_optimization/optimizer_hints/readme.md)
+### [Query Optimization](lessons/query_optimization/readme.md)
+- [EXPLAIN](lessons/explain/readme.md)
+- [ANALYZE](lessons/analyze/readme.md)
+- [Query Cache](lessons/query_cache/readme.md) (deprecated in newer versions)
+- [Index Optimization](lessons/index_optimization/readme.md)
+- [Table Partitioning](lessons/table_partitioning/readme.md)
+- [Optimizer Hints](lessons/optimizer_hints/readme.md)
 
 ---
 
-### Data Import/Export
-- [LOAD DATA INFILE](lessons/data_import_export/load_data_infile/readme.md)
+### [Data Import/Export](lessons/data_import_export/readme.md)
+<!-- - [LOAD DATA INFILE](lessons/data_import_export/load_data_infile/readme.md)
 - [SELECT INTO OUTFILE](lessons/data_import_export/select_into_outfile/readme.md)
 - [mysqldump](lessons/data_import_export/mysqldump/readme.md)
 - [mysqlimport](lessons/data_import_export/mysqlimport/readme.md)
 - [mysqlpump](lessons/data_import_export/mysqlpump/readme.md)
-- [Import from CSV, JSON, XML](lessons/data_import_export/import_formats/readme.md)
+- [Import from CSV, JSON, XML](lessons/data_import_export/import_formats/readme.md) -->
 
 ---
 
-### Replication
-- [Master-Slave Replication](lessons/replication/master_slave/readme.md)
-- [Master-Master Replication](lessons/replication/master_master/readme.md)
-- [GTID (Global Transaction Identifiers)]
+### [Replication](lessons/replication/readme.md)
+<!-- - [Master-Slave Replication](lessons/master_slave_replication/readme.md)
+- [Master-Master Replication](lessons/master_master_replication/readme.md)
+- [GTID (Global Transaction Identifiers)](lessons/gtid/readme.md)
+- [Semi-synchronous Replication](lessons/semi_synchronous_replication/readme.md)
+- [Delayed Replication](lessons/delayed_replication/readme.md)
+- [Multi-Source Replication](lessons/multi_source_replication/readme.md) -->
+
+---
+
+### [Backup and Recovery](lessons/backup_recovery/readme.md)
+<!-- - [Logical Backup](lessons/logical_backup/readme.md)
+  - [`mysqldump`, `mysqlpump`](lessons/mysqldump_mysqlpump/readme.md)
+- [Physical Backup](lessons/physical_backup/readme.md)
+  - [File-level copy of data directory](lessons/file_level_copy/readme.md)
+- [Binary Logs](lessons/binary_logs/readme.md)
+- [Point-in-time Recovery](lessons/point_in_time_recovery/readme.md)
+- [Percona XtraBackup (external tool)](lessons/percona_xtrabackup/readme.md) -->
+
+---
+
+### [Security](lessons/security/readme.md)
+<!-- - [User Authentication](lessons/user_authentication/readme.md)
+- [Access Control and Privileges](lessons/access_control_privileges/readme.md)
+- [Encryption](lessons/encryption/readme.md)
+  - [Data-at-rest Encryption](lessons/data_at_rest_encryption/readme.md)
+  - [SSL/TLS for data-in-transit](lessons/ssl_tls_data_in_transit/readme.md)
+- [SQL Injection Protection](lessons/sql_injection_protection/readme.md)
+- [Firewall Plugin (Enterprise)](lessons/firewall_plugin/readme.md) -->
+
+---
+
+### [Monitoring and Performance](lessons/monitoring_performance/readme.md)
+<!-- - [SHOW STATUS](lessons/show_status/readme.md)
+- [SHOW PROCESSLIST](lessons/show_processlist/readme.md)
+- [INFORMATION_SCHEMA](lessons/information_schema/readme.md)
+- [PERFORMANCE_SCHEMA](lessons/performance_schema/readme.md)
+- [Slow Query Log](lessons/slow_query_log/readme.md)
+- [General Log](lessons/general_log/readme.md)
+- [Error Log](lessons/error_log/readme.md) -->
+
+---
+
+### [System Administration](lessons/system_administration/readme.md)
+<!-- - [Configuration (`my.cnf`, `my.ini`)](lessons/configuration/readme.md)
+- [Server Startup and Shutdown](lessons/server_startup_shutdown/readme.md)
+- [User Management](lessons/user_management/readme.md)
+- [Log Files](lessons/log_files/readme.md)
+- [Time Zone Settings](lessons/time_zone_settings/readme.md)
+- [Resource Limits](lessons/resource_limits/readme.md)
+- [Environment Variables](lessons/environment_variables/readme.md) -->
+
+---
+
+### [Tools and Interfaces](lessons/tools_and_interfaces/readme.md)
+<!-- - [MySQL CLI](lessons/mysql_cli/readme.md)
+- [MySQL Workbench](lessons/mysql_workbench/readme.md)
+- [phpMyAdmin](lessons/phpmyadmin/readme.md)
+- [MySQL Shell](lessons/mysql_shell/readme.md)
+- [MySQL Router](lessons/mysql_router/readme.md)
+- [MySQL Utilities (deprecated)](lessons/mysql_utilities/readme.md) -->
+
+---

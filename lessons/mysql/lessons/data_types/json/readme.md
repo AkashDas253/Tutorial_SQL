@@ -1,4 +1,4 @@
-## Comprehensive Note on JSON Data Type in MySQL
+## JSON Data Type in MySQL
 
 The **JSON** data type in MySQL is used to store **JSON-formatted data** within database columns. This data type allows for storing structured data in a flexible, text-based format, ideal for applications that require dynamic and hierarchical data representation. MySQL's JSON functions and operators provide powerful ways to manipulate and query JSON data directly within the database.
 

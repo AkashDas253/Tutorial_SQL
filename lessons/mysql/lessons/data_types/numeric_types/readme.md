@@ -1,14 +1,14 @@
-## 🟦 Comprehensive Note on Numeric Data Types in MySQL
+## Numeric Data Types in MySQL
 
 ---
 
-### ▪️ Overview
+### Overview
 
 Numeric data types in MySQL are used to store numerical values, both integers and floating-point numbers. These types determine how numbers are stored and their valid range. They are essential for handling calculations, counters, financial figures, and other number-based operations.
 
 ---
 
-### ▪️ Numeric Data Types
+### Numeric Data Types
 
 | Data Type   | Description                                     | Storage       | Range                                             | Example                                      |
 |-------------|-------------------------------------------------|---------------|---------------------------------------------------|----------------------------------------------|
@@ -20,11 +20,11 @@ Numeric data types in MySQL are used to store numerical values, both integers an
 
 ---
 
-### ▪️ Detailed Breakdown of Numeric Data Types
+### Detailed Breakdown of Numeric Data Types
 
 ---
 
-#### ▪️ **INT**
+#### **INT**
 
 - **Description**: Stores whole numbers without fractional components.
 - **Storage**: 4 bytes.
@@ -39,7 +39,7 @@ Numeric data types in MySQL are used to store numerical values, both integers an
 
 ---
 
-#### ▪️ **BIGINT**
+#### **BIGINT**
 
 - **Description**: Stores very large whole numbers, often used for larger integer values.
 - **Storage**: 8 bytes.
@@ -54,7 +54,7 @@ Numeric data types in MySQL are used to store numerical values, both integers an
 
 ---
 
-#### ▪️ **FLOAT**
+#### **FLOAT**
 
 - **Description**: Stores single-precision floating-point numbers. Used for numbers with decimals, but with limited precision.
 - **Storage**: 4 bytes.
@@ -67,7 +67,7 @@ Numeric data types in MySQL are used to store numerical values, both integers an
 
 ---
 
-#### ▪️ **DOUBLE**
+#### **DOUBLE**
 
 - **Description**: Stores double-precision floating-point numbers. More precise than FLOAT, typically used for scientific calculations.
 - **Storage**: 8 bytes.
@@ -80,7 +80,7 @@ Numeric data types in MySQL are used to store numerical values, both integers an
 
 ---
 
-#### ▪️ **DECIMAL**
+#### **DECIMAL**
 
 - **Description**: Stores exact decimal numbers, which makes it ideal for precise calculations (e.g., monetary values) without rounding errors.
 - **Storage**: Varies depending on the precision and scale.
@@ -95,7 +95,7 @@ Numeric data types in MySQL are used to store numerical values, both integers an
 
 ---
 
-### ▪️ Choosing the Right Numeric Data Type
+### Choosing the Right Numeric Data Type
 
 | Data Type   | Use Case                                           | Storage Type       |
 |-------------|---------------------------------------------------|--------------------|
@@ -105,7 +105,7 @@ Numeric data types in MySQL are used to store numerical values, both integers an
 
 ---
 
-### ▪️ Summary
+### Summary
 
 - **INT**: Suitable for small to medium-sized integers (e.g., IDs, counters).
 - **BIGINT**: Used when dealing with large numbers that exceed the range of INT (e.g., large transactions, high-volume counters).

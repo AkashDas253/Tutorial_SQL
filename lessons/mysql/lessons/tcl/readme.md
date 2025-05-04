@@ -2,7 +2,7 @@
 
 ---
 
-### ▪️ Overview
+### Overview
 
 **Transaction Control Language (TCL)** in MySQL refers to the set of SQL commands used to manage transactions within a database. A **transaction** is a sequence of operations performed as a single unit, which ensures data integrity and consistency.
 
@@ -18,7 +18,7 @@ The most commonly used TCL commands are:
 
 ---
 
-### ▪️ Key TCL Commands
+### Key TCL Commands
 
 | Command        | Purpose                                          |
 |----------------|--------------------------------------------------|
@@ -29,37 +29,37 @@ The most commonly used TCL commands are:
 
 ---
 
-### ▪️ Syntax and Usage
+### Syntax and Usage
 
-#### 🔹 `COMMIT`
+#### `COMMIT`
 ```sql
 -- Commits the current transaction
 COMMIT;
 ```
 - **Usage**: This command commits all changes made during the current transaction, making them permanent in the database.
 
-#### 🔹 `ROLLBACK`
+#### `ROLLBACK`
 ```sql
 -- Rolls back the current transaction
 ROLLBACK;
 ```
 - **Usage**: If an error occurs during the transaction or you need to cancel the transaction, this command undoes all changes since the last `COMMIT` or `SAVEPOINT`.
 
-#### 🔹 `SAVEPOINT`
+#### `SAVEPOINT`
 ```sql
 -- Creates a savepoint within the transaction
 SAVEPOINT savepoint_name;
 ```
 - **Usage**: Sets a specific point within a transaction to which you can later roll back, allowing partial rollbacks.
 
-#### 🔹 `ROLLBACK TO SAVEPOINT`
+#### `ROLLBACK TO SAVEPOINT`
 ```sql
 -- Rolls back to a specific savepoint
 ROLLBACK TO SAVEPOINT savepoint_name;
 ```
 - **Usage**: This command undoes the work done after the specified savepoint without affecting the preceding operations.
 
-#### 🔹 `SET TRANSACTION`
+#### `SET TRANSACTION`
 ```sql
 -- Sets the transaction characteristics
 SET TRANSACTION ISOLATION LEVEL level;
@@ -68,7 +68,7 @@ SET TRANSACTION ISOLATION LEVEL level;
 
 ---
 
-### ▪️ Transaction Properties (ACID)
+### Transaction Properties (ACID)
 
 TCL commands help ensure that transactions meet the **ACID** properties:
 
@@ -81,7 +81,7 @@ TCL commands help ensure that transactions meet the **ACID** properties:
 
 ---
 
-### ▪️ Isolation Levels in MySQL
+### Isolation Levels in MySQL
 
 Isolation levels control the visibility of uncommitted changes to other transactions. MySQL supports several isolation levels:
 
@@ -94,7 +94,7 @@ Isolation levels control the visibility of uncommitted changes to other transact
 
 ---
 
-### ▪️ Usage Scenarios
+### Usage Scenarios
 
 | Scenario                                   | TCL Command Used        |
 |--------------------------------------------|-------------------------|
@@ -106,7 +106,7 @@ Isolation levels control the visibility of uncommitted changes to other transact
 
 ---
 
-### ▪️ Example Workflow
+### Example Workflow
 
 1. **Starting a Transaction**:
 ```sql
@@ -144,7 +144,7 @@ ROLLBACK TO SAVEPOINT point1;
 
 ---
 
-### ▪️ Best Practices for Transaction Management
+### Best Practices for Transaction Management
 
 | Best Practice                           | Benefit                                       |
 |-----------------------------------------|-----------------------------------------------|
@@ -156,7 +156,7 @@ ROLLBACK TO SAVEPOINT point1;
 
 ---
 
-### ▪️ TCL vs DCL vs DML vs DDL
+### TCL vs DCL vs DML vs DDL
 
 | Feature         | TCL                                    | DCL                             | DML                             | DDL                             |
 |-----------------|----------------------------------------|---------------------------------|---------------------------------|----------------------------------|

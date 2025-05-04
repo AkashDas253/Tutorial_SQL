@@ -1,14 +1,14 @@
-## 🟦 Comprehensive Note on Date and Time Data Types in MySQL
+## Date and Time Data Types in MySQL
 
 ---
 
-### ▪️ Overview
+### Overview
 
 MySQL provides various **date and time data types** to store time-related values. These types are essential for applications that require storing dates, times, timestamps, or both, such as event scheduling, logging, and time tracking.
 
 ---
 
-### ▪️ Date and Time Data Types
+### Date and Time Data Types
 
 | Data Type     | Description                                      | Storage      | Format                          | Example                                          |
 |---------------|--------------------------------------------------|--------------|---------------------------------|--------------------------------------------------|
@@ -20,11 +20,11 @@ MySQL provides various **date and time data types** to store time-related values
 
 ---
 
-### ▪️ Detailed Breakdown of Date and Time Data Types
+### Detailed Breakdown of Date and Time Data Types
 
 ---
 
-#### ▪️ **DATE**
+#### **DATE**
 
 - **Description**: Stores a date value without any time information.
 - **Storage**: 3 bytes.
@@ -38,7 +38,7 @@ MySQL provides various **date and time data types** to store time-related values
 
 ---
 
-#### ▪️ **DATETIME**
+#### **DATETIME**
 
 - **Description**: Stores both date and time values. Does not automatically adjust for time zone changes.
 - **Storage**: 8 bytes.
@@ -52,7 +52,7 @@ MySQL provides various **date and time data types** to store time-related values
 
 ---
 
-#### ▪️ **TIMESTAMP**
+#### **TIMESTAMP**
 
 - **Description**: Stores a timestamp with the date and time. Automatically adjusts to UTC and reflects changes based on the system time zone.
 - **Storage**: 4 bytes.
@@ -66,7 +66,7 @@ MySQL provides various **date and time data types** to store time-related values
 
 ---
 
-#### ▪️ **TIME**
+#### **TIME**
 
 - **Description**: Stores time values without a date. It represents only hours, minutes, and seconds.
 - **Storage**: 3 bytes.
@@ -80,7 +80,7 @@ MySQL provides various **date and time data types** to store time-related values
 
 ---
 
-#### ▪️ **YEAR**
+#### **YEAR**
 
 - **Description**: Stores a year in a 4-digit format.
 - **Storage**: 1 byte.
@@ -94,7 +94,7 @@ MySQL provides various **date and time data types** to store time-related values
 
 ---
 
-### ▪️ Choosing the Right Date and Time Data Type
+### Choosing the Right Date and Time Data Type
 
 | Data Type   | Use Case                                           | Storage Type       |
 |-------------|---------------------------------------------------|--------------------|
@@ -106,7 +106,7 @@ MySQL provides various **date and time data types** to store time-related values
 
 ---
 
-### ▪️ Summary
+### Summary
 
 - **DATE**: Used when you need to store only the date, without any time information.
 - **DATETIME**: Stores both the date and time but does not automatically adjust for time zone changes.
