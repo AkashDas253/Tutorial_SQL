@@ -1,7 +1,5 @@
 # SQL Notes
 
-This repository contains notes on various SQL topics.
-
 ## Combined
 
 ---
