@@ -5,6 +5,7 @@
 - [Basics](lessons/basics/readme.md)
 - [Concepts](lessons/concepts/readme.md) 
 
+
 - [Types of SQL](lessons/types_of_SQL/readme.md)
 
     - [Data Definition Language (DDL)](lessons/ddl/readme.md)
@@ -63,68 +64,20 @@
 
   - [Partitioning](lessons/partiontioning/readme.md) 
 
-
-<!-- 
-### 10. Extensions and Vendor-Specific Features
-- MySQL:  
-  - AUTO_INCREMENT  
-  - ENGINE Types (InnoDB, MyISAM)  
-  - Full-Text Search  
-- PostgreSQL:  
-  - Table Inheritance  
-  - Rich JSON Support (JSONB)  
-  - Lateral Joins  
-- Oracle SQL:  
-  - Hierarchical Queries (CONNECT BY)  
-  - Flashback Queries  
-  - PL/SQL Packages  
-- SQL Server:  
-  - WITH (NOLOCK)  
-  - Computed Columns  
-  - Columnstore Indexes  
-
 ---
 
-### 11. Database Administration
-- Backup and Recovery  
-- User Management  
-  - CREATE USER  
-  - ALTER USER  
-  - DROP USER  
-- Database Management
-  - CREATE DATABASE  
-  - ALTER DATABASE  
-  - DROP DATABASE  
-
----
-
-### 12. Performance Optimization
-- Query Optimization  
-- Execution Plans  
-- Hints  
-  - Optimizer Hints (Oracle SQL, SQL Server)  
-
----
-
-### 13. Analytical and Aggregate Functions
-- ROW_NUMBER(), RANK(), DENSE_RANK()  
-- LEAD(), LAG()  
-- NTILE()  
-- PERCENTILE_CONT, PERCENTILE_DISC (PostgreSQL, SQL Server)  
-
----
-
-### 14. Security Features
-- Role Management  
-- Encryption (SQL Server TDE, Oracle Advanced Security)  
-- Row-Level Security (SQL Server, PostgreSQL)  
-
---- 
-
-### 15. NoSQL Extensions in SQL Databases
-- JSON/Document Handling (PostgreSQL, MySQL, SQL Server)  
-- Key-Value Data Stores  
- -->
+### [Tricks](lessons/tricks/readme.md)
+- [Joins](lessons/tricks_join/readme.md)
+- [Grouping](lessons/tricks_grouping/readme.md)
+- [Set](lessons/tricks_set/readme.md)
+- [Aggragates](lessons/tricks_aggragates/readme.md)
+- [Sub-Query](lessons/tricks_subquery/readme.md)
+- [Data Manipulation](lessons/tricks_data_manipulation/readme.md)
+- [Window Function](lessons/tricks_window_function/readme.md)
+- [Case](lessons/tricks_case/readme.md)
+- [Merge](lessons/tricks_merge/readme.md)
+- [PIVOT and UNPIVOT](lessons/tricks_pivot_unpivot/readme.md)
+- [CTE](lessons/tricks_cte/readme.md)
 
 ---
 
