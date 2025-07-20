@@ -1,6 +1,7 @@
 ## SQL 
 
 ### SQL Basics
+- [History](lessons/history/readme.md)
 - [Cheatsheet](lessons/cheatsheet/readme.md)
 - [Basics](lessons/basics/readme.md)
 - [Concepts](lessons/concepts/readme.md) 
