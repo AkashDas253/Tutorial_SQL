@@ -1,5 +1,5 @@
 ## Date and Time Data Types in MySQL
-
+ 
 ---
 
 ### Overview

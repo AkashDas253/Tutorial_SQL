@@ -1,5 +1,5 @@
 ### PostgreSQL Date & Time Data Types  
-
+ 
 #### Date & Time Types  
 | Data Type          | Size  | Format | Notes |
 |--------------------|------|----------------------|------------------------------------------------|

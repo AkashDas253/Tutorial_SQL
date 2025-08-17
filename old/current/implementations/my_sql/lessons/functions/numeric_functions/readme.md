@@ -2,7 +2,7 @@
 
 **Numeric functions** in MySQL handle operations involving numbers, such as arithmetic, rounding, absolute values, powers, trigonometry, logarithms, and random number generation.
 
----
+--- 
 
 ### 🔹 Inner Index
 

@@ -1,5 +1,5 @@
 ### **PostgreSQL Materialized Views**  
-
+ 
 #### **Overview**  
 A **Materialized View** stores query results physically, unlike a regular view, which computes results on demand. It improves performance by avoiding repeated computation but requires manual or scheduled updates.
 

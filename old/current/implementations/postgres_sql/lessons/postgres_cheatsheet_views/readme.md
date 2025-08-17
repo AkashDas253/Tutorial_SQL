@@ -1,7 +1,7 @@
 ## **PostgreSQL Views: Comprehensive Cheatsheet**  
 
 ---
-
+ 
 ### **1. Overview of Views**  
 | Feature | Description |
 |---------|-------------|

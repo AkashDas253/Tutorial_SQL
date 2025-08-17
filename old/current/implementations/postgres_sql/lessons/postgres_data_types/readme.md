@@ -1,5 +1,5 @@
 ## PostgreSQL Data Types  
-
+ 
 #### Numeric Types  
 | Data Type        | Description |
 |-----------------|-------------|

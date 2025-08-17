@@ -1,7 +1,7 @@
 ## **PostgreSQL Window Functions: Comprehensive Cheatsheet**  
 
 ---
-
+ 
 ## **1. Key Concepts**  
 | Feature | Description |
 |---------|-------------|

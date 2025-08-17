@@ -1,7 +1,7 @@
 ## JSON Functions
 
 MySQL provides a set of functions to work with JSON data types, allowing you to query, update, and manipulate JSON values in a more efficient way. Below are the most commonly used JSON functions in MySQL.
-
+ 
 #### JSON Creation and Manipulation
 
 | Function                                   | Description                                               |

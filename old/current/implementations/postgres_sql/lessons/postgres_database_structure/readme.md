@@ -1,7 +1,7 @@
 # **Comprehensive Notes on PostgreSQL Database Structure & Internals**  
 
 ## **Database Structure**  
-
+ 
 ### **Overview**  
 PostgreSQL follows a **multi-level architecture** with databases, schemas, tables, and objects organized efficiently. It supports **ACID compliance** and **MVCC (Multi-Version Concurrency Control)** for handling transactions.  
 

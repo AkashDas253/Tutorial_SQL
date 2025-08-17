@@ -2,7 +2,7 @@
 
 #### Overview  
 Operators are symbols or keywords used to perform operations on database values. PostgreSQL supports various types of operators.
-
+ 
 ---
 
 ### **1. Arithmetic Operators**  

@@ -2,7 +2,7 @@
 
 **String functions** allow manipulation, analysis, and transformation of text-based data. They are widely used in data formatting, searching, and cleaning tasks.
 
----
+--- 
 
 ### Inner Index
 

@@ -3,7 +3,7 @@
 **Date and Time functions** in MySQL handle operations involving date and time values, such as retrieval, formatting, conversion, and arithmetic.
 
 ---
-
+ 
 ### 🔹 Inner Index
 
 * [Current Date and Time](#current-date-and-time)

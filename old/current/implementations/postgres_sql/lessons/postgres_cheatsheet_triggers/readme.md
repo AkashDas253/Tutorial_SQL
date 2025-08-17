@@ -1,5 +1,5 @@
 ## **PostgreSQL Triggers: Comprehensive Cheatsheet**  
-
+ 
 ---
 
 ## **1. Overview of Triggers**  

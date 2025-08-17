@@ -1,5 +1,5 @@
 ### PostgreSQL Indexing  
-
+ 
 #### Overview  
 Indexes in PostgreSQL enhance query performance by speeding up data retrieval. They work by creating a data structure that allows faster searches instead of scanning entire tables.
 

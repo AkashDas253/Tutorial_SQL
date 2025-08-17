@@ -1,6 +1,6 @@
 ### PostgreSQL JSON & JSONB Data Types  
 
-#### Overview  
+#### Overview   
 - **`json`**: Stores raw JSON data as a text string.  
 - **`jsonb`**: Stores JSON in a binary format with indexing and efficient querying.  
 

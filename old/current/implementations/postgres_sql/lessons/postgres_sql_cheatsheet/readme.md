@@ -1,5 +1,5 @@
 ## Posgres SQL cheatsheet
-
+ 
 - PostgreSQL Basics  
   - Installation & Setup  
   - Database Structure  

@@ -2,7 +2,7 @@
 
 DCL manages database permissions and access control. It includes commands like `GRANT` and `REVOKE` to assign or remove privileges from users and roles.
 
----
+--- 
 
 ### **1. GRANT – Assign Privileges**  
 The `GRANT` command provides specific permissions on database objects (tables, schemas, etc.) to users or roles.

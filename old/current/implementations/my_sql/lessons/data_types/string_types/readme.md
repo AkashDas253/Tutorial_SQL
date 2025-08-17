@@ -1,7 +1,7 @@
 ## String Data Types in MySQL
 
 ---
-
+ oo
 ### Overview
 
 MySQL provides various **string data types** to store character data, such as text, strings, and binary data. These types are essential for handling names, descriptions, addresses, and any other data that requires character-based storage.

@@ -1,5 +1,5 @@
 ## **PostgreSQL TCL (Transaction Control Language) Cheatsheet**  
-
+ 
 ### **1. Transactions**  
 | Action | Command | Description |
 |--------|---------|-------------|

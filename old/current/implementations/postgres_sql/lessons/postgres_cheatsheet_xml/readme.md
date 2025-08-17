@@ -1,7 +1,7 @@
 ## **PostgreSQL XML Support: Comprehensive Cheatsheet**  
 
 ---
-
+ 
 ## **1. XML Data Type in PostgreSQL**  
 | Data Type | Description |
 |-----------|-------------|

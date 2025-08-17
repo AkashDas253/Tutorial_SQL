@@ -1,5 +1,5 @@
 ## Numeric Data Types in MySQL
-
+ o
 ---
 
 ### Overview

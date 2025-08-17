@@ -1,7 +1,7 @@
 ## **PostgreSQL Time-Series Data - Comprehensive Cheatsheet**  
 
 ---
-
+ 
 ## **1. Key Concepts**  
 
 | Feature | Description |

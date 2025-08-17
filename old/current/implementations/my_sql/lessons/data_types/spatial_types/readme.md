@@ -1,5 +1,5 @@
 ## Spatial Types in MySQL
-
+ oo
 Spatial data types in MySQL are used to store **geometric** or **geographical** data, such as points, lines, and polygons. These data types are essential for applications that deal with location-based information, such as geographic information systems (GIS), mapping applications, and spatial queries.
 
 MySQL provides support for **spatial indexes** and a range of **spatial functions** that allow you to efficiently query and manipulate spatial data. These features help manage and analyze geospatial data, such as distances, areas, and points of interest.

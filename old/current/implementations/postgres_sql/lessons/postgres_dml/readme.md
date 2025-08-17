@@ -1,7 +1,7 @@
 ## **Data Manipulation Language (DML) in PostgreSQL**  
 
 DML consists of SQL commands that manipulate data stored in database tables. It includes `INSERT`, `UPDATE`, `DELETE`, and `SELECT` (when used for data retrieval).  
-
+ 
 ### **1. INSERT Statement**  
 The `INSERT` statement is used to add new records to a table.  
 

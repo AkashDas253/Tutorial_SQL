@@ -1,5 +1,5 @@
 ### PostgreSQL Numeric Data Types  
-
+ 
 #### Integer Types  
 Used for whole numbers without fractions.  
 

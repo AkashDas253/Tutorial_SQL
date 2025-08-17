@@ -2,7 +2,7 @@
 
 #### Overview  
 Constraints in PostgreSQL enforce rules on table columns to ensure data integrity and consistency. They prevent invalid data from being inserted or updated.  
-
+ 
 ---
 
 ### **1. NOT NULL Constraint**  

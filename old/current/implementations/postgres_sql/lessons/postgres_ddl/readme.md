@@ -1,8 +1,7 @@
-
 ## **Data Definition Language (DDL) in PostgreSQL**  
 
 DDL consists of SQL commands that define and manage database structures such as tables, indexes, and schemas. It includes `CREATE`, `ALTER`, `DROP`, and `TRUNCATE`.
-
+ 
 ---
 
 ### **1. CREATE Statement**  

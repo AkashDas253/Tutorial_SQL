@@ -1,6 +1,6 @@
 ## **PostgreSQL Transactions: Comprehensive Cheatsheet**  
 
----
+--- 
 
 ### **1. Overview of Transactions**  
 | Feature | Description |

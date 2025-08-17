@@ -2,7 +2,7 @@
 
 DQL is used to retrieve data from a database. The primary command in DQL is `SELECT`, which allows querying specific columns, filtering results, and performing aggregations.
 
----
+--- 
 
 ### **1. SELECT Statement**  
 The `SELECT` statement retrieves data from tables.
