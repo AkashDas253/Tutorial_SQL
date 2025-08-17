@@ -135,3 +135,4 @@ COMMIT;
 - **PostgreSQL uses `READ COMMITTED` as the default isolation level.**  
 
 ---
+
