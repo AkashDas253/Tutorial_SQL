@@ -43,17 +43,17 @@
 - [Databases](lessons/database_objects/databases.md)
 - [Schemas](lessons/database_objects/schemas.md)
 - [Tables](lessons/database_objects/tables.md)
-  - [Columns & data types](lessons/database_objects/columns_data_types.md)
-  - [Constraints](lessons/database_objects/constraints.md)
+  <!-- - [Columns & data types](lessons/database_objects/columns_data_types.md)
+  - [Constraints](lessons/database_objects/constraints.md) -->
 - [Views](lessons/database_objects/views.md)
 - [Indexes](lessons/database_objects/indexes.md)
-  - [B-tree, Hash, GiST, GIN, BRIN](lessons/database_objects/index_types.md)
+  <!-- - [B-tree, Hash, GiST, GIN, BRIN](lessons/database_objects/index_types.md) -->
 - [Sequences](lessons/database_objects/sequences.md)
 - [Materialized Views](lessons/database_objects/materialized_views.md)
 - [Functions](lessons/database_objects/functions.md)
-  - [SQL functions](lessons/database_objects/sql_functions.md)
+  <!-- - [SQL functions](lessons/database_objects/sql_functions.md)
   - [PL/pgSQL](lessons/database_objects/plpgsql.md)
-  - [Procedural languages](lessons/database_objects/procedural_languages.md)
+  - [Procedural languages](lessons/database_objects/procedural_languages.md) -->
 - [Triggers](lessons/database_objects/triggers.md)
 - [Rules](lessons/database_objects/rules.md)
 - [Extensions](lessons/database_objects/extensions.md)
@@ -63,7 +63,8 @@
 
 ### Data Types
 
-- [Numeric types](lessons/data_types/numeric.md)
+- [Datatypes](lessons/data_types/overview.md)
+<!-- - [Numeric types](lessons/data_types/numeric.md)
 - [Character types](lessons/data_types/character.md)
 - [Boolean](lessons/data_types/boolean.md)
 - [Date & Time types](lessons/data_types/date_time.md)
@@ -74,27 +75,29 @@
 - [Network types](lessons/data_types/network.md)
 - [Range types](lessons/data_types/range.md)
 - [Composite types](lessons/data_types/composite.md)
-- [XML](lessons/data_types/xml.md)
+- [XML](lessons/data_types/xml.md) -->
 
 ### Constraints
 
-- [Primary Key](lessons/constraints/primary_key.md)
+- [Constraints](lessons/constraints/overview.md)
+<!-- - [Primary Key](lessons/constraints/primary_key.md)
 - [Foreign Key](lessons/constraints/foreign_key.md)
 - [Unique](lessons/constraints/unique.md)
 - [Check](lessons/constraints/check.md)
 - [Not Null](lessons/constraints/not_null.md)
-- [Exclusion constraints](lessons/constraints/exclusion.md)
+- [Exclusion constraints](lessons/constraints/exclusion.md) -->
 
 ### Indexing & Performance
 
-- [Index types](lessons/indexing/index_types.md)
+- [Index](lessons/indexing/index.md)
+<!-- - [Index types](lessons/indexing/index_types.md)
 - [Partial indexes](lessons/indexing/partial.md)
 - [Expression indexes](lessons/indexing/expression.md)
 - [Covering indexes](lessons/indexing/covering.md)
 - [Index-only scans](lessons/indexing/index_only_scans.md)
 - [Index maintenance](lessons/indexing/maintenance.md)
 - [VACUUM / ANALYZE](lessons/indexing/vacuum_analyze.md)
-- [Query tuning](lessons/indexing/query_tuning.md)
+- [Query tuning](lessons/indexing/query_tuning.md) -->
 
 ### SQL & Querying
 
@@ -127,7 +130,7 @@
 - [Grouping Sets / Rollup / Cube](lessons/sql/grouping_sets.md)
 - [JSON Functions & Operators](lessons/sql/json_functions_operators.md)
 
-### Procedural & Advanced SQL
+<!-- ### Procedural & Advanced SQL
 
 - [PL/pgSQL](lessons/procedural/plpgsql.md)
   - [Variables & constants](lessons/procedural/variables_constants.md)
@@ -137,9 +140,9 @@
 - [Other Procedural Languages](lessons/procedural/other_languages.md)
   - [PL/Python, PL/Perl, PL/Tcl, PL/Java](lessons/procedural/pl_other.md)
 - [Triggers & Trigger Functions](lessons/procedural/triggers.md)
-- [Rules](lessons/procedural/rules.md)
+- [Rules](lessons/procedural/rules.md) -->
 
-### Security & Roles
+<!-- ### Security & Roles
 
 - [Roles & Users](lessons/security/roles_users.md)
   - [Superuser vs normal user](lessons/security/superuser_vs_normal.md)
@@ -150,25 +153,25 @@
 - [Authentication Methods](lessons/security/authentication.md)
   - [Password, MD5, SCRAM](lessons/security/password_md5_scram.md)
   - [GSSAPI, SSPI](lessons/security/gssapi_sspi.md)
-- [SSL / TLS](lessons/security/ssl_tls.md)
+- [SSL / TLS](lessons/security/ssl_tls.md) -->
 
-### Backup & Restore
+<!-- ### Backup & Restore
 
 - [pg_dump / pg_restore](lessons/backup_restore/pg_dump_restore.md)
 - [pg_basebackup](lessons/backup_restore/pg_basebackup.md)
 - [PITR (Point-In-Time Recovery)](lessons/backup_restore/pitr.md)
-- [WAL Archiving](lessons/backup_restore/wal_archiving.md)
+- [WAL Archiving](lessons/backup_restore/wal_archiving.md) -->
 
-### Replication & High Availability
+<!-- ### Replication & High Availability
 
 - [Streaming Replication](lessons/replication/streaming.md)
 - [Logical Replication](lessons/replication/logical.md)
 - [Physical Replication](lessons/replication/physical.md)
 - [Hot Standby](lessons/replication/hot_standby.md)
 - [Failover & Switchover](lessons/replication/failover_switchover.md)
-- [Replication Slots](lessons/replication/slots.md)
+- [Replication Slots](lessons/replication/slots.md) -->
 
-### Partitioning
+<!-- ### Partitioning
 
 - [Table Partitioning](lessons/partitioning/table_partitioning.md)
   - [Range](lessons/partitioning/range.md)
@@ -176,18 +179,18 @@
   - [Hash](lessons/partitioning/hash.md)
 - [Inheritance-based partitioning](lessons/partitioning/inheritance_based.md)
 - [Declarative Partitioning](lessons/partitioning/declarative.md)
-- [Partition Pruning](lessons/partitioning/pruning.md)
+- [Partition Pruning](lessons/partitioning/pruning.md) -->
 
-### Concurrency & Locking
+<!-- ### Concurrency & Locking
 
 - [Locks](lessons/concurrency/locks.md)
   - [Row-level, Table-level, Advisory](lessons/concurrency/lock_types.md)
 - [Deadlocks](lessons/concurrency/deadlocks.md)
 - [MVCC internals](lessons/concurrency/mvcc_internals.md)
 - [Isolation Levels](lessons/concurrency/isolation_levels.md)
-  - [Read Uncommitted, Read Committed, Repeatable Read, Serializable](lessons/concurrency/isolation_types.md)
+  - [Read Uncommitted, Read Committed, Repeatable Read, Serializable](lessons/concurrency/isolation_types.md) -->
 
-### Monitoring & Maintenance
+<!-- ### Monitoring & Maintenance
 
 - [pg_stat views](lessons/monitoring/pg_stat_views.md)
 - [Logging](lessons/monitoring/logging.md)
@@ -196,26 +199,26 @@
 - [REINDEX](lessons/monitoring/reindex.md)
 - [ANALYZE](lessons/monitoring/analyze.md)
 - [Auto-vacuum](lessons/monitoring/auto_vacuum.md)
-- [pg_stat_statements](lessons/monitoring/pg_stat_statements.md)
+- [pg_stat_statements](lessons/monitoring/pg_stat_statements.md) -->
 
-### Extensions & Advanced Features
+<!-- ### Extensions & Advanced Features
 
 - [PostGIS (Geospatial)](lessons/extensions/postgis.md)
 - [Full Text Search](lessons/extensions/full_text_search.md)
 - [Hstore](lessons/extensions/hstore.md)
 - [Foreign Data Wrappers (FDW)](lessons/extensions/fdw.md)
-- [TimescaleDB / other extensions](lessons/extensions/timescaledb.md)
+- [TimescaleDB / other extensions](lessons/extensions/timescaledb.md) -->
 
-### Networking & Connections
+<!-- ### Networking & Connections
 
 - [Client-Server communication](lessons/networking/client_server.md)
 - [Connection pooling](lessons/networking/connection_pooling.md)
   - [pgBouncer](lessons/networking/pgbouncer.md)
   - [pgpool-II](lessons/networking/pgpool_ii.md)
 - [Listen / Notify](lessons/networking/listen_notify.md)
-- [libpq & drivers](lessons/networking/libpq_drivers.md)
+- [libpq & drivers](lessons/networking/libpq_drivers.md) -->
 
-### Miscellaneous
+<!-- ### Miscellaneous
 
 - [Temporary tables](lessons/misc/temporary_tables.md)
 - [Unlogged tables](lessons/misc/unlogged_tables.md)
@@ -225,5 +228,5 @@
 - [Custom types & operators](lessons/misc/custom_types_operators.md)
 - [Event triggers](lessons/misc/event_triggers.md)
 - [Configuration tuning](lessons/misc/config_tuning.md)
-- [Logging & auditing](lessons/misc/logging_auditing.md)
+- [Logging & auditing](lessons/misc/logging_auditing.md) -->
 
