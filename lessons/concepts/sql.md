@@ -2,286 +2,334 @@
 
 ### SQL Fundamentals
 
-* [SQL Overview](sql_fundamentals/sql_overview.md)
-  * [Definition and purpose](sql_fundamentals/definition_purpose.md)
-  * [Declarative programming](sql_fundamentals/declarative_programming.md)
-  * [ANSI SQL standard](sql_fundamentals/ansi_sql_standard.md)
-  * [SQL compliance levels](sql_fundamentals/compliance_levels.md)
-* [SQL Categories](sql_fundamentals/sql_categories.md)
-  * [DDL (Data Definition Language)](sql_fundamentals/ddl.md)
-  * [DML (Data Manipulation Language)](sql_fundamentals/dml.md)
-  * [DCL (Data Control Language)](sql_fundamentals/dcl.md)
-  * [TCL (Transaction Control Language)](sql_fundamentals/tcl.md)
-  * [DQL (Data Query Language)](sql_fundamentals/dql.md)
-  * [SQL Extensions](sql_fundamentals/extensions.md)
+* SQL Overview
+
+  * Definition and purpose
+  * Declarative programming
+  * ANSI SQL standard
+  * SQL compliance levels
+* SQL Categories
+
+  * DDL (Data Definition Language)
+  * DML (Data Manipulation Language)
+  * DCL (Data Control Language)
+  * TCL (Transaction Control Language)
+  * DQL (Data Query Language)
+  * SQL Extensions (procedural, analytic, recursive)
 
 ---
 
 ### Data Definition Language (DDL)
 
-* [CREATE Statements](ddl/create_statements.md)
-  * [CREATE DATABASE](ddl/create_database.md)
-  * [CREATE SCHEMA / Namespace](ddl/create_schema.md)
-  * [CREATE TABLE](ddl/create_table.md)
-    * [Column definitions](ddl/column_definitions.md)
-    * [Data types](ddl/data_types.md)
-    * [Constraints](ddl/constraints.md)
-  * [CREATE VIEW](ddl/create_view.md)
-  * [CREATE INDEX](ddl/create_index.md)
-    * [Unique / Non-unique](ddl/index_unique.md)
-    * [Clustered / Non-clustered](ddl/index_clustered.md)
-    * [Functional / Partial / Expression-based](ddl/index_functional.md)
-  * [CREATE SEQUENCE](ddl/create_sequence.md)
-  * [CREATE TRIGGER](ddl/create_trigger.md)
-  * [CREATE PROCEDURE / FUNCTION](ddl/create_procedure_function.md)
-  * [CREATE SYNONYM / ALIAS](ddl/create_synonym_alias.md)
-* [ALTER Statements](ddl/alter_statements.md)
-  * [ALTER TABLE](ddl/alter_table.md)
-    * [Add, modify, drop columns](ddl/alter_table_columns.md)
-    * [Rename columns / table](ddl/alter_table_rename.md)
-    * [Add / drop constraints](ddl/alter_table_constraints.md)
-  * [ALTER VIEW](ddl/alter_view.md)
-  * [ALTER INDEX](ddl/alter_index.md)
-  * [ALTER SCHEMA](ddl/alter_schema.md)
-* [DROP Statements](ddl/drop_statements.md)
-  * [DROP DATABASE / SCHEMA](ddl/drop_database_schema.md)
-  * [DROP TABLE](ddl/drop_table.md)
-  * [DROP VIEW](ddl/drop_view.md)
-  * [DROP INDEX](ddl/drop_index.md)
-  * [DROP SEQUENCE / TRIGGER / FUNCTION / PROCEDURE](ddl/drop_sequence_trigger_function_procedure.md)
-* [TRUNCATE TABLE](ddl/truncate_table.md)
-* [RENAME (tables, columns, objects)](ddl/rename.md)
-* [Constraints](ddl/constraints.md)
-  * [PRIMARY KEY](ddl/primary_key.md)
-  * [FOREIGN KEY](ddl/foreign_key.md)
-  * [UNIQUE](ddl/unique.md)
-  * [NOT NULL](ddl/not_null.md)
-  * [CHECK](ddl/check.md)
-  * [DEFAULT](ddl/default.md)
-  * [Composite keys](ddl/composite_keys.md)
-  * [Referential actions](ddl/referential_actions.md)
+* CREATE Statements
+
+  * CREATE DATABASE
+  * CREATE SCHEMA / Namespace
+  * CREATE TABLE
+
+    * Column definitions
+    * Data types
+    * Constraints (PK, FK, UNIQUE, NOT NULL, CHECK, DEFAULT)
+  * CREATE VIEW
+  * CREATE INDEX
+
+    * Unique / Non-unique
+    * Clustered / Non-clustered
+    * Functional / Partial / Expression-based
+  * CREATE SEQUENCE
+  * CREATE TRIGGER
+  * CREATE PROCEDURE / FUNCTION (conceptual)
+  * CREATE SYNONYM / ALIAS
+* ALTER Statements
+
+  * ALTER TABLE
+
+    * Add, modify, drop columns
+    * Rename columns / table
+    * Add / drop constraints
+  * ALTER VIEW
+  * ALTER INDEX (conceptual)
+  * ALTER SCHEMA
+* DROP Statements
+
+  * DROP DATABASE / SCHEMA
+  * DROP TABLE
+  * DROP VIEW
+  * DROP INDEX
+  * DROP SEQUENCE / TRIGGER / FUNCTION / PROCEDURE
+* TRUNCATE TABLE
+* RENAME (tables, columns, objects)
+* Constraints
+
+  * PRIMARY KEY
+  * FOREIGN KEY
+  * UNIQUE
+  * NOT NULL
+  * CHECK
+  * DEFAULT
+  * Composite keys
+  * Referential actions (CASCADE, SET NULL, NO ACTION, RESTRICT)
 
 ---
 
 ### Data Manipulation Language (DML)
 
-* [INSERT](dml/insert.md)
-  * [Single-row insert](dml/insert_single_row.md)
-  * [Multi-row insert](dml/insert_multi_row.md)
-  * [INSERT with SELECT](dml/insert_with_select.md)
-  * [INSERT IGNORE / ON DUPLICATE / UPSERT](dml/insert_upsert.md)
-* [UPDATE](dml/update.md)
-  * [Single / multiple columns](dml/update_columns.md)
-  * [Conditional update (WHERE)](dml/update_where.md)
-  * [Update with subqueries](dml/update_subqueries.md)
-* [DELETE](dml/delete.md)
-  * [Conditional delete](dml/delete_conditional.md)
-  * [DELETE ALL (truncate vs delete)](dml/delete_all.md)
-* [MERGE / UPSERT](dml/merge_upsert.md)
-* [RETURNING / OUTPUT](dml/returning_output.md)
+* INSERT
+
+  * Single-row insert
+  * Multi-row insert
+  * INSERT with SELECT
+  * INSERT IGNORE / ON DUPLICATE / UPSERT (conceptual)
+* UPDATE
+
+  * Single / multiple columns
+  * Conditional update (WHERE)
+  * Update with subqueries
+* DELETE
+
+  * Conditional delete
+  * DELETE ALL (truncate vs delete)
+* MERGE / UPSERT (conceptual)
+* RETURNING / OUTPUT (conceptual, for modified rows)
 
 ---
+
 ### Data Query Language (DQL)
 
-* [SELECT](dql/select.md)
-  * [Column selection, expressions](dql/column_selection.md)
-  * [Aliases (column & table)](dql/aliases.md)
-  * [DISTINCT](dql/distinct.md)
-  * [Wildcards (*)](dql/wildcards.md)
-* [Filtering](dql/filtering.md)
-  * [WHERE clause](dql/where.md)
-    * [Comparison operators](dql/comparison_operators.md)
-    * [Logical operators](dql/logical_operators.md)
-    * [Pattern matching](dql/pattern_matching.md)
-    * [IN / NOT IN](dql/in_not_in.md)
-    * [BETWEEN / NOT BETWEEN](dql/between_not_between.md)
-    * [IS NULL / IS NOT NULL](dql/is_null.md)
-    * [EXISTS / NOT EXISTS](dql/exists.md)
-* [Joins](dql/joins.md)
-  * [INNER JOIN](dql/inner_join.md)
-  * [OUTER JOIN (LEFT, RIGHT, FULL)](dql/outer_join.md)
-  * [CROSS JOIN](dql/cross_join.md)
-  * [SELF JOIN](dql/self_join.md)
-  * [NATURAL JOIN](dql/natural_join.md)
-* [Aggregations](dql/aggregations.md)
-  * [COUNT, SUM, AVG, MIN, MAX](dql/aggregate_functions.md)
-  * [GROUP BY](dql/group_by.md)
-  * [HAVING](dql/having.md)
-  * [GROUPING SETS, ROLLUP, CUBE](dql/grouping_sets.md)
-* [Set Operations](dql/set_operations.md)
-  * [UNION / UNION ALL](dql/union.md)
-  * [INTERSECT](dql/intersect.md)
-  * [EXCEPT / MINUS](dql/except_minus.md)
-* [Subqueries](dql/subqueries.md)
-  * [Scalar](dql/scalar_subquery.md)
-  * [Correlated](dql/correlated_subquery.md)
-  * [Nested / multi-level](dql/nested_subquery.md)
-* [Sorting](dql/sorting.md)
-  * [ORDER BY (ASC / DESC)](dql/order_by.md)
-  * [NULLS FIRST / LAST](dql/nulls_first_last.md)
-* [Limiting](dql/limiting.md)
-  * [LIMIT / OFFSET / FETCH / TOP](dql/limit_offset.md)
-* [Window / Analytic Functions](dql/window_functions.md)
-  * [ROW_NUMBER, RANK, DENSE_RANK, NTILE](dql/ranking_functions.md)
-  * [LEAD, LAG, FIRST_VALUE, LAST_VALUE](dql/lead_lag.md)
-  * [PARTITION BY](dql/partition_by.md)
-* [Expressions](dql/expressions.md)
-  * [Arithmetic](dql/arithmetic.md)
-  * [String](dql/string.md)
-  * [Date / Time](dql/date_time.md)
-  * [Boolean](dql/boolean.md)
-  * [CASE expressions](dql/case.md)
-* [Functions](dql/functions.md)
-  * [Scalar](dql/scalar_functions.md)
-    * [Numeric](dql/numeric_functions.md)
-    * [String](dql/string_functions.md)
-    * [Date / Time](dql/date_time_functions.md)
-    * [Conversion (CAST / CONVERT)](dql/conversion_functions.md)
-    * [Type-specific](dql/type_specific_functions.md)
-  * [Aggregate](dql/aggregate_functions.md)
-  * [Analytic / Window](dql/analytic_window_functions.md)
-  * [Conditional](dql/conditional_functions.md)
-* [Common Table Expressions (CTEs)](dql/ctes.md)
-  * [Recursive CTEs](dql/recursive_ctes.md)
-* [Views](dql/views.md)
-  * [Updatable views](dql/updatable_views.md)
-  * [Materialized views](dql/materialized_views.md)
+* SELECT
+
+  * Column selection, expressions
+  * Aliases (column & table)
+  * DISTINCT
+  * Wildcards (\*)
+* Filtering
+
+  * WHERE clause
+
+    * Comparison operators (=, <>, >, >=, <, <=)
+    * Logical operators (AND, OR, NOT)
+    * Pattern matching (LIKE, SIMILAR TO)
+    * IN / NOT IN
+    * BETWEEN / NOT BETWEEN
+    * IS NULL / IS NOT NULL
+    * EXISTS / NOT EXISTS
+* Joins
+
+  * INNER JOIN
+  * OUTER JOIN (LEFT, RIGHT, FULL)
+  * CROSS JOIN
+  * SELF JOIN
+  * NATURAL JOIN (conceptual)
+* Aggregations
+
+  * COUNT, SUM, AVG, MIN, MAX
+  * GROUP BY
+  * HAVING
+  * GROUPING SETS, ROLLUP, CUBE (conceptual)
+* Set Operations
+
+  * UNION / UNION ALL
+  * INTERSECT
+  * EXCEPT / MINUS
+* Subqueries
+
+  * Scalar
+  * Correlated
+  * Nested / multi-level
+* Sorting
+
+  * ORDER BY (ASC / DESC)
+  * NULLS FIRST / LAST (conceptual)
+* Limiting
+
+  * LIMIT / OFFSET / FETCH / TOP
+* Window / Analytic Functions (conceptual)
+
+  * ROW\_NUMBER, RANK, DENSE\_RANK, NTILE
+  * LEAD, LAG, FIRST\_VALUE, LAST\_VALUE
+  * PARTITION BY
+* Expressions
+
+  * Arithmetic
+  * String
+  * Date / Time
+  * Boolean
+  * CASE expressions
+* Functions
+
+  * Scalar
+
+    * Numeric
+    * String
+    * Date / Time
+    * Conversion (CAST / CONVERT)
+    * Type-specific
+  * Aggregate
+
+    * COUNT, SUM, AVG, MIN, MAX
+  * Analytic / Window (conceptual)
+  * Conditional (IFNULL, COALESCE, NULLIF, NVL)
+* Common Table Expressions (CTEs)
+
+  * Recursive CTEs (conceptual)
+* Views (conceptual as part of queries)
+
+  * Updatable views
   * Materialized views
 
 ---
 
 ### Data Control Language (DCL)
 
-* [GRANT](dcl/grant.md)
-  * [Privileges on tables, views, schemas](dcl/privileges.md)
-  * [Column-level privileges](dcl/column_privileges.md)
-  * [Roles and users](dcl/roles_users.md)
-  * [Granting with grant option](dcl/grant_option.md)
-* [REVOKE](dcl/revoke.md)
-  * [Removing privileges](dcl/removing_privileges.md)
-* [Roles / Groups / Users](dcl/roles_groups_users.md)
-* [Security & Access Control](dcl/security_access_control.md)
+* GRANT
+
+  * Privileges on tables, views, schemas
+  * Column-level privileges
+  * Roles and users
+  * Granting with grant option
+* REVOKE
+
+  * Removing privileges
+* Roles / Groups / Users
+* Security & Access Control (conceptual)
 
 ---
 
 ### Transaction Control Language (TCL)
 
-* [Transactions](tcl/transactions.md)
-  * [BEGIN / START TRANSACTION](tcl/begin_start.md)
-  * [COMMIT](tcl/commit.md)
-  * [ROLLBACK](tcl/rollback.md)
-* [Savepoints](tcl/savepoints.md)
-* [Transaction Isolation Levels](tcl/isolation_levels.md)
-  * [READ UNCOMMITTED](tcl/read_uncommitted.md)
-  * [READ COMMITTED](tcl/read_committed.md)
-  * [REPEATABLE READ](tcl/repeatable_read.md)
-  * [SERIALIZABLE](tcl/serializable.md)
-* [ACID properties](tcl/acid.md)
-  * [Atomicity](tcl/atomicity.md)
-  * [Consistency](tcl/consistency.md)
-  * [Isolation](tcl/isolation.md)
-  * [Durability](tcl/durability.md)
-* [Locking and concurrency](tcl/locking_concurrency.md)
-  * [Row-level locks](tcl/row_level_locks.md)
-  * [Table-level locks](tcl/table_level_locks.md)
-  * [Deadlocks](tcl/deadlocks.md)
-* [Implicit vs explicit transactions](tcl/implicit_explicit.md)
+* Transactions
+
+  * BEGIN / START TRANSACTION
+  * COMMIT
+  * ROLLBACK
+* Savepoints
+* Transaction Isolation Levels
+
+  * READ UNCOMMITTED
+  * READ COMMITTED
+  * REPEATABLE READ
+  * SERIALIZABLE
+* ACID properties
+
+  * Atomicity
+  * Consistency
+  * Isolation
+  * Durability
+* Locking and concurrency (conceptual)
+
+  * Row-level locks
+  * Table-level locks
+  * Deadlocks
+* Implicit vs explicit transactions
 
 ---
 
 ### Data Types (conceptual, general)
 
-* [Numeric](data_types/numeric.md)
-  * [INTEGER / INT / SMALLINT / BIGINT](data_types/integer.md)
-  * [DECIMAL / NUMERIC / FLOAT / REAL / DOUBLE](data_types/decimal_numeric_float.md)
-* [Character](data_types/character.md)
-  * [CHAR, VARCHAR, TEXT, CLOB](data_types/char_varchar_text_clob.md)
-* [Date / Time](data_types/date_time.md)
-  * [DATE, TIME, TIMESTAMP, INTERVAL](data_types/date_time_types.md)
-* [Boolean / Logical](data_types/boolean.md)
-* [Binary](data_types/binary.md)
-  * [BINARY, VARBINARY, BLOB](data_types/binary_types.md)
-* [UUID / GUID](data_types/uuid_guid.md)
-* [JSON / XML / JSONB / Structured types](data_types/json_xml_structured.md)
-* [Enumerated types (ENUM)](data_types/enum.md)
-* [User-defined types (UDT)](data_types/udt.md)
+* Numeric
+
+  * INTEGER / INT / SMALLINT / BIGINT
+  * DECIMAL / NUMERIC / FLOAT / REAL / DOUBLE
+* Character
+
+  * CHAR, VARCHAR, TEXT, CLOB
+* Date / Time
+
+  * DATE, TIME, TIMESTAMP, INTERVAL
+* Boolean / Logical
+* Binary
+
+  * BINARY, VARBINARY, BLOB
+* UUID / GUID (conceptual)
+* JSON / XML / JSONB / Structured types (conceptual)
+* Enumerated types (ENUM)
+* User-defined types (UDT, conceptual)
 
 ---
 
 ### Referential Integrity
 
-* [Primary key / foreign key relationships](referential_integrity/relationships.md)
-* [Cascading actions](referential_integrity/cascading_actions.md)
-  * [ON DELETE CASCADE / SET NULL / RESTRICT / NO ACTION](referential_integrity/on_delete.md)
-  * [ON UPDATE CASCADE / SET NULL / RESTRICT / NO ACTION](referential_integrity/on_update.md)
-* [Self-referencing keys](referential_integrity/self_referencing.md)
-* [Composite keys](referential_integrity/composite_keys.md)
+* Primary key / foreign key relationships
+* Cascading actions
+
+  * ON DELETE CASCADE / SET NULL / RESTRICT / NO ACTION
+  * ON UPDATE CASCADE / SET NULL / RESTRICT / NO ACTION
+* Self-referencing keys
+* Composite keys
 
 ---
 
 ### Indexing & Performance
 
-* [Index types](indexing_performance/index_types.md)
-  * [Unique / Non-unique](indexing_performance/unique.md)
-  * [Clustered / Non-clustered](indexing_performance/clustered.md)
-  * [Functional / Partial / Expression-based](indexing_performance/functional_partial_expression.md)
-  * [Bitmap](indexing_performance/bitmap.md)
-* [Index usage in queries](indexing_performance/usage.md)
-* [Constraints vs Index interaction](indexing_performance/constraints_interaction.md)
-* [Query optimization concepts](indexing_performance/query_optimization.md)
-  * [Execution plan](indexing_performance/execution_plan.md)
-  * [Cost-based optimization](indexing_performance/cost_based.md)
-  * [Statistics and selectivity](indexing_performance/statistics_selectivity.md)
+* Index types
+
+  * Unique / Non-unique
+  * Clustered / Non-clustered
+  * Functional / Partial / Expression-based
+  * Bitmap (conceptual)
+* Index usage in queries
+* Constraints vs Index interaction
+* Query optimization concepts (conceptual)
+
+  * Execution plan
+  * Cost-based optimization
+  * Statistics and selectivity
 
 ---
 
 ### Stored Objects & Procedural SQL
 
-* [Stored Procedures](procedural_sql/stored_procedures.md)
-* [Functions](procedural_sql/functions.md)
-* [Triggers](procedural_sql/triggers.md)
-  * [BEFORE / AFTER / INSTEAD OF](procedural_sql/trigger_timing.md)
-  * [Row-level / Statement-level](procedural_sql/trigger_level.md)
-* [Cursors](procedural_sql/cursors.md)
-  * [Implicit](procedural_sql/cursors_implicit.md)
-  * [Explicit](procedural_sql/cursors_explicit.md)
-* [Sequences / Generators](procedural_sql/sequences_generators.md)
-* [Packages / Modules](procedural_sql/packages_modules.md)
-* [Exception handling](procedural_sql/exception_handling.md)
-  * [TRY/CATCH / DECLARE HANDLER](procedural_sql/try_catch_handler.md)
-* [Loops, conditionals](procedural_sql/loops_conditionals.md)
+* Stored Procedures
+* Functions
+* Triggers
+
+  * BEFORE / AFTER / INSTEAD OF
+  * Row-level / Statement-level
+* Cursors
+
+  * Implicit
+  * Explicit
+* Sequences / Generators
+* Packages / Modules (conceptual)
+* Exception handling (conceptual)
+
+  * TRY/CATCH / DECLARE HANDLER
+* Loops, conditionals (conceptual procedural SQL)
 
 ---
 
 ### Advanced SQL Concepts
 
-* [Recursive queries](advanced/recursive_queries.md)
-* [Hierarchical queries](advanced/hierarchical_queries.md)
-* [Pivot / Unpivot](advanced/pivot_unpivot.md)
-* [Temporary tables / session tables](advanced/temporary_tables.md)
-* [Transactions across distributed systems](advanced/distributed_transactions.md)
-* [Multi-version concurrency control (MVCC)](advanced/mvcc.md)
-* [Partitioning](advanced/partitioning.md)
-  * [Table partitioning](advanced/table_partitioning.md)
-  * [Index partitioning](advanced/index_partitioning.md)
-  * [Range, List, Hash, Composite](advanced/partition_types.md)
-* [Sharding / Distributed SQL](advanced/sharding_distributed.md)
-* [Full-text search](advanced/full_text_search.md)
-* [Views & materialized views](advanced/views_materialized.md)
-* [Audit / logging triggers](advanced/audit_logging_triggers.md)
-* [Data warehousing constructs](advanced/data_warehousing.md)
-  * [Star / snowflake schema](advanced/star_snowflake.md)
-  * [Fact / dimension tables](advanced/fact_dimension.md)
+* Recursive queries
+* Hierarchical queries (CONNECT BY, conceptually)
+* Pivot / Unpivot (conceptual)
+* Temporary tables / session tables
+* Transactions across distributed systems (conceptual)
+* Multi-version concurrency control (MVCC, conceptual)
+* Partitioning
+
+  * Table partitioning
+  * Index partitioning
+  * Range, List, Hash, Composite (conceptual)
+* Sharding / Distributed SQL (conceptual)
+* Full-text search (conceptual)
+* Views & materialized views
+* Audit / logging triggers (conceptual)
+* Data warehousing constructs (conceptual)
+
+  * Star / snowflake schema
+  * Fact / dimension tables
 
 ---
 
 ### Nulls & Special Values
 
-* [NULL](nulls_special/null.md)
-  * [Handling in expressions](nulls_special/handling_expressions.md)
-  * [IS NULL / IS NOT NULL](nulls_special/is_null.md)
-  * [Null propagation rules](nulls_special/null_propagation.md)
-* [DEFAULT values](nulls_special/default_values.md)
-* [Special constants](nulls_special/special_constants.md)
+* NULL
+
+  * Handling in expressions
+  * IS NULL / IS NOT NULL
+  * Null propagation rules
+* DEFAULT values
+* Special constants (CURRENT\_DATE, CURRENT\_TIMESTAMP, SYSTEM\_USER, etc.)
 
 ---
