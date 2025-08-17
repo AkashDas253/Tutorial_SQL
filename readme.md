@@ -5,6 +5,7 @@
 ### Concepts
 - [SQL Concepts](lessons/concepts/sql.md)
 - [SQL Internal Architectural Concept](lessons/concepts/sql_architecture.md)
+- [SQL Tricks](lessons/concepts/sql_tricks.md)
 
 ---
 
@@ -30,6 +31,4 @@
 - [PL/SQL](implementations/pl_sql/readme.md)
 - [Postgres SQL](implementations/postgres_sql/readme.md)
 
-
 ---  
-
