@@ -1,68 +1,5 @@
 ## SQL 
 
-### SQL Basics
-- [History](lessons/history/readme.md)
-- [Cheatsheet](lessons/cheatsheet/readme.md)
-- [Basics](lessons/basics/readme.md)
-- [Concepts](lessons/concepts/readme.md) 
-
-### [Types of SQL Language](lessons/types_of_SQL/readme.md)
-  - [Data Definition Language (DDL)](lessons/ddl/readme.md)
-  - [Data Manipulation Language (DML)](lessons/dml/readme.md)
-      - [Database Specific Implementation](lessons/dml_database_specific/readme.md)
-  - [Transaction Control Language (TCL)](lessons/tcl/readme.md)
-      - [Nested and Distributed Transaction](lessons/nested_distributed_transaction/readme.md)
-  - [Data Control Language (DCL)](lessons/dcl/readme.md)
-    - [Multi-role management](lessons/dcl_multi_role_management/readme.md)
-    - [Permission inheritance](lessons/permission_inheritance/readme.md)
-  - [Data Query Language (DQL)](lessons/dql/readme.md)
-
-
-### Operations and Associates
-
-- [SQL Data Types](lessons/datatypes/readme.md)
-    - [Database Compatibility](lessons/datatypes_compatibility/readme.md)
-        - [Oracle SQL Datatypes](lessons/datatypes_oracle/oracle_sql/lessons/readme.md)
-    - [Advanced Usage](lessons/datatypes_usage/readme.md)
-
-- [SQL Operators](lessons/operator/readme.md)
-
-- Function:
-  - [Aggregate Functions](lessons/aggregate/readme.md)
-  - [Mathematical Functions](lessons/mathematical_functions/readme.md)
-  - [Null Value Functions](lessons/null_value_functions/readme.md)
-  - [Window](lessons/window/readme.md)
-  - [String Functions](lessons/string_functions/readme.md)
-  - [Date and Time Functions](lessons/date_time_functions/readme.md)
-  - [Conversion Functions](lessons/conversion_functions/readme.md)
-  - [Conditional Functions](lessons/conditional_functions/readme.md)
-
-### Optimization and Structuring
-
-- [Query and Schema Constraints](lessons/constraints/readme.md)
-- [Views](lessons/views/readme.md)
-- [Indexes](lessons/index/readme.md)
-- [Partitioning](lessons/partiontioning/readme.md) 
-
-
-
-### Programming
-- [Procedural SQL (PL/SQL or T-SQL)](lessons/procedural_sql/readme.md)
-
-
-### [Tricks](lessons/tricks/readme.md)
-- [Joins](lessons/tricks_join/readme.md)
-- [Grouping](lessons/tricks_grouping/readme.md)
-- [Set](lessons/tricks_set/readme.md)
-- [Aggragates](lessons/tricks_aggragates/readme.md)
-- [Sub-Query](lessons/tricks_subquery/readme.md)
-- [Data Manipulation](lessons/tricks_data_manipulation/readme.md)
-- [Window Function](lessons/tricks_window_function/readme.md)
-- [Case](lessons/tricks_case/readme.md)
-- [Merge](lessons/tricks_merge/readme.md)
-- [PIVOT and UNPIVOT](lessons/tricks_pivot_unpivot/readme.md)
-- [CTE](lessons/tricks_cte/readme.md)
-
 ---
 
 ### SQL Implementations
@@ -72,5 +9,6 @@
 - [Oracle SQL](implementations/oracle_sql/readme.md)
 - [PL/SQL](implementations/pl_sql/readme.md)
 - [Postgres SQL](implementations/postgres_sql/readme.md)
+
 
 ---  
