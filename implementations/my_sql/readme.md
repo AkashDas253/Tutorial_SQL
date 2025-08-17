@@ -1,7 +1,9 @@
 ## MySQL
 
+### Notes specific
 - [Overview](lessons/overview/readme.md)
 - [Concepts](lessons/concepts/readme.md)
+- [Documentation](https://dev.mysql.com/doc/)
 
 ### Language Types
 - [Data Definition Language (DDL)](lessons/ddl/readme.md)

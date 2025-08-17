@@ -2,6 +2,12 @@
 
 ---
 
+### Concepts
+- [Syntax Concepts](lessons/concepts/syntax.md)
+- [Architectural Concept](lessons/concepts/architecture.md)
+
+---
+
 ### SQL Implementations
 
 - [ANSI SQL(Standard)](implementations/ansi_sql/readme.md)

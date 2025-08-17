@@ -1,8 +1,11 @@
 ## ANSI SQL
 
+### Note specific
+
 - [Cheatsheet](lessons/ansi_sql_cheatsheet/readme.md)
 - [Concepts](lessons/ansi_sql_concepts/readme.md)
 
+### Notes
 - [ANSI Data Definition Language (DDL)](lessons/ansi_ddl/readme.md) 
 - [ANSI Data Manipulation Language (DML)](lessons/ansi_dml/readme.md) 
 - [ANSI Data Query Language (DQL)](lessons/ansi_dql/readme.md)

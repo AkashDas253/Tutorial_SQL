@@ -1,9 +1,12 @@
 
-## [PL/SQL]
+## PL/SQL
 
+### Notes specific
 - [Cheatsheet](lessons/plsql_cheatsheet/readme.md)
 - [Concepts](lessons/plsql_concepts/readme.md) 
+- [Documentation](https://docs.oracle.com/en/database/oracle/oracle-database/21/lnpls/index.html)
 
+### Notes
 - [PL/SQL Architecture](lessons/plsql_architecture/readme.md) 
 - [PL/SQL Block Structure](lessons/plsql_block_structure/readme.md) 
 - [Data Types in PL/SQL](lessons/plsql_data_types/readme.md)  

@@ -1,8 +1,11 @@
 ## Oracle SQL
 
+### Note specific
 - [Cheatsheet](lessons/oracle_sql_cheatsheet/readme.md)
 - [Concepts](lessons/oracle_sql_concepts/readme.md)
+- [Documentation (v19)](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/)
 
+### Notes
 - [Oracle Syntax](lessons/oracle_syntax/readme.md) 
 - [Oracle Datatypes](lessons/oracle_datatype/readme.md) 
 - [Oracle Operators](lessons/oracle_operator/readme.md)   
