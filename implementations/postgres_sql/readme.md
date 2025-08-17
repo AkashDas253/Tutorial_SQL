@@ -102,30 +102,30 @@
 ### SQL & Querying
 
 - [Data Manipulation (DML)](lessons/sql/dml.md)
-  - [SELECT](lessons/sql/select.md)
+  <!-- - [SELECT](lessons/sql/select.md)
   - [INSERT](lessons/sql/insert.md)
   - [UPDATE](lessons/sql/update.md)
-  - [DELETE](lessons/sql/delete.md)
+  - [DELETE](lessons/sql/delete.md) -->
 - [Data Definition (DDL)](lessons/sql/ddl.md)
-  - [CREATE / ALTER / DROP](lessons/sql/create_alter_drop.md)
+  <!-- - [CREATE / ALTER / DROP](lessons/sql/create_alter_drop.md)
   - [Table alterations](lessons/sql/table_alterations.md)
-  - [Schema alterations](lessons/sql/schema_alterations.md)
+  - [Schema alterations](lessons/sql/schema_alterations.md) -->
 - [Transaction Control](lessons/sql/transaction_control.md)
-  - [BEGIN / COMMIT / ROLLBACK](lessons/sql/begin_commit_rollback.md)
+  <!-- - [BEGIN / COMMIT / ROLLBACK](lessons/sql/begin_commit_rollback.md)
   - [SAVEPOINT](lessons/sql/savepoint.md)
-  - [Transaction isolation levels](lessons/sql/isolation_levels.md)
+  - [Transaction isolation levels](lessons/sql/isolation_levels.md) -->
 - [Joins](lessons/sql/joins.md)
-  - [INNER, LEFT, RIGHT, FULL](lessons/sql/joins_types.md)
+  <!-- - [INNER, LEFT, RIGHT, FULL](lessons/sql/joins_types.md)
   - [CROSS JOIN](lessons/sql/cross_join.md)
-  - [SELF JOIN](lessons/sql/self_join.md)
+  - [SELF JOIN](lessons/sql/self_join.md) -->
 - [Set Operations](lessons/sql/set_operations.md)
-  - [UNION / INTERSECT / EXCEPT](lessons/sql/union_intersect_except.md)
+  <!-- - [UNION / INTERSECT / EXCEPT](lessons/sql/union_intersect_except.md) -->
 - [Subqueries](lessons/sql/subqueries.md)
-  - [Correlated](lessons/sql/correlated_subqueries.md)
-  - [Non-correlated](lessons/sql/non_correlated_subqueries.md)
+  <!-- - [Correlated](lessons/sql/correlated_subqueries.md)
+  - [Non-correlated](lessons/sql/non_correlated_subqueries.md) -->
 - [Window Functions](lessons/sql/window_functions.md)
 - [CTEs (Common Table Expressions)](lessons/sql/ctes.md)
-  - [Recursive](lessons/sql/recursive_ctes.md)
+  <!-- - [Recursive](lessons/sql/recursive_ctes.md) -->
 - [Aggregates](lessons/sql/aggregates.md)
 - [Grouping Sets / Rollup / Cube](lessons/sql/grouping_sets.md)
 - [JSON Functions & Operators](lessons/sql/json_functions_operators.md)
