@@ -23,7 +23,12 @@
 
 ---
 
-#### SQL Implementations
+### SQL Tricks
+- [](lessons/tricks/handling_null.md)
+
+---
+
+### SQL Implementations
 
 - [ANSI SQL(Standard)](implementations/ansi_sql/readme.md)
 - [My SQL](implementations/my_sql/readme.md)

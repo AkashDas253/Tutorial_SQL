@@ -44,8 +44,6 @@
 - [Full-text Index](lessons/keys_indexes/full_text_index/readme.md)  
 - [Spatial Index](lessons/keys_indexes/spatial_index/readme.md) -->
 
----
-
 ### Constraints
 - [Constraints](lessons/constraints/readme.md) 
 <!-- - [NOT NULL](lessons/constraints/not_null/readme.md)  
@@ -54,32 +52,6 @@
 - [CHECK](lessons/constraints/check/readme.md)  
 - [PRIMARY KEY](lessons/constraints/primary_key/readme.md)  
 - [FOREIGN KEY](lessons/constraints/foreign_key/readme.md) -->
-
----
-
-### Operators
-- [Operators](lessons/operators/readme.md)  
-<!-- - [Arithmetic Operators](lessons/operators/arithmetic_operators/readme.md)  
-- [Comparison Operators](lessons/operators/comparison_operators/readme.md)  
-- [Logical Operators](lessons/operators/logical_operators/readme.md)  
-- [Bitwise Operators](lessons/operators/bitwise_operators/readme.md)  
-- [Assignment Operators](lessons/operators/assignment_operators/readme.md) -->
-
----
-
-### Joins
-- [Joins](lessons/joins/readme.md)
-<!-- - [INNER JOIN](lessons/joins/inner_join/readme.md)  
-- [LEFT JOIN](lessons/joins/left_join/readme.md)  
-- [RIGHT JOIN](lessons/joins/right_join/readme.md)  
-- [FULL OUTER JOIN](lessons/joins/full_outer_join/readme.md)  
-- [CROSS JOIN](lessons/joins/cross_join/readme.md)  
-- [SELF JOIN](lessons/joins/self_join/readme.md)  
-- [NATURAL JOIN](lessons/joins/natural_join/readme.md)  
-- [USING clause](lessons/joins/using_clause/readme.md)  
-- [ON clause](lessons/joins/on_clause/readme.md) -->
-
----
 
 ### Views and Subqueries
 - [Views](lessons/views/readme.md) 
@@ -95,8 +67,31 @@
 
 ---
 
+### Operators
+- [Operators](lessons/operators/readme.md)  
+<!-- - [Arithmetic Operators](lessons/operators/arithmetic_operators/readme.md)  
+- [Comparison Operators](lessons/operators/comparison_operators/readme.md)  
+- [Logical Operators](lessons/operators/logical_operators/readme.md)  
+- [Bitwise Operators](lessons/operators/bitwise_operators/readme.md)  
+- [Assignment Operators](lessons/operators/assignment_operators/readme.md) -->
+
+### Joins
+- [Joins](lessons/joins/readme.md)
+<!-- - [INNER JOIN](lessons/joins/inner_join/readme.md)  
+- [LEFT JOIN](lessons/joins/left_join/readme.md)  
+- [RIGHT JOIN](lessons/joins/right_join/readme.md)  
+- [FULL OUTER JOIN](lessons/joins/full_outer_join/readme.md)  
+- [CROSS JOIN](lessons/joins/cross_join/readme.md)  
+- [SELF JOIN](lessons/joins/self_join/readme.md)  
+- [NATURAL JOIN](lessons/joins/natural_join/readme.md)  
+- [USING clause](lessons/joins/using_clause/readme.md)  
+- [ON clause](lessons/joins/on_clause/readme.md) -->
+
+---
+
 ### Functions
 - [Aggregate Functions](lessons/functions/aggregate_functions/readme.md)
+- [Window Function](lessons/functions/window_functions/readme.md): [Functions Reference](lessons/functions/window_functions/functionreference.md)
   <!-- - [COUNT](lessons/functions/aggregate_functions/count/readme.md), [SUM](lessons/functions/aggregate_functions/sum/readme.md), [AVG](lessons/functions/aggregate_functions/avg/readme.md), [MIN](lessons/functions/aggregate_functions/min/readme.md), [MAX](lessons/functions/aggregate_functions/max/readme.md) -->
 - [String Functions](lessons/functions/string_functions/readme.md)
   <!-- - [CONCAT](lessons/functions/string_functions/concat/readme.md), [LENGTH](lessons/functions/string_functions/length/readme.md), [REPLACE](lessons/functions/string_functions/replace/readme.md), [SUBSTRING](lessons/functions/string_functions/substring/readme.md), [LOWER](lessons/functions/string_functions/lower/readme.md), [UPPER](lessons/functions/string_functions/upper/readme.md) -->
@@ -120,6 +115,18 @@
 - [RELEASE SAVEPOINT](lessons/transactions/release_savepoint/readme.md)
 - [SET AUTOCOMMIT](lessons/transactions/set_autocommit/readme.md) -->
 
+
+### Users and Privileges
+- [Users and Privileges](lessons/users_privileges/readme.md)
+<!-- - [CREATE USER](lessons/users_privileges/create_user/readme.md)
+- [DROP USER](lessons/users_privileges/drop_user/readme.md)
+- [GRANT](lessons/users_privileges/grant/readme.md)
+- [REVOKE](lessons/users_privileges/revoke/readme.md)
+- [SET PASSWORD](lessons/users_privileges/set_password/readme.md)
+- [SHOW GRANTS](lessons/users_privileges/show_grants/readme.md)
+- [Authentication Plugins](lessons/users_privileges/authentication_plugins/readme.md)
+- [Role Management](lessons/users_privileges/role_management/readme.md) -->
+
 ---
 
 ### Storage Engines
@@ -132,19 +139,6 @@
 - [FEDERATED](lessons/storage_engines/federated/readme.md)
 - [BLACKHOLE](lessons/storage_engines/blackhole/readme.md)
 - [PERFORMANCE_SCHEMA](lessons/storage_engines/performance_schema/readme.md) -->
-
----
-
-### Users and Privileges
-- [Users and Privileges](lessons/users_privileges/readme.md)
-<!-- - [CREATE USER](lessons/users_privileges/create_user/readme.md)
-- [DROP USER](lessons/users_privileges/drop_user/readme.md)
-- [GRANT](lessons/users_privileges/grant/readme.md)
-- [REVOKE](lessons/users_privileges/revoke/readme.md)
-- [SET PASSWORD](lessons/users_privileges/set_password/readme.md)
-- [SHOW GRANTS](lessons/users_privileges/show_grants/readme.md)
-- [Authentication Plugins](lessons/users_privileges/authentication_plugins/readme.md)
-- [Role Management](lessons/users_privileges/role_management/readme.md) -->
 
 ---
 
