@@ -12,14 +12,16 @@
 - [Data Control Language (DCL)](lessons/dcl/readme.md)  
 - [Transaction Control Language (TCL)](lessons/tcl/readme.md)
 
-### [Database Structure](lessons/database_structure/readme.md)
+### Database Structure
+- [Database Structure](lessons/database_structure/readme.md)
 <!-- [Database](lessons/database_structure/database/readme.md)  
 - [Schema](lessons/database_structure/schema/readme.md)  
 - [Table](lessons/database_structure/table/readme.md)  
 - [Column](lessons/database_structure/column/readme.md)  
 - [Row/Record](lessons/database_structure/row_record/readme.md)  -->
 
-### [Data Types](lessons/data_types/readme.md)  
+### Data Types
+- [Data Types](lessons/data_types/readme.md)  
 - [Numeric types](lessons/data_types/numeric_types/readme.md)  
 - [Date and Time types](lessons/data_types/date_time_types/readme.md)  
 - [String types](lessons/data_types/string_types/readme.md)  
@@ -28,13 +30,15 @@
 
 ---
 
-### [Keys](lessons/keys/readme.md)
+### Key
+- [Keys](lessons/keys/readme.md)
 <!-- - [Primary Key](lessons/keys_indexes/primary_key/readme.md)  
 - [Foreign Key](lessons/keys_indexes/foreign_key/readme.md)  
 - [Unique Key](lessons/keys_indexes/unique_key/readme.md)  
 - [Composite Key](lessons/keys_indexes/composite_key/readme.md)  
 - [Auto Increment](lessons/keys_indexes/auto_increment/readme.md)   -->
-### [Index](lessons/index/readme.md)  
+### Index
+- [Index](lessons/index/readme.md)  
 <!-- - [Single-column Index](lessons/keys_indexes/single_column_index/readme.md)  
 - [Composite Index](lessons/keys_indexes/composite_index/readme.md)  
 - [Full-text Index](lessons/keys_indexes/full_text_index/readme.md)  
@@ -42,7 +46,8 @@
 
 ---
 
-### [Constraints](lessons/constraints/readme.md) 
+### Constraints
+- [Constraints](lessons/constraints/readme.md) 
 <!-- - [NOT NULL](lessons/constraints/not_null/readme.md)  
 - [UNIQUE](lessons/constraints/unique/readme.md)  
 - [DEFAULT](lessons/constraints/default/readme.md)  
@@ -52,7 +57,8 @@
 
 ---
 
-### [Operators](lessons/operators/readme.md)  
+### Operators
+- [Operators](lessons/operators/readme.md)  
 <!-- - [Arithmetic Operators](lessons/operators/arithmetic_operators/readme.md)  
 - [Comparison Operators](lessons/operators/comparison_operators/readme.md)  
 - [Logical Operators](lessons/operators/logical_operators/readme.md)  
@@ -61,7 +67,8 @@
 
 ---
 
-### [Joins](lessons/joins/readme.md)
+### Joins
+- [Joins](lessons/joins/readme.md)
 <!-- - [INNER JOIN](lessons/joins/inner_join/readme.md)  
 - [LEFT JOIN](lessons/joins/left_join/readme.md)  
 - [RIGHT JOIN](lessons/joins/right_join/readme.md)  
@@ -74,9 +81,9 @@
 
 ---
 
-### [Views](lessons/views/readme.md) 
-
-### [Subqueries](lessons/subqueries/readme.md)
+### Views and Subqueries
+- [Views](lessons/views/readme.md) 
+- [Subqueries](lessons/subqueries/readme.md)
 <!-- - [CREATE VIEW](lessons/views_subqueries/create_view/readme.md)  
 - [ALTER VIEW](lessons/views_subqueries/alter_view/readme.md)  
 - [DROP VIEW](lessons/views_subqueries/drop_view/readme.md)  
@@ -104,7 +111,8 @@
 
 ---
 
-### [Transactions](lessons/transactions/readme.md)
+### Transactions
+- [Transactions](lessons/transactions/readme.md)
 <!-- - [START TRANSACTION](lessons/transactions/start_transaction/readme.md)
 - [COMMIT](lessons/transactions/commit/readme.md)
 - [ROLLBACK](lessons/transactions/rollback/readme.md)
@@ -114,7 +122,8 @@
 
 ---
 
-### [Storage Engines](lessons/storage_engines/readme.md)
+### Storage Engines
+- [Storage Engines](lessons/storage_engines/readme.md)
 <!-- - [InnoDB](lessons/storage_engines/innodb/readme.md)
 - [MyISAM](lessons/storage_engines/myisam/readme.md)
 - [MEMORY](lessons/storage_engines/memory/readme.md)
@@ -126,7 +135,8 @@
 
 ---
 
-### [Users and Privileges](lessons/users_privileges/readme.md)
+### Users and Privileges
+- [Users and Privileges](lessons/users_privileges/readme.md)
 <!-- - [CREATE USER](lessons/users_privileges/create_user/readme.md)
 - [DROP USER](lessons/users_privileges/drop_user/readme.md)
 - [GRANT](lessons/users_privileges/grant/readme.md)
@@ -155,7 +165,8 @@
 
 ---
 
-### [Query Optimization](lessons/query_optimization/readme.md)
+### Query Optimization
+- [Query Optimization](lessons/query_optimization/readme.md)
 - [EXPLAIN](lessons/explain/readme.md)
 - [ANALYZE](lessons/analyze/readme.md)
 - [Query Cache](lessons/query_cache/readme.md) (deprecated in newer versions)
@@ -165,7 +176,8 @@
 
 ---
 
-### [Data Import/Export](lessons/data_import_export/readme.md)
+### Data Import/Export
+- [Data Import/Export](lessons/data_import_export/readme.md)
 <!-- - [LOAD DATA INFILE](lessons/data_import_export/load_data_infile/readme.md)
 - [SELECT INTO OUTFILE](lessons/data_import_export/select_into_outfile/readme.md)
 - [mysqldump](lessons/data_import_export/mysqldump/readme.md)
@@ -175,7 +187,8 @@
 
 ---
 
-### [Replication](lessons/replication/readme.md)
+### Replication
+- [Replication](lessons/replication/readme.md)
 <!-- - [Master-Slave Replication](lessons/master_slave_replication/readme.md)
 - [Master-Master Replication](lessons/master_master_replication/readme.md)
 - [GTID (Global Transaction Identifiers)](lessons/gtid/readme.md)
@@ -185,7 +198,8 @@
 
 ---
 
-### [Backup and Recovery](lessons/backup_recovery/readme.md)
+### Backup and Recovery
+- [Backup and Recovery](lessons/backup_recovery/readme.md)
 <!-- - [Logical Backup](lessons/logical_backup/readme.md)
   - [`mysqldump`, `mysqlpump`](lessons/mysqldump_mysqlpump/readme.md)
 - [Physical Backup](lessons/physical_backup/readme.md)
@@ -196,7 +210,8 @@
 
 ---
 
-### [Security](lessons/security/readme.md)
+### Security
+- [Security](lessons/security/readme.md)
 <!-- - [User Authentication](lessons/user_authentication/readme.md)
 - [Access Control and Privileges](lessons/access_control_privileges/readme.md)
 - [Encryption](lessons/encryption/readme.md)
@@ -207,7 +222,8 @@
 
 ---
 
-### [Monitoring and Performance](lessons/monitoring_performance/readme.md)
+### Monitoring and Performance
+- [Monitoring and Performance](lessons/monitoring_performance/readme.md)
 <!-- - [SHOW STATUS](lessons/show_status/readme.md)
 - [SHOW PROCESSLIST](lessons/show_processlist/readme.md)
 - [INFORMATION_SCHEMA](lessons/information_schema/readme.md)
@@ -218,7 +234,8 @@
 
 ---
 
-### [System Administration](lessons/system_administration/readme.md)
+### System Administration
+- [System Administration](lessons/system_administration/readme.md)
 <!-- - [Configuration (`my.cnf`, `my.ini`)](lessons/configuration/readme.md)
 - [Server Startup and Shutdown](lessons/server_startup_shutdown/readme.md)
 - [User Management](lessons/user_management/readme.md)
@@ -229,7 +246,8 @@
 
 ---
 
-### [Tools and Interfaces](lessons/tools_and_interfaces/readme.md)
+### Tools and Interfaces
+- [Tools and Interfaces](lessons/tools_and_interfaces/readme.md)
 <!-- - [MySQL CLI](lessons/mysql_cli/readme.md)
 - [MySQL Workbench](lessons/mysql_workbench/readme.md)
 - [phpMyAdmin](lessons/phpmyadmin/readme.md)
