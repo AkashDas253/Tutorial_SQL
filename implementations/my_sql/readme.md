@@ -7,7 +7,7 @@
 
 ---
 
-### SQL Part
+### SQL Query Support
 
 #### Language Types
 - [Data Definition Language (DDL)](lessons/languages/ddl.md)
@@ -111,7 +111,7 @@
 
 ---
 
-### Administration
+### DB Administration
 
 #### Transactions
 - [Transactions](lessons/transactions/readme.md)
