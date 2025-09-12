@@ -134,6 +134,17 @@
 - [Authentication Plugins](lessons/users_privileges/authentication_plugins/readme.md)
 - [Role Management](lessons/users_privileges/role_management/readme.md) -->
 
+
+#### Query Optimization
+- [Query Optimization](lessons/query_optimization/readme.md)
+- [EXPLAIN](lessons/explain/readme.md)
+- [ANALYZE](lessons/analyze/readme.md)
+- [Query Cache](lessons/query_cache/readme.md) (deprecated in newer versions)
+- [Index Optimization](lessons/index_optimization/readme.md)
+- [Table Partitioning](lessons/table_partitioning/readme.md)
+- [Optimizer Hints](lessons/optimizer_hints/readme.md)
+
+
 ---
 
 ### Stored Program
@@ -153,18 +164,9 @@
 
 ---
 
-### Query Optimization
-- [Query Optimization](lessons/query_optimization/readme.md)
-- [EXPLAIN](lessons/explain/readme.md)
-- [ANALYZE](lessons/analyze/readme.md)
-- [Query Cache](lessons/query_cache/readme.md) (deprecated in newer versions)
-- [Index Optimization](lessons/index_optimization/readme.md)
-- [Table Partitioning](lessons/table_partitioning/readme.md)
-- [Optimizer Hints](lessons/optimizer_hints/readme.md)
+### Architecture and Management
 
----
-
-### Replication
+#### Replication
 - [Replication](lessons/replication/readme.md)
 <!-- - [Master-Slave Replication](lessons/master_slave_replication/readme.md)
 - [Master-Master Replication](lessons/master_master_replication/readme.md)
@@ -173,7 +175,7 @@
 - [Delayed Replication](lessons/delayed_replication/readme.md)
 - [Multi-Source Replication](lessons/multi_source_replication/readme.md) -->
 
-### Backup and Recovery
+#### Backup and Recovery
 - [Backup and Recovery](lessons/backup_recovery/readme.md)
 <!-- - [Logical Backup](lessons/logical_backup/readme.md)
   - [`mysqldump`, `mysqlpump`](lessons/mysqldump_mysqlpump/readme.md)
@@ -183,7 +185,7 @@
 - [Point-in-time Recovery](lessons/point_in_time_recovery/readme.md)
 - [Percona XtraBackup (external tool)](lessons/percona_xtrabackup/readme.md) -->
 
-### Security
+#### Security
 - [Security](lessons/security/readme.md)
 <!-- - [User Authentication](lessons/user_authentication/readme.md)
 - [Access Control and Privileges](lessons/access_control_privileges/readme.md)
@@ -193,7 +195,7 @@
 - [SQL Injection Protection](lessons/sql_injection_protection/readme.md)
 - [Firewall Plugin (Enterprise)](lessons/firewall_plugin/readme.md) -->
 
-### Monitoring and Performance
+#### Monitoring and Performance
 - [Monitoring and Performance](lessons/monitoring_performance/readme.md)
 <!-- - [SHOW STATUS](lessons/show_status/readme.md)
 - [SHOW PROCESSLIST](lessons/show_processlist/readme.md)
@@ -203,7 +205,7 @@
 - [General Log](lessons/general_log/readme.md)
 - [Error Log](lessons/error_log/readme.md) -->
 
-### System Administration
+#### System Administration
 - [System Administration](lessons/system_administration/readme.md)
 <!-- - [Configuration (`my.cnf`, `my.ini`)](lessons/configuration/readme.md)
 - [Server Startup and Shutdown](lessons/server_startup_shutdown/readme.md)
@@ -213,7 +215,7 @@
 - [Resource Limits](lessons/resource_limits/readme.md)
 - [Environment Variables](lessons/environment_variables/readme.md) -->
 
-### Storage Engines
+#### Storage Engines
 - [Storage Engines](lessons/storage_engines/readme.md)
 <!-- - [InnoDB](lessons/storage_engines/innodb/readme.md)
 - [MyISAM](lessons/storage_engines/myisam/readme.md)
@@ -226,7 +228,9 @@
 
 ---
 
-### Tools and Interfaces
+### Supporting Tools
+
+#### Tools and Interfaces
 - [Tools and Interfaces](lessons/tools_and_interfaces/readme.md)
 <!-- - [MySQL CLI](lessons/mysql_cli/readme.md)
 - [MySQL Workbench](lessons/mysql_workbench/readme.md)
@@ -235,9 +239,7 @@
 - [MySQL Router](lessons/mysql_router/readme.md)
 - [MySQL Utilities (deprecated)](lessons/mysql_utilities/readme.md) -->
 
----
-
-### Data Import/Export
+#### Data Import/Export
 - [Data Import/Export](lessons/data_import_export/readme.md)
 <!-- - [LOAD DATA INFILE](lessons/data_import_export/load_data_infile/readme.md)
 - [SELECT INTO OUTFILE](lessons/data_import_export/select_into_outfile/readme.md)
