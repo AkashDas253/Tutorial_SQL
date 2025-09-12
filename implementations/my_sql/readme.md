@@ -42,10 +42,10 @@
 
 #### Index
 - [Index](lessons/index/readme.md)  
-<!-- - [Single-column Index](lessons/keys_indexes/single_column_index/readme.md)  
-- [Composite Index](lessons/keys_indexes/composite_index/readme.md)  
-- [Full-text Index](lessons/keys_indexes/full_text_index/readme.md)  
-- [Spatial Index](lessons/keys_indexes/spatial_index/readme.md) -->
+- [Single-column Index](lessons/indexes/single_column_index.md)  
+<!-- - [Composite Index](lessons/indexes/composite_index/readme.md)  
+- [Full-text Index](lessons/indexes/full_text_index/readme.md)  
+- [Spatial Index](lessons/indexes/spatial_index/readme.md) -->
 
 #### Constraints
 - [Constraints](lessons/constraints/readme.md) 
