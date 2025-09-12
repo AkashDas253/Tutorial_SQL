@@ -13,7 +13,7 @@
 
 ---
 
-### **SQL Architecture**
+### SQL Architecture
 
 - [High-Level Layers](lessons/sql_architecture/high_level_layers.md)
 - [SQL Engine Internal Architecture](lessons/sql_architecture/engine_internal_architecture.md)
@@ -24,7 +24,8 @@
 ---
 
 ### SQL Tricks
-- [](lessons/tricks/handling_null.md)
+- [Handling Nulls](lessons/tricks/handling_null.md)
+- [Selecting Datatype](lessons/tricks/selecting_datatype.md)
 
 ---
 
