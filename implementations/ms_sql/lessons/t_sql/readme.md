@@ -13,28 +13,20 @@
 - Functions:
     - [Aggregate functions](./aggragate_function.md)
     - [String functions](./string_function.md)
-    <!-- - [Date and time functions]
-    - [Mathematical functions]
-    - [Conversion functions]
-    - [System functions]
-    - [System functions] -->
-<!-- 
-Programmable objects
+    - [Date and time functions](./date_time_function.md) 
+    - [Mathematical functions](./mathematical_function.md)
+    - [Conversion functions](./conversion_function.md)
+    - [System functions](./system_function.md)
+    - [Window/Analytical functions](./window_function.md)
 
-Stored Procedures
+- Programmable objects
+    - [Stored Procedures](./stored_procedure.md)
+    - [User-Defined Functions (UDFs)](./user_defined_function.md)
+    - [Triggers](./trigger.md)
+    - [Views](./view.md)
+    - [Cursors](./cursor.md)
 
-User-Defined Functions (UDFs)
-
-Triggers
-
-Views
-
-Cursors
-
-Temporary objects
-
-Local temporary tables (#)
-
-Global temporary tables (##)
-
-Table variables -->
+- Temporary objects
+    - [Local temporary tables (#)](./local_temporary_table.md)
+    - [Global temporary tables (##)](./global_temporary_table.md)
+    - [Table variables](./table_variable.md)
